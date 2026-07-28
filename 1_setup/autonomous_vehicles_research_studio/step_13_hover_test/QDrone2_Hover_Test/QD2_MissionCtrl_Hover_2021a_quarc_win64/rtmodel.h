@@ -1,0 +1,25 @@
+/*
+ *  rtmodel.h:
+ *
+ * Academic License - for use in teaching, academic research, and meeting
+ * course requirements at degree granting institutions only.  Not for
+ * government, commercial, or other organizational use.
+ *
+ * Code generation for model "QD2_MissionCtrl_Hover_2021a".
+ *
+ * Model version              : 13.3
+ * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
+ * C source code generated on : Tue Jul 28 14:06:16 2026
+ *
+ * Target selection: quarc_win64.tlc
+ * Note: GRT includes extra infrastructure and instrumentation for prototyping
+ * Embedded hardware selection: Intel->x86-64 (Windows64)
+ * Code generation objectives: Unspecified
+ * Validation result: Not run
+ */
+
+#ifndef rtmodel_h_
+#define rtmodel_h_
+#include "QD2_MissionCtrl_Hover_2021a.h"
+#define GRTINTERFACE                   1
+#endif                                 /* rtmodel_h_ */
