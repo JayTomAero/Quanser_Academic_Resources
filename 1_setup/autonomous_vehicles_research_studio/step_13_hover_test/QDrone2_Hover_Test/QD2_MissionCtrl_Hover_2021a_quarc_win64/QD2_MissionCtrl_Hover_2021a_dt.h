@@ -7,9 +7,9 @@
  *
  * Code generation for model "QD2_MissionCtrl_Hover_2021a".
  *
- * Model version              : 13.11
+ * Model version              : 13.13
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C source code generated on : Tue Aug  4 16:10:06 2026
+ * C source code generated on : Wed Aug  5 13:12:21 2026
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -175,7 +175,7 @@ static DataTypeTransition rtPTransitions[] = {
   { (char_T *)(&QD2_MissionCtrl_Hover_2021a_P.HostGameController_Controller), 2,
     0, 5 },
 
-  { (char_T *)(&QD2_MissionCtrl_Hover_2021a_P.HostInitialize_URI), 3, 0, 106 },
+  { (char_T *)(&QD2_MissionCtrl_Hover_2021a_P.HostInitialize_URI), 3, 0, 105 },
 
   { (char_T *)(&QD2_MissionCtrl_Hover_2021a_P.CoreSubsys.Constant_Value), 0, 0,
     61 },

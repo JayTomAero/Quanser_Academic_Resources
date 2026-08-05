@@ -7,9 +7,9 @@
  *
  * Code generation for model "QD2_MissionCtrl_Hover_2021a".
  *
- * Model version              : 13.11
+ * Model version              : 13.13
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C source code generated on : Tue Aug  4 16:10:06 2026
+ * C source code generated on : Wed Aug  5 13:12:21 2026
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -2831,10 +2831,10 @@ RT_MODEL_QD2_MissionCtrl_Hove_T *QD2_MissionCtrl_Hover_2021a(void)
   QD2_MissionCtrl_Hover_2021a_M->Timing.stepSize2 = 0.016;
 
   /* External mode info */
-  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[0] = (1305484700U);
-  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[1] = (349227086U);
-  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[2] = (1316286156U);
-  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[3] = (2773033277U);
+  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[0] = (3074125116U);
+  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[1] = (2614164692U);
+  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[2] = (1208371652U);
+  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[3] = (3886236381U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;
@@ -2931,7 +2931,7 @@ RT_MODEL_QD2_MissionCtrl_Hove_T *QD2_MissionCtrl_Hover_2021a(void)
   QD2_MissionCtrl_Hover_2021a_M->Sizes.numSampTimes = (3);/* Number of sample times */
   QD2_MissionCtrl_Hover_2021a_M->Sizes.numBlocks = (266);/* Number of blocks */
   QD2_MissionCtrl_Hover_2021a_M->Sizes.numBlockIO = (66);/* Number of block outputs */
-  QD2_MissionCtrl_Hover_2021a_M->Sizes.numBlockPrms = (300);/* Sum of parameter "widths" */
+  QD2_MissionCtrl_Hover_2021a_M->Sizes.numBlockPrms = (299);/* Sum of parameter "widths" */
   return QD2_MissionCtrl_Hover_2021a_M;
 }
 

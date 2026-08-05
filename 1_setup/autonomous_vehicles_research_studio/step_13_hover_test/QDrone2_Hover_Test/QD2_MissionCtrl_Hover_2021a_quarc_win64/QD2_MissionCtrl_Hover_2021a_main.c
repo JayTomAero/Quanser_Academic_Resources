@@ -4,8 +4,8 @@
  * This file was generated automatically by QUARC. It serves as the main
  * entry point for the real-time code.
  *
- * Date:           Tue Aug  4 16:10:06 2026
- * Model version:  13.11
+ * Date:           Wed Aug  5 13:12:21 2026
+ * Model version:  13.13
  * Matlab version: 26.1 (R2026a) 20-Nov-2025
  ****************************************************************************/
 

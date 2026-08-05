@@ -7,9 +7,9 @@
  *
  * Code generation for model "QD2_DroneStack_PID_2021a".
  *
- * Model version              : 11.3
+ * Model version              : 11.5
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C source code generated on : Tue Aug  4 16:12:14 2026
+ * C source code generated on : Wed Aug  5 13:12:55 2026
  *
  * Target selection: quarc_linux_qdrone2.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -3009,7 +3009,7 @@ struct P_QD2_DroneStack_PID_2021a_T_ {
   uint8_T ToHostFile_FileFormat;    /* Computed Parameter: ToHostFile_FileFormat
                                      * Referenced by: '<S5>/To Host File'
                                      */
-  uint8_T ToHostFile_file_name[69];    /* Expression: file_name_argument
+  uint8_T ToHostFile_file_name[68];    /* Expression: file_name_argument
                                         * Referenced by: '<S5>/To Host File'
                                         */
   uint8_T ToHostFile_VarName_l[15];    /* Expression: variable_name_argument
@@ -3018,7 +3018,7 @@ struct P_QD2_DroneStack_PID_2021a_T_ {
   uint8_T ToHostFile_FileFormat_n;/* Computed Parameter: ToHostFile_FileFormat_n
                                    * Referenced by: '<S1>/To Host File'
                                    */
-  uint8_T ToHostFile_file_name_h[75];  /* Expression: file_name_argument
+  uint8_T ToHostFile_file_name_h[74];  /* Expression: file_name_argument
                                         * Referenced by: '<S1>/To Host File'
                                         */
   uint8_T StringConstant16_Value[80];  /* Expression: value
@@ -3063,7 +3063,7 @@ struct P_QD2_DroneStack_PID_2021a_T_ {
   uint8_T ToHostFile_FileFormat_a;/* Computed Parameter: ToHostFile_FileFormat_a
                                    * Referenced by: '<S7>/To Host File'
                                    */
-  uint8_T ToHostFile_file_name_j[76];  /* Expression: file_name_argument
+  uint8_T ToHostFile_file_name_j[75];  /* Expression: file_name_argument
                                         * Referenced by: '<S7>/To Host File'
                                         */
   uint8_T StreamServer_URI[36];        /* Expression: uri_argument
