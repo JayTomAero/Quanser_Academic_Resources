@@ -1,0 +1,4 @@
+/* Expression: [0 0 -0.07]
+  * Referenced by: '<S11>/Subtract Rigid Body Reference Offset  (Initial Height)  to get height above the ground'
+   */
+{   0.0, 0.0, -0.07 } 

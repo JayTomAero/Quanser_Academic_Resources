@@ -7,9 +7,9 @@
  *
  * Code generation for model "QD2_DroneStack_PID_2021a".
  *
- * Model version              : 11.0
+ * Model version              : 11.3
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C source code generated on : Wed Jul 29 16:26:00 2026
+ * C source code generated on : Tue Aug  4 16:12:14 2026
  *
  * Target selection: quarc_linux_qdrone2.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -10234,10 +10234,10 @@ RT_MODEL_QD2_DroneStack_PID_2_T *QD2_DroneStack_PID_2021a(void)
   rtmSetFirstInitCond(QD2_DroneStack_PID_2021a_M, 1);
 
   /* External mode info */
-  QD2_DroneStack_PID_2021a_M->Sizes.checksums[0] = (819505525U);
-  QD2_DroneStack_PID_2021a_M->Sizes.checksums[1] = (4166959094U);
-  QD2_DroneStack_PID_2021a_M->Sizes.checksums[2] = (2689178127U);
-  QD2_DroneStack_PID_2021a_M->Sizes.checksums[3] = (3169523502U);
+  QD2_DroneStack_PID_2021a_M->Sizes.checksums[0] = (410214839U);
+  QD2_DroneStack_PID_2021a_M->Sizes.checksums[1] = (68184555U);
+  QD2_DroneStack_PID_2021a_M->Sizes.checksums[2] = (1039175306U);
+  QD2_DroneStack_PID_2021a_M->Sizes.checksums[3] = (545271456U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;
@@ -10395,7 +10395,7 @@ RT_MODEL_QD2_DroneStack_PID_2_T *QD2_DroneStack_PID_2021a(void)
   QD2_DroneStack_PID_2021a_M->Sizes.numU = (0);/* Number of model inputs */
   QD2_DroneStack_PID_2021a_M->Sizes.sysDirFeedThru = (0);/* The model is not direct feedthrough */
   QD2_DroneStack_PID_2021a_M->Sizes.numSampTimes = (5);/* Number of sample times */
-  QD2_DroneStack_PID_2021a_M->Sizes.numBlocks = (720);/* Number of blocks */
+  QD2_DroneStack_PID_2021a_M->Sizes.numBlocks = (721);/* Number of blocks */
   QD2_DroneStack_PID_2021a_M->Sizes.numBlockIO = (260);/* Number of block outputs */
   QD2_DroneStack_PID_2021a_M->Sizes.numBlockPrms = (2688);/* Sum of parameter "widths" */
   return QD2_DroneStack_PID_2021a_M;
