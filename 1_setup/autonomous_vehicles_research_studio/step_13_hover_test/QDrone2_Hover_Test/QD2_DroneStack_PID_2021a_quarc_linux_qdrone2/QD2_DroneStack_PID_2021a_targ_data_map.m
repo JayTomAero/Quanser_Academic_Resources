@@ -2610,35 +2610,43 @@
             sigMap.sections(1) = section;
             clear section
 
-            section.nData     = 2;
-            section.data(2)  = dumData; %prealloc
+            section.nData     = 3;
+            section.data(3)  = dumData; %prealloc
 
-                    ;% QD2_DroneStack_PID_2021a_B.RateTransition14
+                    ;% QD2_DroneStack_PID_2021a_B.StreamClient_o2
                     section.data(1).logicalSrcIdx = 174;
                     section.data(1).dtTransOffset = 0;
 
-                    ;% QD2_DroneStack_PID_2021a_B.Print_o2
+                    ;% QD2_DroneStack_PID_2021a_B.RateTransition14
                     section.data(2).logicalSrcIdx = 175;
                     section.data(2).dtTransOffset = 1;
+
+                    ;% QD2_DroneStack_PID_2021a_B.Print_o2
+                    section.data(3).logicalSrcIdx = 176;
+                    section.data(3).dtTransOffset = 2;
 
             nTotData = nTotData + section.nData;
             sigMap.sections(2) = section;
             clear section
 
-            section.nData     = 3;
-            section.data(3)  = dumData; %prealloc
+            section.nData     = 4;
+            section.data(4)  = dumData; %prealloc
 
                     ;% QD2_DroneStack_PID_2021a_B.ModelArgument
-                    section.data(1).logicalSrcIdx = 176;
+                    section.data(1).logicalSrcIdx = 177;
                     section.data(1).dtTransOffset = 0;
 
-                    ;% QD2_DroneStack_PID_2021a_B.MatrixConcatenate
-                    section.data(2).logicalSrcIdx = 177;
+                    ;% QD2_DroneStack_PID_2021a_B.StreamClient_o1
+                    section.data(2).logicalSrcIdx = 178;
                     section.data(2).dtTransOffset = 80;
 
+                    ;% QD2_DroneStack_PID_2021a_B.MatrixConcatenate
+                    section.data(3).logicalSrcIdx = 179;
+                    section.data(3).dtTransOffset = 81;
+
                     ;% QD2_DroneStack_PID_2021a_B.RateTransition16
-                    section.data(3).logicalSrcIdx = 178;
-                    section.data(3).dtTransOffset = 320;
+                    section.data(4).logicalSrcIdx = 180;
+                    section.data(4).dtTransOffset = 321;
 
             nTotData = nTotData + section.nData;
             sigMap.sections(3) = section;
@@ -2648,223 +2656,223 @@
             section.data(55)  = dumData; %prealloc
 
                     ;% QD2_DroneStack_PID_2021a_B.DataTypeConversion_pb
-                    section.data(1).logicalSrcIdx = 179;
+                    section.data(1).logicalSrcIdx = 181;
                     section.data(1).dtTransOffset = 0;
 
                     ;% QD2_DroneStack_PID_2021a_B.DataTypeConversion22
-                    section.data(2).logicalSrcIdx = 180;
+                    section.data(2).logicalSrcIdx = 182;
                     section.data(2).dtTransOffset = 4;
 
                     ;% QD2_DroneStack_PID_2021a_B.DataTypeConversion24
-                    section.data(3).logicalSrcIdx = 181;
+                    section.data(3).logicalSrcIdx = 183;
                     section.data(3).dtTransOffset = 5;
 
                     ;% QD2_DroneStack_PID_2021a_B.Compare
-                    section.data(4).logicalSrcIdx = 182;
+                    section.data(4).logicalSrcIdx = 184;
                     section.data(4).dtTransOffset = 6;
 
                     ;% QD2_DroneStack_PID_2021a_B.AND
-                    section.data(5).logicalSrcIdx = 183;
+                    section.data(5).logicalSrcIdx = 185;
                     section.data(5).dtTransOffset = 7;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator
-                    section.data(6).logicalSrcIdx = 184;
+                    section.data(6).logicalSrcIdx = 186;
                     section.data(6).dtTransOffset = 11;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator_b
-                    section.data(7).logicalSrcIdx = 185;
+                    section.data(7).logicalSrcIdx = 187;
                     section.data(7).dtTransOffset = 12;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator_a
-                    section.data(8).logicalSrcIdx = 186;
+                    section.data(8).logicalSrcIdx = 188;
                     section.data(8).dtTransOffset = 13;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator_bu
-                    section.data(9).logicalSrcIdx = 187;
+                    section.data(9).logicalSrcIdx = 189;
                     section.data(9).dtTransOffset = 14;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator_m
-                    section.data(10).logicalSrcIdx = 188;
+                    section.data(10).logicalSrcIdx = 190;
                     section.data(10).dtTransOffset = 15;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator_l
-                    section.data(11).logicalSrcIdx = 189;
+                    section.data(11).logicalSrcIdx = 191;
                     section.data(11).dtTransOffset = 16;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator_l3
-                    section.data(12).logicalSrcIdx = 190;
+                    section.data(12).logicalSrcIdx = 192;
                     section.data(12).dtTransOffset = 17;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator_o
-                    section.data(13).logicalSrcIdx = 191;
+                    section.data(13).logicalSrcIdx = 193;
                     section.data(13).dtTransOffset = 18;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator_ms
-                    section.data(14).logicalSrcIdx = 192;
+                    section.data(14).logicalSrcIdx = 194;
                     section.data(14).dtTransOffset = 19;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator_og
-                    section.data(15).logicalSrcIdx = 193;
+                    section.data(15).logicalSrcIdx = 195;
                     section.data(15).dtTransOffset = 20;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator_on
-                    section.data(16).logicalSrcIdx = 194;
+                    section.data(16).logicalSrcIdx = 196;
                     section.data(16).dtTransOffset = 21;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator_lm
-                    section.data(17).logicalSrcIdx = 195;
+                    section.data(17).logicalSrcIdx = 197;
                     section.data(17).dtTransOffset = 22;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator_i
-                    section.data(18).logicalSrcIdx = 196;
+                    section.data(18).logicalSrcIdx = 198;
                     section.data(18).dtTransOffset = 23;
 
                     ;% QD2_DroneStack_PID_2021a_B.OR
-                    section.data(19).logicalSrcIdx = 197;
+                    section.data(19).logicalSrcIdx = 199;
                     section.data(19).dtTransOffset = 24;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator_p
-                    section.data(20).logicalSrcIdx = 198;
+                    section.data(20).logicalSrcIdx = 200;
                     section.data(20).dtTransOffset = 25;
 
                     ;% QD2_DroneStack_PID_2021a_B.RelationalOperator
-                    section.data(21).logicalSrcIdx = 199;
+                    section.data(21).logicalSrcIdx = 201;
                     section.data(21).dtTransOffset = 26;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator3
-                    section.data(22).logicalSrcIdx = 200;
+                    section.data(22).logicalSrcIdx = 202;
                     section.data(22).dtTransOffset = 27;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator_ab
-                    section.data(23).logicalSrcIdx = 201;
+                    section.data(23).logicalSrcIdx = 203;
                     section.data(23).dtTransOffset = 28;
 
                     ;% QD2_DroneStack_PID_2021a_B.RelationalOperator_g
-                    section.data(24).logicalSrcIdx = 202;
+                    section.data(24).logicalSrcIdx = 204;
                     section.data(24).dtTransOffset = 29;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator_f
-                    section.data(25).logicalSrcIdx = 203;
+                    section.data(25).logicalSrcIdx = 205;
                     section.data(25).dtTransOffset = 30;
 
                     ;% QD2_DroneStack_PID_2021a_B.RelationalOperator_i
-                    section.data(26).logicalSrcIdx = 204;
+                    section.data(26).logicalSrcIdx = 206;
                     section.data(26).dtTransOffset = 31;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator_ft
-                    section.data(27).logicalSrcIdx = 205;
+                    section.data(27).logicalSrcIdx = 207;
                     section.data(27).dtTransOffset = 32;
 
                     ;% QD2_DroneStack_PID_2021a_B.RelationalOperator_h
-                    section.data(28).logicalSrcIdx = 206;
+                    section.data(28).logicalSrcIdx = 208;
                     section.data(28).dtTransOffset = 33;
 
                     ;% QD2_DroneStack_PID_2021a_B.DataTypeConversion4_fx
-                    section.data(29).logicalSrcIdx = 207;
+                    section.data(29).logicalSrcIdx = 209;
                     section.data(29).dtTransOffset = 34;
 
                     ;% QD2_DroneStack_PID_2021a_B.DataTypeConversion23
-                    section.data(30).logicalSrcIdx = 208;
+                    section.data(30).logicalSrcIdx = 210;
                     section.data(30).dtTransOffset = 35;
 
                     ;% QD2_DroneStack_PID_2021a_B.Compare_c
-                    section.data(31).logicalSrcIdx = 209;
+                    section.data(31).logicalSrcIdx = 211;
                     section.data(31).dtTransOffset = 36;
 
                     ;% QD2_DroneStack_PID_2021a_B.Compare1
-                    section.data(32).logicalSrcIdx = 210;
+                    section.data(32).logicalSrcIdx = 212;
                     section.data(32).dtTransOffset = 37;
 
                     ;% QD2_DroneStack_PID_2021a_B.Compare2
-                    section.data(33).logicalSrcIdx = 211;
+                    section.data(33).logicalSrcIdx = 213;
                     section.data(33).dtTransOffset = 38;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator_mx
-                    section.data(34).logicalSrcIdx = 212;
+                    section.data(34).logicalSrcIdx = 214;
                     section.data(34).dtTransOffset = 39;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator2
-                    section.data(35).logicalSrcIdx = 213;
+                    section.data(35).logicalSrcIdx = 215;
                     section.data(35).dtTransOffset = 40;
 
                     ;% QD2_DroneStack_PID_2021a_B.checkifmeasuredheightexceedsmax
-                    section.data(36).logicalSrcIdx = 214;
+                    section.data(36).logicalSrcIdx = 216;
                     section.data(36).dtTransOffset = 41;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator3_e
-                    section.data(37).logicalSrcIdx = 215;
+                    section.data(37).logicalSrcIdx = 217;
                     section.data(37).dtTransOffset = 42;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator_bd
-                    section.data(38).logicalSrcIdx = 216;
+                    section.data(38).logicalSrcIdx = 218;
                     section.data(38).dtTransOffset = 43;
 
                     ;% QD2_DroneStack_PID_2021a_B.TmpSignalConversionAtBooleanEdg
-                    section.data(39).logicalSrcIdx = 217;
+                    section.data(39).logicalSrcIdx = 219;
                     section.data(39).dtTransOffset = 44;
 
                     ;% QD2_DroneStack_PID_2021a_B.DataTypeConversion2_o
-                    section.data(40).logicalSrcIdx = 218;
+                    section.data(40).logicalSrcIdx = 220;
                     section.data(40).dtTransOffset = 47;
 
                     ;% QD2_DroneStack_PID_2021a_B.DataTypeConversion5_c
-                    section.data(41).logicalSrcIdx = 219;
+                    section.data(41).logicalSrcIdx = 221;
                     section.data(41).dtTransOffset = 48;
 
                     ;% QD2_DroneStack_PID_2021a_B.DataTypeConversion_f
-                    section.data(42).logicalSrcIdx = 220;
+                    section.data(42).logicalSrcIdx = 222;
                     section.data(42).dtTransOffset = 49;
 
                     ;% QD2_DroneStack_PID_2021a_B.DataTypeConversion8
-                    section.data(43).logicalSrcIdx = 221;
+                    section.data(43).logicalSrcIdx = 223;
                     section.data(43).dtTransOffset = 50;
 
                     ;% QD2_DroneStack_PID_2021a_B.DataTypeConversion14
-                    section.data(44).logicalSrcIdx = 222;
+                    section.data(44).logicalSrcIdx = 224;
                     section.data(44).dtTransOffset = 51;
 
                     ;% QD2_DroneStack_PID_2021a_B.DataTypeConversion9_m
-                    section.data(45).logicalSrcIdx = 223;
+                    section.data(45).logicalSrcIdx = 225;
                     section.data(45).dtTransOffset = 52;
 
                     ;% QD2_DroneStack_PID_2021a_B.DataTypeConversion10_a
-                    section.data(46).logicalSrcIdx = 224;
+                    section.data(46).logicalSrcIdx = 226;
                     section.data(46).dtTransOffset = 53;
 
                     ;% QD2_DroneStack_PID_2021a_B.DataTypeConversion11_h
-                    section.data(47).logicalSrcIdx = 225;
+                    section.data(47).logicalSrcIdx = 227;
                     section.data(47).dtTransOffset = 54;
 
                     ;% QD2_DroneStack_PID_2021a_B.DataTypeConversion12_i
-                    section.data(48).logicalSrcIdx = 226;
+                    section.data(48).logicalSrcIdx = 228;
                     section.data(48).dtTransOffset = 55;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator_bx
-                    section.data(49).logicalSrcIdx = 227;
+                    section.data(49).logicalSrcIdx = 229;
                     section.data(49).dtTransOffset = 56;
 
                     ;% QD2_DroneStack_PID_2021a_B.RelationalOperator_e
-                    section.data(50).logicalSrcIdx = 228;
+                    section.data(50).logicalSrcIdx = 230;
                     section.data(50).dtTransOffset = 57;
 
                     ;% QD2_DroneStack_PID_2021a_B.LogicalOperator_c
-                    section.data(51).logicalSrcIdx = 229;
+                    section.data(51).logicalSrcIdx = 231;
                     section.data(51).dtTransOffset = 58;
 
                     ;% QD2_DroneStack_PID_2021a_B.RelationalOperator_gi
-                    section.data(52).logicalSrcIdx = 230;
+                    section.data(52).logicalSrcIdx = 232;
                     section.data(52).dtTransOffset = 59;
 
                     ;% QD2_DroneStack_PID_2021a_B.HILWatchdog
-                    section.data(53).logicalSrcIdx = 231;
+                    section.data(53).logicalSrcIdx = 233;
                     section.data(53).dtTransOffset = 60;
 
                     ;% QD2_DroneStack_PID_2021a_B.AND_f
-                    section.data(54).logicalSrcIdx = 232;
+                    section.data(54).logicalSrcIdx = 234;
                     section.data(54).dtTransOffset = 61;
 
                     ;% QD2_DroneStack_PID_2021a_B.Input
-                    section.data(55).logicalSrcIdx = 233;
+                    section.data(55).logicalSrcIdx = 235;
                     section.data(55).dtTransOffset = 62;
 
             nTotData = nTotData + section.nData;
@@ -2875,31 +2883,31 @@
             section.data(7)  = dumData; %prealloc
 
                     ;% QD2_DroneStack_PID_2021a_B.CoreSubsys_pn[1].Gain1
-                    section.data(1).logicalSrcIdx = 244;
+                    section.data(1).logicalSrcIdx = 246;
                     section.data(1).dtTransOffset = 0;
 
                     ;% QD2_DroneStack_PID_2021a_B.CoreSubsys_pn[1].Integrator1
-                    section.data(2).logicalSrcIdx = 245;
+                    section.data(2).logicalSrcIdx = 247;
                     section.data(2).dtTransOffset = 2;
 
                     ;% QD2_DroneStack_PID_2021a_B.CoreSubsys_pn[1].Product1
-                    section.data(3).logicalSrcIdx = 246;
+                    section.data(3).logicalSrcIdx = 248;
                     section.data(3).dtTransOffset = 5;
 
                     ;% QD2_DroneStack_PID_2021a_B.CoreSubsys_pn[1].Product
-                    section.data(4).logicalSrcIdx = 247;
+                    section.data(4).logicalSrcIdx = 249;
                     section.data(4).dtTransOffset = 8;
 
                     ;% QD2_DroneStack_PID_2021a_B.CoreSubsys_pn[1].Product_i
-                    section.data(5).logicalSrcIdx = 248;
+                    section.data(5).logicalSrcIdx = 250;
                     section.data(5).dtTransOffset = 11;
 
                     ;% QD2_DroneStack_PID_2021a_B.CoreSubsys_pn[1].Product1_i
-                    section.data(6).logicalSrcIdx = 249;
+                    section.data(6).logicalSrcIdx = 251;
                     section.data(6).dtTransOffset = 14;
 
                     ;% QD2_DroneStack_PID_2021a_B.CoreSubsys_pn[1].Sum1
-                    section.data(7).logicalSrcIdx = 250;
+                    section.data(7).logicalSrcIdx = 252;
                     section.data(7).dtTransOffset = 17;
 
             nTotData = nTotData + section.nData;
@@ -2910,7 +2918,7 @@
             section.data(1)  = dumData; %prealloc
 
                     ;% QD2_DroneStack_PID_2021a_B.UsedesiredYwhenenabled.h_dm1
-                    section.data(1).logicalSrcIdx = 253;
+                    section.data(1).logicalSrcIdx = 255;
                     section.data(1).dtTransOffset = 0;
 
             nTotData = nTotData + section.nData;
@@ -2921,7 +2929,7 @@
             section.data(1)  = dumData; %prealloc
 
                     ;% QD2_DroneStack_PID_2021a_B.UsedesiredXwhenenabled.h_dm1
-                    section.data(1).logicalSrcIdx = 254;
+                    section.data(1).logicalSrcIdx = 256;
                     section.data(1).dtTransOffset = 0;
 
             nTotData = nTotData + section.nData;
@@ -2932,7 +2940,7 @@
             section.data(1)  = dumData; %prealloc
 
                     ;% QD2_DroneStack_PID_2021a_B.Usedesyawwhenenabled.h_dm1
-                    section.data(1).logicalSrcIdx = 255;
+                    section.data(1).logicalSrcIdx = 257;
                     section.data(1).dtTransOffset = 0;
 
             nTotData = nTotData + section.nData;
@@ -2943,7 +2951,7 @@
             section.data(1)  = dumData; %prealloc
 
                     ;% QD2_DroneStack_PID_2021a_B.Usedesheightwhenenabled.h_dm1
-                    section.data(1).logicalSrcIdx = 256;
+                    section.data(1).logicalSrcIdx = 258;
                     section.data(1).dtTransOffset = 0;
 
             nTotData = nTotData + section.nData;
@@ -2954,7 +2962,7 @@
             section.data(1)  = dumData; %prealloc
 
                     ;% QD2_DroneStack_PID_2021a_B.Usedesiredheightwhenenabled_c.h_dm1
-                    section.data(1).logicalSrcIdx = 257;
+                    section.data(1).logicalSrcIdx = 259;
                     section.data(1).dtTransOffset = 0;
 
             nTotData = nTotData + section.nData;
@@ -2965,7 +2973,7 @@
             section.data(1)  = dumData; %prealloc
 
                     ;% QD2_DroneStack_PID_2021a_B.CoreSubsys_p[8].Print_o2
-                    section.data(1).logicalSrcIdx = 258;
+                    section.data(1).logicalSrcIdx = 260;
                     section.data(1).dtTransOffset = 0;
 
             nTotData = nTotData + section.nData;
@@ -2976,7 +2984,7 @@
             section.data(1)  = dumData; %prealloc
 
                     ;% QD2_DroneStack_PID_2021a_B.CoreSubsys[2].Print_o2
-                    section.data(1).logicalSrcIdx = 259;
+                    section.data(1).logicalSrcIdx = 261;
                     section.data(1).dtTransOffset = 0;
 
             nTotData = nTotData + section.nData;
@@ -4281,8 +4289,8 @@
     ;%
 
 
-    targMap.checksum0 = 776606155;
-    targMap.checksum1 = 3461775729;
-    targMap.checksum2 = 2868217453;
-    targMap.checksum3 = 276190051;
+    targMap.checksum0 = 4001583096;
+    targMap.checksum1 = 3939837056;
+    targMap.checksum2 = 2666949152;
+    targMap.checksum3 = 2323941766;
 

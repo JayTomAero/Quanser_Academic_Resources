@@ -1,0 +1,4 @@
+/* Expression: [12 12 1]
+  * Referenced by: '<S4>/K_p_angle (rad//s // rad)'
+   */
+{   12.0, 12.0, 1.0 } 

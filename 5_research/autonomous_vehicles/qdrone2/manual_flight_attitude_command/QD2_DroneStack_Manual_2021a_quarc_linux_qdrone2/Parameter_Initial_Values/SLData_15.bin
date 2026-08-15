@@ -1,0 +1,4 @@
+/* Mask Parameter: HILWriteDigital_channels
+  * Referenced by: '<S2>/HIL Write Digital'
+   */
+{   6U, 7U, 8U, 9U, 10U, 11U } 

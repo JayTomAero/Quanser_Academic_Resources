@@ -1,0 +1,9 @@
+'-w -d /tmp -uri %u -URI_Host tcpip://192.168.2.133:18001','tcpip://192.168.2.34:17001?retries=10','tcpip://192.168.2.34:17000'
+
+'-w -d %d -uri %u -URI_Host tcpip://192.168.2.133:18001'
+
+192.168.2.5:3883
+
+QDrone2_02
+
+Public to private

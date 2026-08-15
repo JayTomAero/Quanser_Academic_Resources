@@ -920,139 +920,139 @@
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.RateTransition6
                     section.data(24).logicalSrcIdx = 23;
-                    section.data(24).dtTransOffset = 73;
+                    section.data(24).dtTransOffset = 77;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.RateTransition7
                     section.data(25).logicalSrcIdx = 24;
-                    section.data(25).dtTransOffset = 82;
+                    section.data(25).dtTransOffset = 86;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.Selector
                     section.data(26).logicalSrcIdx = 25;
-                    section.data(26).dtTransOffset = 91;
+                    section.data(26).dtTransOffset = 95;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.RateTransition8
                     section.data(27).logicalSrcIdx = 26;
-                    section.data(27).dtTransOffset = 100;
+                    section.data(27).dtTransOffset = 104;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.Selector1
                     section.data(28).logicalSrcIdx = 27;
-                    section.data(28).dtTransOffset = 109;
+                    section.data(28).dtTransOffset = 113;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.Abs
                     section.data(29).logicalSrcIdx = 28;
-                    section.data(29).dtTransOffset = 118;
+                    section.data(29).dtTransOffset = 122;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.Switch_g
                     section.data(30).logicalSrcIdx = 29;
-                    section.data(30).dtTransOffset = 120;
+                    section.data(30).dtTransOffset = 124;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.YawVelocityScaling
                     section.data(31).logicalSrcIdx = 30;
-                    section.data(31).dtTransOffset = 122;
+                    section.data(31).dtTransOffset = 126;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.VRPNClient_o1
                     section.data(32).logicalSrcIdx = 31;
-                    section.data(32).dtTransOffset = 123;
+                    section.data(32).dtTransOffset = 127;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.VRPNClient_o2
                     section.data(33).logicalSrcIdx = 32;
-                    section.data(33).dtTransOffset = 126;
+                    section.data(33).dtTransOffset = 130;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.VRPNClient_o3
                     section.data(34).logicalSrcIdx = 33;
-                    section.data(34).dtTransOffset = 130;
+                    section.data(34).dtTransOffset = 134;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.VRPNClient_o4
                     section.data(35).logicalSrcIdx = 34;
-                    section.data(35).dtTransOffset = 133;
+                    section.data(35).dtTransOffset = 137;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.VRPNClient_o5
                     section.data(36).logicalSrcIdx = 35;
-                    section.data(36).dtTransOffset = 137;
+                    section.data(36).dtTransOffset = 141;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.VRPNClient_o6
                     section.data(37).logicalSrcIdx = 36;
-                    section.data(37).dtTransOffset = 138;
+                    section.data(37).dtTransOffset = 142;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.VRPNClient_o7
                     section.data(38).logicalSrcIdx = 37;
-                    section.data(38).dtTransOffset = 141;
+                    section.data(38).dtTransOffset = 145;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.VRPNClient_o8
                     section.data(39).logicalSrcIdx = 38;
-                    section.data(39).dtTransOffset = 145;
+                    section.data(39).dtTransOffset = 149;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.Gain_i
                     section.data(40).logicalSrcIdx = 39;
-                    section.data(40).dtTransOffset = 146;
+                    section.data(40).dtTransOffset = 150;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.ImpAsg_InsertedFor_OutputSignal
                     section.data(41).logicalSrcIdx = 40;
-                    section.data(41).dtTransOffset = 149;
+                    section.data(41).dtTransOffset = 153;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.Flight_State
                     section.data(42).logicalSrcIdx = 41;
-                    section.data(42).dtTransOffset = 151;
+                    section.data(42).dtTransOffset = 155;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.FixPtSum1
                     section.data(43).logicalSrcIdx = 43;
-                    section.data(43).dtTransOffset = 152;
+                    section.data(43).dtTransOffset = 156;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.DataTypeConversion2_i
                     section.data(44).logicalSrcIdx = 44;
-                    section.data(44).dtTransOffset = 153;
+                    section.data(44).dtTransOffset = 157;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.DataTypeConversion4
                     section.data(45).logicalSrcIdx = 45;
-                    section.data(45).dtTransOffset = 154;
+                    section.data(45).dtTransOffset = 158;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.OutportBufferForJoystickIssue01
                     section.data(46).logicalSrcIdx = 46;
-                    section.data(46).dtTransOffset = 155;
+                    section.data(46).dtTransOffset = 159;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.Product_n
                     section.data(47).logicalSrcIdx = 47;
-                    section.data(47).dtTransOffset = 156;
+                    section.data(47).dtTransOffset = 160;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.Product1
                     section.data(48).logicalSrcIdx = 48;
-                    section.data(48).dtTransOffset = 159;
+                    section.data(48).dtTransOffset = 163;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.Product2
                     section.data(49).logicalSrcIdx = 49;
-                    section.data(49).dtTransOffset = 160;
+                    section.data(49).dtTransOffset = 164;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.Product3
                     section.data(50).logicalSrcIdx = 50;
-                    section.data(50).dtTransOffset = 161;
+                    section.data(50).dtTransOffset = 165;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.DataTypeConversion_g
                     section.data(51).logicalSrcIdx = 51;
-                    section.data(51).dtTransOffset = 162;
+                    section.data(51).dtTransOffset = 166;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.DiscreteTimeIntegrator
                     section.data(52).logicalSrcIdx = 52;
-                    section.data(52).dtTransOffset = 163;
+                    section.data(52).dtTransOffset = 167;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.Gain_h
                     section.data(53).logicalSrcIdx = 53;
-                    section.data(53).dtTransOffset = 164;
+                    section.data(53).dtTransOffset = 168;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.Bias
                     section.data(54).logicalSrcIdx = 54;
-                    section.data(54).dtTransOffset = 165;
+                    section.data(54).dtTransOffset = 169;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.y
                     section.data(55).logicalSrcIdx = 55;
-                    section.data(55).dtTransOffset = 166;
+                    section.data(55).dtTransOffset = 170;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.z
                     section.data(56).logicalSrcIdx = 56;
-                    section.data(56).dtTransOffset = 167;
+                    section.data(56).dtTransOffset = 171;
 
                     ;% QD2_MissionCtrl_ManualPC_2021_B.Posemrad4
                     section.data(57).logicalSrcIdx = 57;
-                    section.data(57).dtTransOffset = 168;
+                    section.data(57).dtTransOffset = 172;
 
             nTotData = nTotData + section.nData;
             sigMap.sections(1) = section;
@@ -1603,8 +1603,8 @@
     ;%
 
 
-    targMap.checksum0 = 3370625795;
-    targMap.checksum1 = 2468992688;
-    targMap.checksum2 = 518663659;
-    targMap.checksum3 = 1726915584;
+    targMap.checksum0 = 4134201443;
+    targMap.checksum1 = 566813720;
+    targMap.checksum2 = 2096342655;
+    targMap.checksum3 = 764929163;
 

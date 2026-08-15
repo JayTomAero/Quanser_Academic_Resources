@@ -7,9 +7,9 @@
  *
  * Code generation for model "QD2_DroneStack_PID_2021a".
  *
- * Model version              : 11.5
+ * Model version              : 11.6
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C source code generated on : Wed Aug  5 13:12:55 2026
+ * C source code generated on : Fri Aug 14 15:35:51 2026
  *
  * Target selection: quarc_linux_qdrone2.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -546,8 +546,8 @@ P_QD2_DroneStack_PID_2021a_T QD2_DroneStack_PID_2021a_P = {
   { 115U, 97U, 118U, 101U, 100U, 95U, 100U, 97U, 116U, 97U, 92U, 81U, 68U, 50U,
     95U, 68U, 114U, 111U, 110U, 101U, 83U, 116U, 97U, 99U, 107U, 95U, 80U, 73U,
     68U, 95U, 50U, 48U, 50U, 49U, 97U, 92U, 108U, 111U, 103U, 95U, 81U, 68U, 50U,
-    95U, 50U, 48U, 50U, 54U, 45U, 48U, 56U, 45U, 48U, 53U, 95U, 49U, 51U, 45U,
-    49U, 50U, 45U, 52U, 51U, 46U, 109U, 97U, 116U, 0U },
+    95U, 50U, 48U, 50U, 54U, 45U, 48U, 56U, 45U, 49U, 52U, 95U, 49U, 53U, 45U,
+    51U, 53U, 45U, 52U, 51U, 46U, 109U, 97U, 116U, 0U },
 
   { 99U, 111U, 109U, 109U, 97U, 110U, 100U, 101U, 114U, 95U, 100U, 97U, 116U,
     97U, 0U },
@@ -556,7 +556,7 @@ P_QD2_DroneStack_PID_2021a_T QD2_DroneStack_PID_2021a_P = {
   { 115U, 97U, 118U, 101U, 100U, 95U, 100U, 97U, 116U, 97U, 47U, 81U, 68U, 50U,
     95U, 68U, 114U, 111U, 110U, 101U, 83U, 116U, 97U, 99U, 107U, 95U, 80U, 73U,
     68U, 95U, 50U, 48U, 50U, 49U, 97U, 47U, 108U, 111U, 103U, 95U, 50U, 48U, 50U,
-    54U, 45U, 48U, 56U, 45U, 48U, 53U, 95U, 49U, 51U, 45U, 49U, 50U, 45U, 52U,
+    54U, 45U, 48U, 56U, 45U, 49U, 52U, 95U, 49U, 53U, 45U, 51U, 53U, 45U, 52U,
     51U, 95U, 67U, 111U, 109U, 109U, 97U, 110U, 100U, 101U, 114U, 46U, 109U, 97U,
     116U, 0U },
 
@@ -643,7 +643,7 @@ P_QD2_DroneStack_PID_2021a_T QD2_DroneStack_PID_2021a_P = {
   { 115U, 97U, 118U, 101U, 100U, 95U, 100U, 97U, 116U, 97U, 47U, 81U, 68U, 50U,
     95U, 68U, 114U, 111U, 110U, 101U, 83U, 116U, 97U, 99U, 107U, 95U, 80U, 73U,
     68U, 95U, 50U, 48U, 50U, 49U, 97U, 47U, 108U, 111U, 103U, 95U, 50U, 48U, 50U,
-    54U, 45U, 48U, 56U, 45U, 48U, 53U, 95U, 49U, 51U, 45U, 49U, 50U, 45U, 52U,
+    54U, 45U, 48U, 56U, 45U, 49U, 52U, 95U, 49U, 53U, 45U, 51U, 53U, 45U, 52U,
     51U, 95U, 83U, 116U, 97U, 98U, 105U, 108U, 105U, 122U, 101U, 114U, 46U, 109U,
     97U, 116U, 0U },
 

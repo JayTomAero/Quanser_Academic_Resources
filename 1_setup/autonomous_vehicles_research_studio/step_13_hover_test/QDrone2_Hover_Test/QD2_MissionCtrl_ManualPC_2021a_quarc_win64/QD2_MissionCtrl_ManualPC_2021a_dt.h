@@ -9,7 +9,7 @@
  *
  * Model version              : 3.0
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C source code generated on : Tue Aug  4 15:52:49 2026
+ * C source code generated on : Fri Aug 14 16:58:26 2026
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -86,7 +86,7 @@ static const char_T * rtDataTypeNames[] = {
 
 /* data type transitions for block I/O structure */
 static DataTypeTransition rtBTransitions[] = {
-  { (char_T *)(&QD2_MissionCtrl_ManualPC_2021_B.DataTypeConversion), 0, 0, 172 },
+  { (char_T *)(&QD2_MissionCtrl_ManualPC_2021_B.DataTypeConversion), 0, 0, 176 },
 
   { (char_T *)(&QD2_MissionCtrl_ManualPC_2021_B.HostInitialize_o2), 6, 0, 1 },
 

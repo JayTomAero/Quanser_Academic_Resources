@@ -1,0 +1,14 @@
+rtGetInf.o: \
+ C:/Users/jayca/Quanser_Academic_Resources/5_research/autonomous_vehicles/qdrone2/manual_flight_attitude_command/QD2_DroneStack_Manual_2021a_quarc_linux_qdrone2/rtGetInf.c \
+ C:/Users/jayca/Quanser_Academic_Resources/5_research/autonomous_vehicles/qdrone2/manual_flight_attitude_command/QD2_DroneStack_Manual_2021a_quarc_linux_qdrone2/rtwtypes.h \
+ C:/PROGRA~1/MATLAB/R2026a/extern/include/tmwtypes.h \
+ C:/Users/jayca/Quanser_Academic_Resources/5_research/autonomous_vehicles/qdrone2/manual_flight_attitude_command/QD2_DroneStack_Manual_2021a_quarc_linux_qdrone2/rtGetInf.h \
+ C:/Users/jayca/Quanser_Academic_Resources/5_research/autonomous_vehicles/qdrone2/manual_flight_attitude_command/QD2_DroneStack_Manual_2021a_quarc_linux_qdrone2/rt_nonfinite.h
+
+C:/Users/jayca/Quanser_Academic_Resources/5_research/autonomous_vehicles/qdrone2/manual_flight_attitude_command/QD2_DroneStack_Manual_2021a_quarc_linux_qdrone2/rtwtypes.h:
+
+C:/PROGRA~1/MATLAB/R2026a/extern/include/tmwtypes.h:
+
+C:/Users/jayca/Quanser_Academic_Resources/5_research/autonomous_vehicles/qdrone2/manual_flight_attitude_command/QD2_DroneStack_Manual_2021a_quarc_linux_qdrone2/rtGetInf.h:
+
+C:/Users/jayca/Quanser_Academic_Resources/5_research/autonomous_vehicles/qdrone2/manual_flight_attitude_command/QD2_DroneStack_Manual_2021a_quarc_linux_qdrone2/rt_nonfinite.h:

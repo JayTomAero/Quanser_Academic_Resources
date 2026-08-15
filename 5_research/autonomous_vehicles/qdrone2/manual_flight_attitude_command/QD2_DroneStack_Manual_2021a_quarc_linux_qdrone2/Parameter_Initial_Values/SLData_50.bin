@@ -1,0 +1,4 @@
+/* Expression: 10*pi/3*[1 1 1]
+  * Referenced by: '<S4>/Saturation Max Rate  (rad//s)'
+   */
+{   10.471975511965978, 10.471975511965978, 10.471975511965978 } 

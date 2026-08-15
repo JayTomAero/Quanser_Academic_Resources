@@ -9,7 +9,7 @@
  *
  * Model version              : 3.0
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C source code generated on : Tue Aug  4 15:52:49 2026
+ * C source code generated on : Fri Aug 14 16:58:26 2026
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -654,8 +654,8 @@ P_QD2_MissionCtrl_ManualPC_20_T QD2_MissionCtrl_ManualPC_2021_P = {
   { 115U, 97U, 118U, 101U, 100U, 95U, 100U, 97U, 116U, 97U, 47U, 81U, 68U, 50U,
     95U, 77U, 105U, 115U, 115U, 105U, 111U, 110U, 67U, 116U, 114U, 108U, 95U,
     77U, 97U, 110U, 117U, 97U, 108U, 80U, 67U, 95U, 50U, 48U, 50U, 49U, 97U, 47U,
-    108U, 111U, 103U, 95U, 50U, 48U, 50U, 54U, 45U, 48U, 56U, 45U, 48U, 52U, 95U,
-    49U, 53U, 45U, 53U, 50U, 45U, 52U, 55U, 95U, 77U, 105U, 115U, 115U, 105U,
+    108U, 111U, 103U, 95U, 50U, 48U, 50U, 54U, 45U, 48U, 56U, 45U, 49U, 52U, 95U,
+    49U, 54U, 45U, 53U, 56U, 45U, 50U, 52U, 95U, 77U, 105U, 115U, 115U, 105U,
     111U, 110U, 67U, 116U, 114U, 108U, 46U, 109U, 97U, 116U, 0U },
 
   /* Start of '<S44>/CoreSubsys' */
@@ -864,5 +864,5 @@ const ConstP_QD2_MissionCtrl_Manual_T QD2_MissionCtrl_ManualPC_ConstP = {
   /* Expression: trackers_list
    * Referenced by: '<S10>/VRPN Client'
    */
-  { 82U, 105U, 103U, 105U, 100U, 66U, 111U, 100U, 121U, 0U }
+  { 81U, 68U, 114U, 111U, 110U, 101U, 50U, 95U, 48U, 50U, 0U }
 };

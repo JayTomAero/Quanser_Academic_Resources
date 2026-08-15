@@ -9,7 +9,7 @@
  *
  * Model version              : 3.0
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C source code generated on : Tue Aug  4 15:52:49 2026
+ * C source code generated on : Fri Aug 14 16:58:26 2026
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -979,7 +979,7 @@ typedef struct {
   real_T DataTypeConversion_e;         /* '<S5>/Data Type Conversion' */
   real_T Product;                      /* '<S2>/Product' */
   real_T Subtract;                     /* '<S2>/Subtract' */
-  real_T TmpSignalConversionAtToHostFile[18];
+  real_T TmpSignalConversionAtToHostFile[22];
   real_T RateTransition6[9];           /* '<S10>/Rate Transition6' */
   real_T RateTransition7[9];           /* '<S10>/Rate Transition7' */
   real_T Selector[9];                  /* '<S10>/Selector' */
@@ -1155,7 +1155,7 @@ typedef struct {
   /* Expression: trackers_list
    * Referenced by: '<S10>/VRPN Client'
    */
-  uint8_T VRPNClient_TraStringList[10];
+  uint8_T VRPNClient_TraStringList[11];
 } ConstP_QD2_MissionCtrl_Manual_T;
 
 /* Backward compatible GRT Identifiers */

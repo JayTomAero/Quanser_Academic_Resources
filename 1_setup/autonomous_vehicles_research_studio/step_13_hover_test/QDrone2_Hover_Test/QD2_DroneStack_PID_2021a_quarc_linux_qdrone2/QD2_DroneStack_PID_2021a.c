@@ -7,9 +7,9 @@
  *
  * Code generation for model "QD2_DroneStack_PID_2021a".
  *
- * Model version              : 11.5
+ * Model version              : 11.6
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C source code generated on : Wed Aug  5 13:12:55 2026
+ * C source code generated on : Fri Aug 14 15:35:51 2026
  *
  * Target selection: quarc_linux_qdrone2.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -420,11 +420,9 @@ void QD2_DroneStack_PID_2021a_output0(void) /* Sample time: [0.0s, 0.0s] */
   real_T rtb_Time_d;
   real_T rtb_ImpSel_InsertedFor_ChannelR;
   real_T rtb_ImpSel_InsertedFor_Channe_e;
-  int32_T rtb_StreamClient_o2;
   int32_T rtb_Print_o1;
   int32_T rtb_Print_o1_h;
   int32_T rtb_Print_o1_l;
-  uint8_T rtb_StreamClient_o1;
 
   /* local scratch DWork variables */
   int32_T ForEach_itr;
@@ -726,15 +724,15 @@ void QD2_DroneStack_PID_2021a_output0(void) /* Sample time: [0.0s, 0.0s] */
       receive_result = pstream_receive
         (QD2_DroneStack_PID_2021a_DW.StreamClient_Stream,
          &QD2_DroneStack_PID_2021a_B.StreamClient_o4[0]);
-      rtb_StreamClient_o2 = 0;
+      QD2_DroneStack_PID_2021a_B.StreamClient_o2 = 0;
       if (send_result < 0 && send_result != -QERR_WOULD_BLOCK) {
-        rtb_StreamClient_o2 = send_result;
+        QD2_DroneStack_PID_2021a_B.StreamClient_o2 = send_result;
       } else if (receive_result < 0 && receive_result != -QERR_WOULD_BLOCK) {
-        rtb_StreamClient_o2 = receive_result;
+        QD2_DroneStack_PID_2021a_B.StreamClient_o2 = receive_result;
       }
 
       pstream_get_state(QD2_DroneStack_PID_2021a_DW.StreamClient_Stream, &state);
-      rtb_StreamClient_o1 = state;
+      QD2_DroneStack_PID_2021a_B.StreamClient_o1 = state;
     }
 
     /* DataTypeConversion: '<S10>/Data Type Conversion' */
@@ -4891,7 +4889,8 @@ void QD2_DroneStack_PID_2021a_output0(void) /* Sample time: [0.0s, 0.0s] */
     data_loss = 0.0;
     if (QD2_DroneStack_PID_2021a_B.Clock1 > 3.0) {
       /* '<S48>:1:10' */
-      if ((rtb_StreamClient_o1 != 2) && (rtb_StreamClient_o2 < 0)) {
+      if ((QD2_DroneStack_PID_2021a_B.StreamClient_o1 != 2) &&
+          (QD2_DroneStack_PID_2021a_B.StreamClient_o2 < 0)) {
         /* '<S48>:1:11' */
         /* '<S48>:1:13' */
         rtb_DataTypeConversion3 = 1.0;
@@ -10234,10 +10233,10 @@ RT_MODEL_QD2_DroneStack_PID_2_T *QD2_DroneStack_PID_2021a(void)
   rtmSetFirstInitCond(QD2_DroneStack_PID_2021a_M, 1);
 
   /* External mode info */
-  QD2_DroneStack_PID_2021a_M->Sizes.checksums[0] = (776606155U);
-  QD2_DroneStack_PID_2021a_M->Sizes.checksums[1] = (3461775729U);
-  QD2_DroneStack_PID_2021a_M->Sizes.checksums[2] = (2868217453U);
-  QD2_DroneStack_PID_2021a_M->Sizes.checksums[3] = (276190051U);
+  QD2_DroneStack_PID_2021a_M->Sizes.checksums[0] = (4001583096U);
+  QD2_DroneStack_PID_2021a_M->Sizes.checksums[1] = (3939837056U);
+  QD2_DroneStack_PID_2021a_M->Sizes.checksums[2] = (2666949152U);
+  QD2_DroneStack_PID_2021a_M->Sizes.checksums[3] = (2323941766U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;
@@ -10395,8 +10394,8 @@ RT_MODEL_QD2_DroneStack_PID_2_T *QD2_DroneStack_PID_2021a(void)
   QD2_DroneStack_PID_2021a_M->Sizes.numU = (0);/* Number of model inputs */
   QD2_DroneStack_PID_2021a_M->Sizes.sysDirFeedThru = (0);/* The model is not direct feedthrough */
   QD2_DroneStack_PID_2021a_M->Sizes.numSampTimes = (5);/* Number of sample times */
-  QD2_DroneStack_PID_2021a_M->Sizes.numBlocks = (721);/* Number of blocks */
-  QD2_DroneStack_PID_2021a_M->Sizes.numBlockIO = (260);/* Number of block outputs */
+  QD2_DroneStack_PID_2021a_M->Sizes.numBlocks = (724);/* Number of blocks */
+  QD2_DroneStack_PID_2021a_M->Sizes.numBlockIO = (262);/* Number of block outputs */
   QD2_DroneStack_PID_2021a_M->Sizes.numBlockPrms = (2685);/* Sum of parameter "widths" */
   return QD2_DroneStack_PID_2021a_M;
 }

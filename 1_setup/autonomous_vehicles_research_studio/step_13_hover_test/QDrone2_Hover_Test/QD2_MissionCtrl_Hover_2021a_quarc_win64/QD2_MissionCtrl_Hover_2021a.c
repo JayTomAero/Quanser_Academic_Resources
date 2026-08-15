@@ -7,9 +7,9 @@
  *
  * Code generation for model "QD2_MissionCtrl_Hover_2021a".
  *
- * Model version              : 13.13
+ * Model version              : 13.17
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C source code generated on : Wed Aug  5 13:12:21 2026
+ * C source code generated on : Fri Aug 14 15:35:32 2026
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -2410,7 +2410,7 @@ void QD2_MissionCtrl_Hover_2021a_initialize(void)
 
       result = vrpn_client_open
         (&QD2_MissionCtrl_Hover_2021a_DW.VRPNClient_VRPNClient,
-         "169.254.118.6:3883",
+         "192.168.2.5:3883",
          NULL, NULL, 0,
          NULL, NULL, 0,
          NULL, NULL, 0,
@@ -2831,10 +2831,10 @@ RT_MODEL_QD2_MissionCtrl_Hove_T *QD2_MissionCtrl_Hover_2021a(void)
   QD2_MissionCtrl_Hover_2021a_M->Timing.stepSize2 = 0.016;
 
   /* External mode info */
-  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[0] = (3074125116U);
-  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[1] = (2614164692U);
-  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[2] = (1208371652U);
-  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[3] = (3886236381U);
+  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[0] = (781804907U);
+  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[1] = (2396764992U);
+  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[2] = (3807853032U);
+  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[3] = (4103645960U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;

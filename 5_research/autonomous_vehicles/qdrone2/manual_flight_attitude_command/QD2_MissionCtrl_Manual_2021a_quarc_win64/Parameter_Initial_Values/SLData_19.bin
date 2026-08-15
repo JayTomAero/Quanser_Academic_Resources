@@ -1,0 +1,4 @@
+/* Expression: [pi/4 pi/4 pi/2]
+  * Referenced by: '<S9>/+//- pi//4 rad for Roll//Pitch +//- pi//2 rad//s for Yaw Rate'
+   */
+{   0.78539816339744828, 0.78539816339744828, 1.5707963267948966 } 

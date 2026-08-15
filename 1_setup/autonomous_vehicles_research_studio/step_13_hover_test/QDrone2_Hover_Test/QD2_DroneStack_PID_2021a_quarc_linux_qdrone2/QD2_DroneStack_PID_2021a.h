@@ -7,9 +7,9 @@
  *
  * Code generation for model "QD2_DroneStack_PID_2021a".
  *
- * Model version              : 11.5
+ * Model version              : 11.6
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C source code generated on : Wed Aug  5 13:12:55 2026
+ * C source code generated on : Fri Aug 14 15:35:51 2026
  *
  * Target selection: quarc_linux_qdrone2.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -1214,9 +1214,11 @@ typedef struct {
   real_T max_throttle_vel;       /* '<S13>/Hover Throttle Sigmoid Parameters' */
   real_T max_throttle_accel;     /* '<S13>/Hover Throttle Sigmoid Parameters' */
   real_T Next_state;                   /* '<S1>/STATE MACHINE TRANSITION' */
+  int32_T StreamClient_o2;             /* '<S2>/Stream Client' */
   int32_T RateTransition14;            /* '<S5>/Rate Transition14' */
   int32_T Print_o2;                    /* '<S28>/Print' */
   uint8_T ModelArgument[80];           /* '<S2>/Model Argument' */
+  uint8_T StreamClient_o1;             /* '<S2>/Stream Client' */
   uint8_T MatrixConcatenate[240];      /* '<S16>/Matrix Concatenate' */
   uint8_T RateTransition16;            /* '<S5>/Rate Transition16' */
   boolean_T DataTypeConversion_pb[4];  /* '<S10>/Data Type Conversion' */

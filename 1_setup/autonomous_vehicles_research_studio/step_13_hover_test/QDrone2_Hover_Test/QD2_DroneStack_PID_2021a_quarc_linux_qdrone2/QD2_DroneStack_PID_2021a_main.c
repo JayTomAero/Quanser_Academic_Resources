@@ -4,8 +4,8 @@
  * This file was generated automatically by QUARC. It serves as the main
  * entry point for the real-time code.
  *
- * Date:           Wed Aug  5 13:12:54 2026
- * Model version:  11.5
+ * Date:           Fri Aug 14 15:35:51 2026
+ * Model version:  11.6
  * Matlab version: 26.1 (R2026a) 20-Nov-2025
  ****************************************************************************/
 
@@ -498,7 +498,7 @@ int
   }
 
   rtExtModeQuarcParseArgs(argc, (const char **) argv,
-    "tcpip://192.168.2.27:17001?retries=10");
+    "tcpip://192.168.2.34:17001?retries=10");
 
   /*
    * Check for unprocessed ("unhandled") args.

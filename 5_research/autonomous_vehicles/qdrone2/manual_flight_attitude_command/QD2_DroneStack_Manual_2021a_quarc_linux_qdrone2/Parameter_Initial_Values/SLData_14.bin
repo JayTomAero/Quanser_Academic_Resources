@@ -1,0 +1,4 @@
+/* Mask Parameter: HILWritePWM_channels
+  * Referenced by: '<S19>/HIL Write PWM'
+   */
+{   0U, 1U, 2U, 3U } 

@@ -9,7 +9,7 @@
  *
  * Model version              : 3.0
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C source code generated on : Tue Aug  4 15:52:49 2026
+ * C source code generated on : Fri Aug 14 16:58:26 2026
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -1755,6 +1755,14 @@ void QD2_MissionCtrl_ManualPC_2021a_output0(void) /* Sample time: [0.0s, 0.0s] *
       QD2_MissionCtrl_ManualPC_2021_B.ManualSwitch1[3];
     QD2_MissionCtrl_ManualPC_2021_B.TmpSignalConversionAtToHostFile[17] =
       QD2_MissionCtrl_ManualPC_2021_B.Flight_State;
+    QD2_MissionCtrl_ManualPC_2021_B.TmpSignalConversionAtToHostFile[18] =
+      QD2_MissionCtrl_ManualPC_2021_B.Product1;
+    QD2_MissionCtrl_ManualPC_2021_B.TmpSignalConversionAtToHostFile[19] =
+      QD2_MissionCtrl_ManualPC_2021_B.Product_n[0];
+    QD2_MissionCtrl_ManualPC_2021_B.TmpSignalConversionAtToHostFile[20] =
+      QD2_MissionCtrl_ManualPC_2021_B.Product_n[1];
+    QD2_MissionCtrl_ManualPC_2021_B.TmpSignalConversionAtToHostFile[21] =
+      QD2_MissionCtrl_ManualPC_2021_B.Product_n[2];
 
     /* RateTransition: '<S10>/Rate Transition6' incorporates:
      *  RateTransition: '<S10>/Rate Transition7'
@@ -3009,7 +3017,7 @@ void QD2_MissionCtrl_ManualPC_2021a_initialize(void)
       const char* wp;
       device_list = (const char*)
         QD2_MissionCtrl_ManualPC_ConstP.VRPNClient_TraStringList;
-      ep = device_list + 10 - 1;
+      ep = device_list + 11 - 1;
       wp = device_list;
       index = 0;
       for (cp = device_list; cp <= ep; cp++) {
@@ -3022,7 +3030,7 @@ void QD2_MissionCtrl_ManualPC_2021a_initialize(void)
 
       result = vrpn_client_open
         (&QD2_MissionCtrl_ManualPC_202_DW.VRPNClient_VRPNClient,
-         "169.254.118.6:3883",
+         "192.168.2.5:3883",
          NULL, NULL, 0,
          NULL, NULL, 0,
          NULL, NULL, 0,
@@ -3538,10 +3546,10 @@ RT_MODEL_QD2_MissionCtrl_Manu_T *QD2_MissionCtrl_ManualPC_2021a(void)
   QD2_MissionCtrl_ManualPC_202_M->Timing.stepSize2 = 0.016;
 
   /* External mode info */
-  QD2_MissionCtrl_ManualPC_202_M->Sizes.checksums[0] = (3370625795U);
-  QD2_MissionCtrl_ManualPC_202_M->Sizes.checksums[1] = (2468992688U);
-  QD2_MissionCtrl_ManualPC_202_M->Sizes.checksums[2] = (518663659U);
-  QD2_MissionCtrl_ManualPC_202_M->Sizes.checksums[3] = (1726915584U);
+  QD2_MissionCtrl_ManualPC_202_M->Sizes.checksums[0] = (4134201443U);
+  QD2_MissionCtrl_ManualPC_202_M->Sizes.checksums[1] = (566813720U);
+  QD2_MissionCtrl_ManualPC_202_M->Sizes.checksums[2] = (2096342655U);
+  QD2_MissionCtrl_ManualPC_202_M->Sizes.checksums[3] = (764929163U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;
@@ -3655,7 +3663,7 @@ RT_MODEL_QD2_MissionCtrl_Manu_T *QD2_MissionCtrl_ManualPC_2021a(void)
   QD2_MissionCtrl_ManualPC_202_M->Sizes.numU = (0);/* Number of model inputs */
   QD2_MissionCtrl_ManualPC_202_M->Sizes.sysDirFeedThru = (0);/* The model is not direct feedthrough */
   QD2_MissionCtrl_ManualPC_202_M->Sizes.numSampTimes = (3);/* Number of sample times */
-  QD2_MissionCtrl_ManualPC_202_M->Sizes.numBlocks = (307);/* Number of blocks */
+  QD2_MissionCtrl_ManualPC_202_M->Sizes.numBlocks = (308);/* Number of blocks */
   QD2_MissionCtrl_ManualPC_202_M->Sizes.numBlockIO = (82);/* Number of block outputs */
   QD2_MissionCtrl_ManualPC_202_M->Sizes.numBlockPrms = (325);/* Sum of parameter "widths" */
   return QD2_MissionCtrl_ManualPC_202_M;

@@ -1,0 +1,4 @@
+/* Expression: [ 0.1876    0.1544    0.0395]
+  * Referenced by: '<S4>/K_p_speed (Nm // rad//s)'
+   */
+{   0.1876, 0.1544, 0.0395 } 

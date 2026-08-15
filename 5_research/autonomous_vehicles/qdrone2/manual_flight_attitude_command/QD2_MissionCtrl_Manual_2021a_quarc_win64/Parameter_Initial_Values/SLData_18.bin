@@ -1,0 +1,4 @@
+/* Expression: [1.0915 0.8984 0.0984]
+  * Referenced by: '<S9>/+//- 1.0915 Nm for Roll +//- 0.8984 Nm for Pitch +//- 0.0984 Nm for Yaw'
+   */
+{   1.0915, 0.8984, 0.0984 } 
