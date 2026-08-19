@@ -1,0 +1,30 @@
+/*
+ * quarc_basic_client_demo_types.h
+ *
+ * Academic License - for use in teaching, academic research, and meeting
+ * course requirements at degree granting institutions only.  Not for
+ * government, commercial, or other organizational use.
+ *
+ * Code generation for model "quarc_basic_client_demo".
+ *
+ * Model version              : 1.29
+ * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
+ * C source code generated on : Wed Aug 12 11:46:28 2026
+ *
+ * Target selection: quarc_linux_qdrone2.tlc
+ * Note: GRT includes extra infrastructure and instrumentation for prototyping
+ * Embedded hardware selection: ARM Compatible->ARM 64-bit (LP64)
+ * Code generation objectives: Unspecified
+ * Validation result: Not run
+ */
+
+#ifndef quarc_basic_client_demo_types_h_
+#define quarc_basic_client_demo_types_h_
+
+/* Parameters (default storage) */
+typedef struct P_quarc_basic_client_demo_T_ P_quarc_basic_client_demo_T;
+
+/* Forward declaration for rtModel */
+typedef struct tag_RTM_quarc_basic_client_de_T RT_MODEL_quarc_basic_client_d_T;
+
+#endif                                 /* quarc_basic_client_demo_types_h_ */

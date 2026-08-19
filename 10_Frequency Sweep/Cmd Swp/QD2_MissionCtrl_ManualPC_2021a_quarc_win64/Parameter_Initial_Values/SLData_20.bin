@@ -1,0 +1,4 @@
+/* Expression: -1*ones(1,6)
+  * Referenced by: '<S9>/Constant'
+   */
+{   -1.0, -1.0, -1.0, -1.0, -1.0, -1.0 } 

@@ -1,0 +1,14 @@
+rtGetNaN.o: \
+ C:/Users/jayca/Quanser_Academic_Resources/1_setup/autonomous_vehicles_research_studio/step_13_hover_test/QDrone2_Hover_Test/quarc_basic_client_demo_quarc_linux_qdrone2/rtGetNaN.c \
+ C:/Users/jayca/Quanser_Academic_Resources/1_setup/autonomous_vehicles_research_studio/step_13_hover_test/QDrone2_Hover_Test/quarc_basic_client_demo_quarc_linux_qdrone2/rtwtypes.h \
+ C:/PROGRA~1/MATLAB/R2026a/extern/include/tmwtypes.h \
+ C:/Users/jayca/Quanser_Academic_Resources/1_setup/autonomous_vehicles_research_studio/step_13_hover_test/QDrone2_Hover_Test/quarc_basic_client_demo_quarc_linux_qdrone2/rtGetNaN.h \
+ C:/Users/jayca/Quanser_Academic_Resources/1_setup/autonomous_vehicles_research_studio/step_13_hover_test/QDrone2_Hover_Test/quarc_basic_client_demo_quarc_linux_qdrone2/rt_nonfinite.h
+
+C:/Users/jayca/Quanser_Academic_Resources/1_setup/autonomous_vehicles_research_studio/step_13_hover_test/QDrone2_Hover_Test/quarc_basic_client_demo_quarc_linux_qdrone2/rtwtypes.h:
+
+C:/PROGRA~1/MATLAB/R2026a/extern/include/tmwtypes.h:
+
+C:/Users/jayca/Quanser_Academic_Resources/1_setup/autonomous_vehicles_research_studio/step_13_hover_test/QDrone2_Hover_Test/quarc_basic_client_demo_quarc_linux_qdrone2/rtGetNaN.h:
+
+C:/Users/jayca/Quanser_Academic_Resources/1_setup/autonomous_vehicles_research_studio/step_13_hover_test/QDrone2_Hover_Test/quarc_basic_client_demo_quarc_linux_qdrone2/rt_nonfinite.h:
