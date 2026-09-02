@@ -1,5 +1,5 @@
-﻿-IC:\Users\jayca\Quanser_Academic_Resources\1_setup\autonomous_vehicles_research_studio\step_13_hover_test\QDrone2_Hover_Test
--IC:\Users\jayca\Quanser_Academic_Resources\1_setup\autonomous_vehicles_research_studio\step_13_hover_test\QDrone2_Hover_Test\QD2_MissionCtrl_Hover_2021a_quarc_win64
+﻿-I"C:\Users\jayca\Quanser_Academic_Resources\10_Frequency Sweep\Cmd Swp"
+-I"C:\Users\jayca\Quanser_Academic_Resources\10_Frequency Sweep\Cmd Swp\QD2_MissionCtrl_Hover_2021a_quarc_win64"
 -I"C:\Program Files\MATLAB\R2026a\extern\include"
 -I"C:\Program Files\MATLAB\R2026a\simulink\include"
 -I"C:\Program Files\MATLAB\R2026a\rtw\c\src"

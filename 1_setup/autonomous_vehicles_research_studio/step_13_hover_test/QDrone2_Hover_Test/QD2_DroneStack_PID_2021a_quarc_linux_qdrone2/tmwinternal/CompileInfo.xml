@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/ci/19700101 http://schema.mathworks.com/mf0/sl_modelref_info/R2025b http://schema.mathworks.com/mf0/slexec_mm_sto/R2025a_202404151030 http://schema.mathworks.com/mf0/sltp_mm/R2025b_202504071000">
-  <ModelRefInfoRepo.ModelRefInfoRoot type="ModelRefInfoRepo.ModelRefInfoRoot" uuid="ce831a5a-bb3c-4135-b0b6-0f1259534e40">
-    <JITEngines>s1sBSNn0M17u7MuFa02dSLF</JITEngines>
-    <JITEngines>s47zr9GT7RbkirGWriZaItB</JITEngines>
-    <JITEngines>s8X4QkhGiqTUEnJGqakZrqE</JITEngines>
-    <JITEngines>sEEmeqouT1le0Auyh9tkfkH</JITEngines>
-    <JITEngines>sI80Kq6JWK4PtO3Lda3aBEH</JITEngines>
-    <JITEngines>sNH2j0bn2n63EYSlTM1Z62B</JITEngines>
-    <JITEngines>sVHovhMhxJ9CPULStwyW1WE</JITEngines>
-    <JITEngines>sZaqvwUckg9tk10rZIi7NXG</JITEngines>
-    <JITEngines>sdCEYf9rFQEZgujZAzjX6wC</JITEngines>
-    <JITEngines>sieRnIsBBT8x0TN5l78i77</JITEngines>
-    <JITEngines>sn6Kdj2T2x7rJs69xrIeNeC</JITEngines>
-    <JITEngines>st3oHHvDvX3vV3iiEKpsZzG</JITEngines>
-    <JITEngines>sxZ2GgRNXXmZmTeKVxdwxhD</JITEngines>
-    <JITEngines>synaouZ5gLnHZ12iNmjI57</JITEngines>
-    <JITEngines>szocQtIZyzGht5ohXasm70F</JITEngines>
-    <childModelRefInfo type="ModelRefInfoRepo.ChildModelRefInfo" uuid="62bd86ad-f892-4d8b-8f47-0ad4e9ccdc83">
+  <ModelRefInfoRepo.ModelRefInfoRoot type="ModelRefInfoRepo.ModelRefInfoRoot" uuid="c562f2e7-31e7-4f99-a547-4ae488f50069">
+    <JITEngines>s0vuLh1ltJCfarxteFu162E</JITEngines>
+    <JITEngines>s1tOhnO9UEiu1dfNgucWxCB</JITEngines>
+    <JITEngines>s3Zr0OwftG0HHzmfziuqRiF</JITEngines>
+    <JITEngines>s8dzDDjaShGzSHuUMwws3vD</JITEngines>
+    <JITEngines>sEcVdVTkrIbpQ7spjJkbzOB</JITEngines>
+    <JITEngines>sJiRSs2nFSCKwBqwEkXbQoD</JITEngines>
+    <JITEngines>sLCxLHLFzHAjn8tNpJQ6c6F</JITEngines>
+    <JITEngines>sWmyWfBIEt8jThStbIPgVLB</JITEngines>
+    <JITEngines>sbydz6po8j96K8Zz3WHR7IG</JITEngines>
+    <JITEngines>sht8ay3WJEoXWbEXthLuGLC</JITEngines>
+    <JITEngines>smlUkjE3xun36UxjrJch86C</JITEngines>
+    <JITEngines>sqS20YXszyFHPK0BKVGpv2F</JITEngines>
+    <JITEngines>swysSSG8e3BJ1SjnO3zIT7E</JITEngines>
+    <JITEngines>sxnsI6nFrBkjTQFj2hYaBXB</JITEngines>
+    <JITEngines>sy3kNPWSZrBUE4JcUrsqreC</JITEngines>
+    <childModelRefInfo type="ModelRefInfoRepo.ChildModelRefInfo" uuid="0cf70ff7-b7eb-45b6-904d-0e9c4149829e">
       <modelName>QD2_DroneStack_PID_2021a</modelName>
       <modelPath>QD2_DroneStack_PID_2021a</modelPath>
     </childModelRefInfo>
-    <clockResolutions type="ModelRefInfoRepo.ClockResolutionInfo" uuid="28868e77-7f5e-4a0a-90ee-0c375078ea92">
+    <clockResolutions type="ModelRefInfoRepo.ClockResolutionInfo" uuid="cd53dbab-7aba-41b7-a013-00549380f920">
       <rateIdx>1</rateIdx>
       <resolution>.001</resolution>
       <source>DeducedFromSampleTime</source>
@@ -28,8 +28,8 @@
     <compDerivCacheNeedsReset>false</compDerivCacheNeedsReset>
     <compZcCacheNeedsReset>false</compZcCacheNeedsReset>
     <compiledTFinal>inf</compiledTFinal>
-    <dataSourceInfo type="ModelRefInfoRepo.DataSourceInfo" uuid="6d0770fc-f3c4-42e6-a909-58a8810ec3d2">
-      <dataSources type="ModelRefInfoRepo.SourceInfo" uuid="8ffabd22-dcc9-4b1d-8521-8b1d67178755">
+    <dataSourceInfo type="ModelRefInfoRepo.DataSourceInfo" uuid="bb3357d8-93c0-400b-9469-38aaca990066">
+      <dataSources type="ModelRefInfoRepo.SourceInfo" uuid="db4ae3ba-cee6-418c-90b8-e7624ca16bf8">
         <includeAllSections>true</includeAllSections>
         <sourceName>base workspace</sourceName>
         <type>BaseWorkspace</type>
@@ -105,87 +105,87 @@
     <solverStatusFlags>323</solverStatusFlags>
     <timingAndTaskingRegistry>&lt;?xml version=&quot;1.0&quot;?&gt;
 &lt;slexec_sto version=&quot;1.1&quot; packageUris=&quot;http://schema.mathworks.com/mf0/slexec_mm_sto/R2025a_202404151030&quot;&gt;
-  &lt;sto.Registry type=&quot;sto.Registry&quot; uuid=&quot;98b53fe7-e0e7-4fb2-886b-64cef3b32cc2&quot;&gt;
+  &lt;sto.Registry type=&quot;sto.Registry&quot; uuid=&quot;a5590e42-10e3-4d73-87dc-ef2a9e0216ca&quot;&gt;
     &lt;executionSpec&gt;Undetermined&lt;/executionSpec&gt;
     &lt;identifier&gt;QD2_DroneStack_PID_2021a&lt;/identifier&gt;
-    &lt;clockRegistry type=&quot;sto.ClockRegistry&quot; uuid=&quot;f75c4a21-35d6-48e9-96b3-18a6108f5a2b&quot;&gt;
-      &lt;clocks type=&quot;sto.Timer&quot; uuid=&quot;e1535049-36a6-4f06-870d-1d217e176d6e&quot;&gt;
+    &lt;clockRegistry type=&quot;sto.ClockRegistry&quot; uuid=&quot;bc21f7ef-fe1d-4561-ba7a-b950c3898f08&quot;&gt;
+      &lt;clocks type=&quot;sto.Timer&quot; uuid=&quot;3637f1c9-48de-4be3-9a54-b75692bd9874&quot;&gt;
         &lt;computedFundamentalDiscretePeriod&gt;.001&lt;/computedFundamentalDiscretePeriod&gt;
-        &lt;fastestDiscreteRate type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;36ea1da8-da5f-45fe-bb69-18be67f8e0c3&quot;/&gt;
+        &lt;fastestDiscreteRate type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;6189d662-9b5c-47a0-912b-22d770f31294&quot;/&gt;
         &lt;isDefaultTimer&gt;true&lt;/isDefaultTimer&gt;
         &lt;resolution&gt;.001&lt;/resolution&gt;
         &lt;timeAdvanceMode&gt;FixedStep&lt;/timeAdvanceMode&gt;
         &lt;identifier&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/identifier&gt;
-        &lt;rates type=&quot;sto.ContinuousRate&quot; uuid=&quot;9d17249f-714b-4cff-b44b-d61301c612c5&quot;&gt;
+        &lt;rates type=&quot;sto.ContinuousRate&quot; uuid=&quot;b0d0bffd-f62a-41fc-909a-c6929208ea2e&quot;&gt;
           &lt;annotation&gt;Cont&lt;/annotation&gt;
           &lt;clockId&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/clockId&gt;
           &lt;colorIndex&gt;-1&lt;/colorIndex&gt;
           &lt;description&gt;Continuous&lt;/description&gt;
           &lt;taskId&gt;_task0&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;626d909e-ace8-4e0f-b2b8-898879e691a2&quot;/&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;0a9d331e-c96c-4b33-9a9a-b68ea5c4539d&quot;/&gt;
         &lt;/rates&gt;
-        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;36ea1da8-da5f-45fe-bb69-18be67f8e0c3&quot;&gt;
+        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;6189d662-9b5c-47a0-912b-22d770f31294&quot;&gt;
           &lt;annotation&gt;D1&lt;/annotation&gt;
           &lt;clockId&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/clockId&gt;
           &lt;description&gt;Discrete 1&lt;/description&gt;
           &lt;rateIdx&gt;1&lt;/rateIdx&gt;
           &lt;taskId&gt;_task0&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;9ab923db-99e6-41a9-981b-625c035451e4&quot;&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;6128c150-e6f3-400e-b4b4-3da40a5c5ae0&quot;&gt;
             &lt;period&gt;.001&lt;/period&gt;
             &lt;rateType&gt;ClassicPeriodicDiscrete&lt;/rateType&gt;
           &lt;/rateSpec&gt;
         &lt;/rates&gt;
-        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;d785baab-39ce-4040-a1f1-28b3e689cd7b&quot;&gt;
+        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;0dd7c787-4ccb-434b-a1cf-bc05d51d78a7&quot;&gt;
           &lt;annotation&gt;D2&lt;/annotation&gt;
           &lt;clockId&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/clockId&gt;
           &lt;colorIndex&gt;1&lt;/colorIndex&gt;
           &lt;description&gt;Discrete 2&lt;/description&gt;
           &lt;rateIdx&gt;2&lt;/rateIdx&gt;
           &lt;taskId&gt;_task1&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;115f150a-dadd-4a72-91ea-13941e73ab36&quot;&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;9761750f-14e0-405a-b2e9-bbc88ef65ad5&quot;&gt;
             &lt;period&gt;.002&lt;/period&gt;
             &lt;rateType&gt;ClassicPeriodicDiscrete&lt;/rateType&gt;
           &lt;/rateSpec&gt;
         &lt;/rates&gt;
-        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;41daa6d9-b81e-46d7-9482-68114eda55ac&quot;&gt;
+        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;cc657d67-6dee-4b1f-bae8-27d3b2e6b6fb&quot;&gt;
           &lt;annotation&gt;D3&lt;/annotation&gt;
           &lt;clockId&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/clockId&gt;
           &lt;colorIndex&gt;2&lt;/colorIndex&gt;
           &lt;description&gt;Discrete 3&lt;/description&gt;
           &lt;rateIdx&gt;3&lt;/rateIdx&gt;
           &lt;taskId&gt;_task2&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;d053a5de-278f-4e78-94bb-e40907c8d877&quot;&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;368a6636-d8cc-4f77-8b74-08729f65719d&quot;&gt;
             &lt;period&gt;.01&lt;/period&gt;
             &lt;rateType&gt;ClassicPeriodicDiscrete&lt;/rateType&gt;
           &lt;/rateSpec&gt;
         &lt;/rates&gt;
-        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;043dde7c-6c2f-4a08-8b2a-4d62607f5d3b&quot;&gt;
+        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;01546747-dd72-4584-9ac1-b3b81b7fcea1&quot;&gt;
           &lt;annotation&gt;D4&lt;/annotation&gt;
           &lt;clockId&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/clockId&gt;
           &lt;colorIndex&gt;3&lt;/colorIndex&gt;
           &lt;description&gt;Discrete 4&lt;/description&gt;
           &lt;rateIdx&gt;4&lt;/rateIdx&gt;
           &lt;taskId&gt;_task3&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;437163a4-ca92-48df-b847-1b4e74d820d8&quot;&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;34649f71-d4a4-4e99-b738-8821d476a75c&quot;&gt;
             &lt;period&gt;.04&lt;/period&gt;
             &lt;rateType&gt;ClassicPeriodicDiscrete&lt;/rateType&gt;
           &lt;/rateSpec&gt;
         &lt;/rates&gt;
-        &lt;baseRate type=&quot;sto.ContinuousRate&quot; uuid=&quot;e1b3df3b-14a3-47b1-9a76-a62dcd10b6c2&quot;&gt;
+        &lt;baseRate type=&quot;sto.ContinuousRate&quot; uuid=&quot;e91fe403-9c55-4a41-885b-31b78affc17c&quot;&gt;
           &lt;annotation&gt;Cont&lt;/annotation&gt;
           &lt;clockId&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/clockId&gt;
           &lt;colorIndex&gt;-1&lt;/colorIndex&gt;
           &lt;description&gt;Continuous&lt;/description&gt;
           &lt;taskId&gt;_task0&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;dac1eb2a-d64c-4b8c-9d8f-2e44dbf913fa&quot;/&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;8d8dcdfc-9482-4f91-8241-c85ba4788025&quot;/&gt;
         &lt;/baseRate&gt;
       &lt;/clocks&gt;
-      &lt;clocks type=&quot;sto.Event&quot; uuid=&quot;a1910e21-b79e-451f-95bc-73f24013be78&quot;&gt;
+      &lt;clocks type=&quot;sto.Event&quot; uuid=&quot;f2618a6f-0f28-401e-8884-dd708001565b&quot;&gt;
         &lt;eventType&gt;PARAMETER_CHANGE_EVENT&lt;/eventType&gt;
         &lt;cNum&gt;1&lt;/cNum&gt;
         &lt;clockType&gt;Event&lt;/clockType&gt;
         &lt;identifier&gt;ParameterChangeEvent&lt;/identifier&gt;
-        &lt;rates type=&quot;sto.ModelWideEventRate&quot; uuid=&quot;c15c6585-0b2c-4835-b58c-22f6c0fa684e&quot;&gt;
+        &lt;rates type=&quot;sto.ModelWideEventRate&quot; uuid=&quot;f88d8edd-19d9-45ce-b144-579778aa2942&quot;&gt;
           &lt;annotation&gt;Inf&lt;/annotation&gt;
           &lt;clockId&gt;ParameterChangeEvent&lt;/clockId&gt;
           &lt;colorIndex&gt;-1&lt;/colorIndex&gt;
@@ -193,7 +193,7 @@
           &lt;rateIdx&gt;-1&lt;/rateIdx&gt;
           &lt;taskId&gt;ModelWideParameterChangeEvent&lt;/taskId&gt;
           &lt;useForExecution&gt;NotForExecution&lt;/useForExecution&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;ec9233f6-d44e-4c98-9757-3222819f9d28&quot;&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;798de790-5c8b-4109-ae86-804312e28d88&quot;&gt;
             &lt;period&gt;inf&lt;/period&gt;
             &lt;rateType&gt;ModelWideParameterChangeEvent&lt;/rateType&gt;
           &lt;/rateSpec&gt;
@@ -201,10 +201,10 @@
       &lt;/clocks&gt;
       &lt;timeAdvanceMode&gt;FixedStep&lt;/timeAdvanceMode&gt;
     &lt;/clockRegistry&gt;
-    &lt;taskRegistry type=&quot;sto.TaskRegistry&quot; uuid=&quot;ab82a509-d08d-402d-87d2-d9bc24dc9f84&quot;&gt;
-      &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;92f4910c-7e93-49bd-bca7-27921a9a52c9&quot;&gt;
+    &lt;taskRegistry type=&quot;sto.TaskRegistry&quot; uuid=&quot;2669401c-0bed-482d-b5a1-febd33912293&quot;&gt;
+      &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;61862231-30f2-43ba-b53d-33bda19ad864&quot;&gt;
         &lt;isExplicit&gt;true&lt;/isExplicit&gt;
-        &lt;rates type=&quot;sto.ModelWideEventRate&quot; uuid=&quot;3acad949-f298-482a-8a11-0bdb5e0f8492&quot;&gt;
+        &lt;rates type=&quot;sto.ModelWideEventRate&quot; uuid=&quot;e435a3fb-603a-48bd-a98f-222d8542db3c&quot;&gt;
           &lt;annotation&gt;Inf&lt;/annotation&gt;
           &lt;clockId&gt;ParameterChangeEvent&lt;/clockId&gt;
           &lt;colorIndex&gt;-1&lt;/colorIndex&gt;
@@ -212,7 +212,7 @@
           &lt;rateIdx&gt;-1&lt;/rateIdx&gt;
           &lt;taskId&gt;ModelWideParameterChangeEvent&lt;/taskId&gt;
           &lt;useForExecution&gt;NotForExecution&lt;/useForExecution&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;dc0bf6ef-31b7-4c7d-807a-4c3d55a4aae9&quot;&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;4d0d735f-8f7c-442c-8fdc-03ae64b675e1&quot;&gt;
             &lt;period&gt;inf&lt;/period&gt;
             &lt;rateType&gt;ModelWideParameterChangeEvent&lt;/rateType&gt;
           &lt;/rateSpec&gt;
@@ -223,24 +223,24 @@
         &lt;identifier&gt;ModelWideParameterChangeEvent&lt;/identifier&gt;
         &lt;priority&gt;-1&lt;/priority&gt;
       &lt;/rootTaskHierarchyElements&gt;
-      &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;0281c30f-19af-4c67-bc33-9963f1675611&quot;&gt;
+      &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;0bcd01bd-aca7-41e7-bda7-317882191c48&quot;&gt;
         &lt;isExecutable&gt;true&lt;/isExecutable&gt;
         &lt;orderIndex&gt;1&lt;/orderIndex&gt;
-        &lt;rates type=&quot;sto.ContinuousRate&quot; uuid=&quot;9525aba9-ece6-46f3-bd84-469997a8d870&quot;&gt;
+        &lt;rates type=&quot;sto.ContinuousRate&quot; uuid=&quot;0760143b-27c8-4180-ab07-25adaab474a3&quot;&gt;
           &lt;annotation&gt;Cont&lt;/annotation&gt;
           &lt;clockId&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/clockId&gt;
           &lt;colorIndex&gt;-1&lt;/colorIndex&gt;
           &lt;description&gt;Continuous&lt;/description&gt;
           &lt;taskId&gt;_task0&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;d10fa545-1a24-498d-9c6b-13e15c7812f6&quot;/&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;d3e28b3a-0b14-474c-9be5-4520c2acba03&quot;/&gt;
         &lt;/rates&gt;
-        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;964d86f9-51e1-4f37-b714-bd9c76ecac10&quot;&gt;
+        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;b452ebea-0fba-4870-ba44-fe228f3932db&quot;&gt;
           &lt;annotation&gt;D1&lt;/annotation&gt;
           &lt;clockId&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/clockId&gt;
           &lt;description&gt;Discrete 1&lt;/description&gt;
           &lt;rateIdx&gt;1&lt;/rateIdx&gt;
           &lt;taskId&gt;_task0&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;197094bb-55b3-455c-991d-c1321e782263&quot;&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;f154f976-be1c-444e-a143-aeb5d82b5504&quot;&gt;
             &lt;period&gt;.001&lt;/period&gt;
             &lt;rateType&gt;ClassicPeriodicDiscrete&lt;/rateType&gt;
           &lt;/rateSpec&gt;
@@ -251,17 +251,17 @@
         &lt;identifier&gt;_task0&lt;/identifier&gt;
         &lt;priority&gt;40&lt;/priority&gt;
       &lt;/rootTaskHierarchyElements&gt;
-      &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;6db92e12-eb52-47ba-a70c-f92fdfba7a10&quot;&gt;
+      &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;af310179-4111-4d72-be27-b206ad700f72&quot;&gt;
         &lt;isExecutable&gt;true&lt;/isExecutable&gt;
         &lt;orderIndex&gt;2&lt;/orderIndex&gt;
-        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;2dcc7f95-6b5a-4d8d-ad5b-45df1201741c&quot;&gt;
+        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;0d889941-9b42-48a5-8632-de28908c2872&quot;&gt;
           &lt;annotation&gt;D2&lt;/annotation&gt;
           &lt;clockId&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/clockId&gt;
           &lt;colorIndex&gt;1&lt;/colorIndex&gt;
           &lt;description&gt;Discrete 2&lt;/description&gt;
           &lt;rateIdx&gt;2&lt;/rateIdx&gt;
           &lt;taskId&gt;_task1&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;b3b9c1b8-e525-4395-9da1-4a1a94ae2925&quot;&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;f63a5f85-dcae-41d6-8c39-78bb196f3c28&quot;&gt;
             &lt;period&gt;.002&lt;/period&gt;
             &lt;rateType&gt;ClassicPeriodicDiscrete&lt;/rateType&gt;
           &lt;/rateSpec&gt;
@@ -273,17 +273,17 @@
         &lt;identifier&gt;_task1&lt;/identifier&gt;
         &lt;priority&gt;39&lt;/priority&gt;
       &lt;/rootTaskHierarchyElements&gt;
-      &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;f66aca22-ea96-434a-ba0e-5307a47d850c&quot;&gt;
+      &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;4c07e1ed-7e0f-4d19-9c17-2e5f9e7d741c&quot;&gt;
         &lt;isExecutable&gt;true&lt;/isExecutable&gt;
         &lt;orderIndex&gt;3&lt;/orderIndex&gt;
-        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;c5a59a34-3544-4fc6-85d2-b7b5e6548d07&quot;&gt;
+        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;7826397e-856a-4912-b2c7-2c8d7230327e&quot;&gt;
           &lt;annotation&gt;D3&lt;/annotation&gt;
           &lt;clockId&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/clockId&gt;
           &lt;colorIndex&gt;2&lt;/colorIndex&gt;
           &lt;description&gt;Discrete 3&lt;/description&gt;
           &lt;rateIdx&gt;3&lt;/rateIdx&gt;
           &lt;taskId&gt;_task2&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;9d5fba59-c6b6-4cc9-be2a-70375403f790&quot;&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;57ca1311-31d4-41fd-95e6-02fdbb38e147&quot;&gt;
             &lt;period&gt;.01&lt;/period&gt;
             &lt;rateType&gt;ClassicPeriodicDiscrete&lt;/rateType&gt;
           &lt;/rateSpec&gt;
@@ -295,17 +295,17 @@
         &lt;identifier&gt;_task2&lt;/identifier&gt;
         &lt;priority&gt;38&lt;/priority&gt;
       &lt;/rootTaskHierarchyElements&gt;
-      &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;3d295626-a0cd-4c2b-945b-e88cbd18f0f7&quot;&gt;
+      &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;91b24e07-a1e5-4a80-a0cc-d6ee4577c7da&quot;&gt;
         &lt;isExecutable&gt;true&lt;/isExecutable&gt;
         &lt;orderIndex&gt;4&lt;/orderIndex&gt;
-        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;2c155c8d-4f8c-4b98-9ebc-368a961c57b5&quot;&gt;
+        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;ca2c74a6-205f-4359-aaf7-e7f640069e4e&quot;&gt;
           &lt;annotation&gt;D4&lt;/annotation&gt;
           &lt;clockId&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/clockId&gt;
           &lt;colorIndex&gt;3&lt;/colorIndex&gt;
           &lt;description&gt;Discrete 4&lt;/description&gt;
           &lt;rateIdx&gt;4&lt;/rateIdx&gt;
           &lt;taskId&gt;_task3&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;39dc4c9e-a4bc-415b-9833-5764456adbca&quot;&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;007ad64d-d4b2-4a11-b92e-a8a8a5f252e8&quot;&gt;
             &lt;period&gt;.04&lt;/period&gt;
             &lt;rateType&gt;ClassicPeriodicDiscrete&lt;/rateType&gt;
           &lt;/rateSpec&gt;
@@ -317,61 +317,61 @@
         &lt;identifier&gt;_task3&lt;/identifier&gt;
         &lt;priority&gt;37&lt;/priority&gt;
       &lt;/rootTaskHierarchyElements&gt;
-      &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;e9f74ccf-c87a-4720-84eb-5becf415ebef&quot;&gt;
+      &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;cca805e8-ae22-49d1-8727-c99a02824668&quot;&gt;
         &lt;clockIdentifier&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/clockIdentifier&gt;
-        &lt;serializedConnectionProperties type=&quot;sto.SerializedConnectionProperties&quot; uuid=&quot;60ce6e2f-07aa-4313-85c2-58c147b45dfa&quot;&gt;
+        &lt;serializedConnectionProperties type=&quot;sto.SerializedConnectionProperties&quot; uuid=&quot;f4ccaa4b-4caa-4f76-8de7-cb91fc966e0e&quot;&gt;
           &lt;orderingImpact&gt;Impacted&lt;/orderingImpact&gt;
           &lt;targetClockIdentifier&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/targetClockIdentifier&gt;
           &lt;targetTaskIdentifier&gt;_task0&lt;/targetTaskIdentifier&gt;
         &lt;/serializedConnectionProperties&gt;
         &lt;taskIdentifier&gt;_task3&lt;/taskIdentifier&gt;
       &lt;/taskDependencyGraph&gt;
-      &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;46761222-8b9e-45fc-8c7a-c32111d70217&quot;&gt;
+      &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;90deec32-9d0f-4f58-a006-88c9952a9697&quot;&gt;
         &lt;clockIdentifier&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/clockIdentifier&gt;
-        &lt;serializedConnectionProperties type=&quot;sto.SerializedConnectionProperties&quot; uuid=&quot;3928ab55-4ac0-4cbe-a5ac-f194b0324dd0&quot;&gt;
+        &lt;serializedConnectionProperties type=&quot;sto.SerializedConnectionProperties&quot; uuid=&quot;abeb4714-e20b-4c82-88ac-4695a96e6afb&quot;&gt;
           &lt;orderingImpact&gt;Impacted&lt;/orderingImpact&gt;
           &lt;targetClockIdentifier&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/targetClockIdentifier&gt;
-          &lt;targetTaskIdentifier&gt;_task0&lt;/targetTaskIdentifier&gt;
+          &lt;targetTaskIdentifier&gt;_task3&lt;/targetTaskIdentifier&gt;
         &lt;/serializedConnectionProperties&gt;
-        &lt;taskIdentifier&gt;_task2&lt;/taskIdentifier&gt;
+        &lt;serializedConnectionProperties type=&quot;sto.SerializedConnectionProperties&quot; uuid=&quot;1956f077-9fde-4ce5-a704-bfaea5a50f37&quot;&gt;
+          &lt;orderingImpact&gt;Impacted&lt;/orderingImpact&gt;
+          &lt;targetClockIdentifier&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/targetClockIdentifier&gt;
+          &lt;targetTaskIdentifier&gt;_task1&lt;/targetTaskIdentifier&gt;
+        &lt;/serializedConnectionProperties&gt;
+        &lt;serializedConnectionProperties type=&quot;sto.SerializedConnectionProperties&quot; uuid=&quot;b1691f42-20d0-4441-ac81-ed9eefa79f8c&quot;&gt;
+          &lt;orderingImpact&gt;Impacted&lt;/orderingImpact&gt;
+          &lt;targetClockIdentifier&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/targetClockIdentifier&gt;
+          &lt;targetTaskIdentifier&gt;_task2&lt;/targetTaskIdentifier&gt;
+        &lt;/serializedConnectionProperties&gt;
+        &lt;taskIdentifier&gt;_task0&lt;/taskIdentifier&gt;
       &lt;/taskDependencyGraph&gt;
-      &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;0d60c64f-c60a-4b4b-b143-af441d86eeca&quot;&gt;
+      &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;25748472-81b5-4165-90db-8fbe5dc8bdd4&quot;&gt;
         &lt;clockIdentifier&gt;ParameterChangeEvent&lt;/clockIdentifier&gt;
         &lt;taskIdentifier&gt;ModelWideParameterChangeEvent&lt;/taskIdentifier&gt;
       &lt;/taskDependencyGraph&gt;
-      &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;8cf1c1c6-4ee6-4bc3-bb16-3bffee8d4fa9&quot;&gt;
+      &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;38d574d4-fbaf-40aa-9e2a-97f3bbaa4cdb&quot;&gt;
         &lt;clockIdentifier&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/clockIdentifier&gt;
-        &lt;serializedConnectionProperties type=&quot;sto.SerializedConnectionProperties&quot; uuid=&quot;53381a9f-fa15-4161-9cc2-5ce9a74e5d1b&quot;&gt;
+        &lt;serializedConnectionProperties type=&quot;sto.SerializedConnectionProperties&quot; uuid=&quot;1906111b-2514-4fed-9d09-ce6c1d130563&quot;&gt;
           &lt;orderingImpact&gt;Impacted&lt;/orderingImpact&gt;
           &lt;targetClockIdentifier&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/targetClockIdentifier&gt;
           &lt;targetTaskIdentifier&gt;_task0&lt;/targetTaskIdentifier&gt;
         &lt;/serializedConnectionProperties&gt;
         &lt;taskIdentifier&gt;_task1&lt;/taskIdentifier&gt;
       &lt;/taskDependencyGraph&gt;
-      &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;4a57ac2b-83b8-4adc-82a7-15f97ec3b329&quot;&gt;
+      &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;36894ef3-9e02-4d12-bfd8-4120b8205bcd&quot;&gt;
         &lt;clockIdentifier&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/clockIdentifier&gt;
-        &lt;serializedConnectionProperties type=&quot;sto.SerializedConnectionProperties&quot; uuid=&quot;3498b674-d5a6-4b21-a88a-dd0ca416f658&quot;&gt;
+        &lt;serializedConnectionProperties type=&quot;sto.SerializedConnectionProperties&quot; uuid=&quot;75bcf432-e5f5-414e-b08e-f2046105d1a0&quot;&gt;
           &lt;orderingImpact&gt;Impacted&lt;/orderingImpact&gt;
           &lt;targetClockIdentifier&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/targetClockIdentifier&gt;
-          &lt;targetTaskIdentifier&gt;_task3&lt;/targetTaskIdentifier&gt;
+          &lt;targetTaskIdentifier&gt;_task0&lt;/targetTaskIdentifier&gt;
         &lt;/serializedConnectionProperties&gt;
-        &lt;serializedConnectionProperties type=&quot;sto.SerializedConnectionProperties&quot; uuid=&quot;67ded378-c058-4147-81ce-32e01fa443ac&quot;&gt;
-          &lt;orderingImpact&gt;Impacted&lt;/orderingImpact&gt;
-          &lt;targetClockIdentifier&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/targetClockIdentifier&gt;
-          &lt;targetTaskIdentifier&gt;_task2&lt;/targetTaskIdentifier&gt;
-        &lt;/serializedConnectionProperties&gt;
-        &lt;serializedConnectionProperties type=&quot;sto.SerializedConnectionProperties&quot; uuid=&quot;eb5d3c91-a1ad-40d0-b15c-5083d407a1df&quot;&gt;
-          &lt;orderingImpact&gt;Impacted&lt;/orderingImpact&gt;
-          &lt;targetClockIdentifier&gt;QD2_DroneStack_PID_2021a::defaultTimer&lt;/targetClockIdentifier&gt;
-          &lt;targetTaskIdentifier&gt;_task1&lt;/targetTaskIdentifier&gt;
-        &lt;/serializedConnectionProperties&gt;
-        &lt;taskIdentifier&gt;_task0&lt;/taskIdentifier&gt;
+        &lt;taskIdentifier&gt;_task2&lt;/taskIdentifier&gt;
       &lt;/taskDependencyGraph&gt;
       &lt;taskingMode&gt;ClassicMultiTasking&lt;/taskingMode&gt;
     &lt;/taskRegistry&gt;
   &lt;/sto.Registry&gt;
 &lt;/slexec_sto&gt;</timingAndTaskingRegistry>
-    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="6be2cf29-8d15-45c6-bbed-b299e7f17abd">
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="67c9d584-6a99-4d82-b9f1-0600f7bbcfab">
       <direction>7</direction>
       <isDiscrete>true</isDiscrete>
       <name>Reset</name>
@@ -380,7 +380,7 @@
       <type>1</type>
       <width>1</width>
     </zeroCrossingInfo>
-    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="f99d9932-fe03-4e99-bdd4-3245dde67209">
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="be03d008-482e-4cb1-bc70-334e49551f65">
       <direction>7</direction>
       <isDiscrete>true</isDiscrete>
       <name>Reset</name>
@@ -389,7 +389,7 @@
       <type>1</type>
       <width>1</width>
     </zeroCrossingInfo>
-    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="2751ee1d-aefc-463d-aee3-45bf2be2a144">
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="2d41399d-22b4-4772-9dc2-f067daf21e08">
       <direction>7</direction>
       <isDiscrete>true</isDiscrete>
       <name>Reset</name>
@@ -398,7 +398,7 @@
       <type>1</type>
       <width>1</width>
     </zeroCrossingInfo>
-    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="e1ef3680-d7b2-4447-a5ca-2e4387c8cd1d">
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="d355c62f-e70e-4b5c-a9c1-53255640316d">
       <direction>7</direction>
       <isDiscrete>true</isDiscrete>
       <name>Trig</name>
@@ -406,7 +406,7 @@
       <type>1</type>
       <width>1</width>
     </zeroCrossingInfo>
-    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="c599e94c-f68b-4996-943b-e46ae27049a6">
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="f3e44751-20db-4b30-9998-3a9c461587cf">
       <direction>7</direction>
       <isDiscrete>true</isDiscrete>
       <name>Trig</name>
@@ -414,7 +414,7 @@
       <type>1</type>
       <width>1</width>
     </zeroCrossingInfo>
-    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="864c04d1-73f8-484a-89e2-d1c8f2d6f499">
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="19152183-960b-44a0-8dfa-becde8fff822">
       <direction>7</direction>
       <isDiscrete>true</isDiscrete>
       <name>Trig</name>
@@ -422,7 +422,7 @@
       <type>1</type>
       <width>1</width>
     </zeroCrossingInfo>
-    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="c7a657f1-b344-4368-ba31-b2b2d0e8df1b">
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="9d4ba80d-241c-470e-bc87-b048cb47a725">
       <direction>7</direction>
       <isDiscrete>true</isDiscrete>
       <name>Trig</name>
@@ -430,7 +430,7 @@
       <type>1</type>
       <width>1</width>
     </zeroCrossingInfo>
-    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="dfa844c0-033b-49c0-91ef-9f96c1e7cc67">
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="a6cb5ef2-6da0-44fe-bff6-1ecb353605ea">
       <direction>7</direction>
       <isDiscrete>true</isDiscrete>
       <name>Trig</name>
@@ -438,7 +438,7 @@
       <type>1</type>
       <width>1</width>
     </zeroCrossingInfo>
-    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="c315b276-b392-4eda-940e-03e44e1dd92c">
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="e0951e41-5eb9-48f5-9818-a1e5b8be8fd2">
       <direction>7</direction>
       <isDiscrete>true</isDiscrete>
       <name>Trig</name>
@@ -446,7 +446,7 @@
       <type>1</type>
       <width>1</width>
     </zeroCrossingInfo>
-    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="c7a6751b-638e-4654-9758-e8a4468d5679">
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="e885f5cc-88f9-4c68-bba2-1c38f10d3a76">
       <direction>7</direction>
       <isDiscrete>true</isDiscrete>
       <name>Trig</name>
@@ -454,7 +454,7 @@
       <type>1</type>
       <width>1</width>
     </zeroCrossingInfo>
-    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="224c0517-b48c-4525-8ebf-2a08d3af26f3">
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="f2467c0f-a13d-445f-a7d0-37b9a3aa40d9">
       <direction>7</direction>
       <isDiscrete>true</isDiscrete>
       <name>Trig</name>
@@ -462,7 +462,7 @@
       <type>1</type>
       <width>1</width>
     </zeroCrossingInfo>
-    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="77d17e34-6fc9-4280-b013-a5a68736a6ae">
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="eca2eca3-13c4-49c1-891f-f5cae6f5afd2">
       <direction>7</direction>
       <isDiscrete>true</isDiscrete>
       <name>Trig</name>
@@ -470,7 +470,7 @@
       <type>1</type>
       <width>1</width>
     </zeroCrossingInfo>
-    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="fb67f679-e745-426a-ae1f-174c634439b0">
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="12d7a9de-9634-4e57-acdc-5abe5f2a81e7">
       <direction>7</direction>
       <isDiscrete>true</isDiscrete>
       <name>Trig</name>
@@ -478,7 +478,7 @@
       <type>1</type>
       <width>1</width>
     </zeroCrossingInfo>
-    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="25ef1b42-16a0-41d8-9efd-736a0befdf46">
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="d097659f-1d41-4cfc-a321-517fa09937ec">
       <direction>7</direction>
       <isDiscrete>true</isDiscrete>
       <name>Trig</name>
@@ -486,7 +486,7 @@
       <type>1</type>
       <width>1</width>
     </zeroCrossingInfo>
-    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="237fb937-3d11-4aed-9c0e-d30b67fe66cd">
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="43be61af-99d0-4741-90aa-89e078cf24fd">
       <direction>7</direction>
       <isDiscrete>true</isDiscrete>
       <name>Trig</name>
@@ -494,7 +494,7 @@
       <type>1</type>
       <width>1</width>
     </zeroCrossingInfo>
-    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="6b7c9e99-326a-4536-8924-83a8ba2ae81b">
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="2f3ea1a7-6afb-4031-95f7-455c0a731ebd">
       <direction>56</direction>
       <isDiscrete>true</isDiscrete>
       <name>Trig</name>
@@ -502,7 +502,7 @@
       <type>1</type>
       <width>1</width>
     </zeroCrossingInfo>
-    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="9ba122ca-ae50-4f7f-be8a-7c7250fe7e58">
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="1a6ac3ac-bc72-43f9-b748-d2ee94ffa86a">
       <direction>56</direction>
       <isDiscrete>true</isDiscrete>
       <name>Trig</name>
@@ -510,7 +510,7 @@
       <type>1</type>
       <width>1</width>
     </zeroCrossingInfo>
-    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="78ebfcd3-6fde-4717-85ff-132a4f95f7e4">
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="1bcf1a3e-573e-45b7-bd76-2f9c066f9512">
       <direction>56</direction>
       <isDiscrete>true</isDiscrete>
       <name>Trig</name>
@@ -518,10 +518,10 @@
       <type>1</type>
       <width>1</width>
     </zeroCrossingInfo>
-    <FMUBlockMap type="ModelRefInfoRepo.FMUBlockInfo" uuid="9c7ac04b-0508-460f-bc17-e4051f6cacbe"/>
-    <codeGenInfo type="ModelRefInfoRepo.CodeGenInformation" uuid="6cb1c277-c1c4-47bf-8d2e-0af3c962e1d7"/>
-    <compiledVariantInfos type="ModelRefInfoRepo.CompiledVariantInfoMap" uuid="793ef180-a1a1-4171-a5cc-aaeff3da541d"/>
-    <configSettingsForConsistencyChecks type="ModelRefInfoRepo.ConfigSettingsForConsistencyChecks" uuid="3196bda4-a6b7-4bc5-9402-ce2bc74323ec">
+    <FMUBlockMap type="ModelRefInfoRepo.FMUBlockInfo" uuid="c45dee50-ed96-4db4-89d3-93f58ad093c8"/>
+    <codeGenInfo type="ModelRefInfoRepo.CodeGenInformation" uuid="862cd2ae-e4a9-468c-b1a5-597777c56e79"/>
+    <compiledVariantInfos type="ModelRefInfoRepo.CompiledVariantInfoMap" uuid="e05d0583-50fa-407a-8d0d-9e34f1541ca8"/>
+    <configSettingsForConsistencyChecks type="ModelRefInfoRepo.ConfigSettingsForConsistencyChecks" uuid="30a62ec7-40ef-4e66-bbbd-0fbeb88824f7">
       <consistentOutportInitialization>true</consistentOutportInitialization>
       <dateTimeAtTZero>0.0</dateTimeAtTZero>
       <dateTimeAtTZero>0.0</dateTimeAtTZero>
@@ -538,7 +538,7 @@
       <solverMode>SOLVER_MODE_MULTITASKING</solverMode>
       <solverName>ode1</solverName>
       <solverType>SOLVER_TYPE_FIXEDSTEP</solverType>
-      <hardwareSettings type="ModelRefInfoRepo.HardwareSettings" uuid="aa56de48-13df-4fba-b69d-9235fb1d12c6">
+      <hardwareSettings type="ModelRefInfoRepo.HardwareSettings" uuid="d06786ef-9375-4053-9c21-9815c7cc6410">
         <prodBitPerChar>8</prodBitPerChar>
         <prodBitPerDouble>64</prodBitPerDouble>
         <prodBitPerFloat>32</prodBitPerFloat>
@@ -557,19 +557,19 @@
         <prodWordSize>64</prodWordSize>
       </hardwareSettings>
     </configSettingsForConsistencyChecks>
-    <controllableInputRatesMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="90cb99ae-673c-4c6f-bc09-59835b31a723"/>
-    <controllableOutputRatesMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="cd9c935e-c2ab-452a-a494-13e12d57afa3"/>
-    <dataPortGroup type="ModelRefInfoRepo.DataPortGroup" uuid="775bf9fb-bd27-4661-a020-40e3a322381f"/>
-    <expFcnUnconnectedDataPortGroup type="ModelRefInfoRepo.DataPortGroup" uuid="d9e1e600-d42c-45b6-8bbf-d01bf8344433"/>
-    <interfaceParameterInfo type="ModelRefInfoRepo.InterfaceParameterInfo" uuid="bb3708ef-4b75-4f87-98c1-d8354d7e1b67">
-      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="c28e1d3f-6449-411d-b8e0-c1c021d3d374">
+    <controllableInputRatesMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="d53dc364-6c69-488f-ab8e-24c71c1d8154"/>
+    <controllableOutputRatesMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="37e4dae0-4695-4d50-88a7-84831867c06d"/>
+    <dataPortGroup type="ModelRefInfoRepo.DataPortGroup" uuid="045348b5-333a-47c3-a520-dff9d7d89fd4"/>
+    <expFcnUnconnectedDataPortGroup type="ModelRefInfoRepo.DataPortGroup" uuid="f9e13b5c-058e-4d21-ae11-b3152fd6bbd9"/>
+    <interfaceParameterInfo type="ModelRefInfoRepo.InterfaceParameterInfo" uuid="f16b3380-d059-4803-bf97-9774e75313d0">
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="7f0291a6-20fa-4937-8456-46fffe13f201">
         <dimensions>1</dimensions>
         <dimensions>3</dimensions>
         <isUsed>true</isUsed>
         <numDimensions>2</numDimensions>
         <parameterName>KT</parameterName>
       </globalVariables>
-      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="af476e8e-de41-401e-8764-d3a39ef38a86">
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="f7f7c046-29ec-4297-ae28-3c3d69c0e7ff">
         <dimensions>4</dimensions>
         <dimensions>4</dimensions>
         <isUsed>true</isUsed>
@@ -577,8 +577,8 @@
         <parameterName>Motor_Matrix</parameterName>
       </globalVariables>
     </interfaceParameterInfo>
-    <messageInfo type="ModelRefInfoRepo.MessageInformation" uuid="fdd3a1c6-a324-442d-bef6-81aea71dcede"/>
-    <methodInfo type="ModelRefInfoRepo.MethodExistenceInfo" uuid="917c98fe-d3fd-4c2b-8379-61a6637b6ebf">
+    <messageInfo type="ModelRefInfoRepo.MessageInformation" uuid="22ec6815-147d-418f-8163-0c4f805efc2c"/>
+    <methodInfo type="ModelRefInfoRepo.MethodExistenceInfo" uuid="11fa8894-e46d-4f0c-b8b4-aa1559daffe8">
       <hasDerivMethod>true</hasDerivMethod>
       <hasDisableMethod>true</hasDisableMethod>
       <hasEnableMethod>true</hasEnableMethod>
@@ -588,7 +588,7 @@
       <hasTerminateMethod>true</hasTerminateMethod>
       <hasUpdateMethod>true</hasUpdateMethod>
     </methodInfo>
-    <periodicEventPortUnsupportedBlockInfo type="ModelRefInfoRepo.PeriodicEventPortUnsupportedBlockInfo" uuid="1fc63c3d-1cf4-4ef2-8ed4-3202bc7e851c">
+    <periodicEventPortUnsupportedBlockInfo type="ModelRefInfoRepo.PeriodicEventPortUnsupportedBlockInfo" uuid="01b87da8-0938-4a16-8ca0-0ffd7d589944">
       <deterministicRTBs>QD2_DroneStack_PID_2021a/QDrone 2 DAQ/Rate Transition</deterministicRTBs>
       <deterministicRTBs>QD2_DroneStack_PID_2021a/QDrone 2 DAQ/Rate Transition to 100Hz</deterministicRTBs>
       <deterministicRTBs>QD2_DroneStack_PID_2021a/QDrone 2 DAQ/Rate Transition1</deterministicRTBs>
@@ -600,20 +600,20 @@
       <multiRateSubsystems>QD2_DroneStack_PID_2021a/COMMANDER (ANGLE MODE)/STATE MACHINE SIGNALS/Generate Extra Messages for Console/Boolean Edge-Based Triggered Print</multiRateSubsystems>
       <multiRateSubsystems>QD2_DroneStack_PID_2021a/QDrone 2 DAQ/Attitude Estimate from IMU Data/For Each Subsystem - Iterate over IMU0 and IMU1</multiRateSubsystems>
     </periodicEventPortUnsupportedBlockInfo>
-    <portGroupsRequireSameRate type="ModelRefInfoRepo.PortGroupsRequireSameRate" uuid="2519450e-1e7a-400a-92db-b70e6ae1a727">
-      <DSMPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="4fd43a9e-2b18-4d20-b161-22ee842ed0e4"/>
-      <GlobalDSMPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="21cae0c0-1fec-4dc0-9531-e2d9d059e66f"/>
-      <mergedPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="95a6bd07-fb7d-40a8-86e9-b027ef806b4f"/>
+    <portGroupsRequireSameRate type="ModelRefInfoRepo.PortGroupsRequireSameRate" uuid="10b466db-0e58-4729-ad5e-f80dac0c7b5a">
+      <DSMPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="3370d2a8-0a8d-453d-b51f-3c9e5783ab4c"/>
+      <GlobalDSMPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="840b5e45-2777-4e3d-b1c8-db72854515e3"/>
+      <mergedPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="f2283869-663c-405c-bc04-c301992351bb"/>
     </portGroupsRequireSameRate>
-    <rateBasedMdlGlobalDSMRateSpec type="ModelRefInfoRepo.GlobalDSMRateSpecMap" uuid="e8db8948-c285-471e-9127-b980a6558be4"/>
-    <rateSpecOfGlobalDSMAccessedByDescExpFcnMdlMap type="ModelRefInfoRepo.GlobalDSMRateSpecMap" uuid="bc51a4b7-db9b-4846-8623-b0f4fea86651"/>
-    <rootBlockDiagramInterface type="ci.Model" uuid="986a191c-a3b0-4e9c-bb71-68f5a5e8fefb">
-      <p_RootComponentInterface type="ci.ComponentInterface" uuid="237310ac-6a9c-4ae9-b8c0-84f5e5e1954b">
+    <rateBasedMdlGlobalDSMRateSpec type="ModelRefInfoRepo.GlobalDSMRateSpecMap" uuid="7b82263c-ab2a-4f1b-b6cf-bf34b33c5d51"/>
+    <rateSpecOfGlobalDSMAccessedByDescExpFcnMdlMap type="ModelRefInfoRepo.GlobalDSMRateSpecMap" uuid="7e3bb016-cf0a-4718-908b-6f13ad6f620d"/>
+    <rootBlockDiagramInterface type="ci.Model" uuid="a9271a3a-1d9e-4da6-9a5e-727c085fd9b5">
+      <p_RootComponentInterface type="ci.ComponentInterface" uuid="6dacb1e2-553f-46cb-82c7-5e8b27874cc3">
         <p_Name>QD2_DroneStack_PID_2021a</p_Name>
         <p_Type>ROOT</p_Type>
       </p_RootComponentInterface>
     </rootBlockDiagramInterface>
-    <simulinkFunctions type="ModelRefInfoRepo.SimulinkFunctions" uuid="4ac42be3-cc38-4e7e-9c2d-4914ec37dcc9">
+    <simulinkFunctions type="ModelRefInfoRepo.SimulinkFunctions" uuid="8eccdf59-0ad7-4898-9ea5-fde43e253981">
       <compSimulinkFunctionCatalog></compSimulinkFunctionCatalog>
     </simulinkFunctions>
     <sltpContext type="sltp.mm.core.Context" uuid="9eb6ecc5-3ad0-4bf1-acde-649785355ec9">
@@ -754,46 +754,46 @@
         </subgraph>
       </rootTask>
     </sltpContext>
-    <stateWriterToOwnerMap type="ModelRefInfoRepo.StateWriterInfo" uuid="303c27af-8a1b-4e9d-8c37-f10a34624e0c"/>
-    <stoClientDataRegistry type="sto.ClientDataRegistry" uuid="3256423c-34b7-40ff-a553-e9ffe239a265">
-      <dataSets type="sto.ClientClockNamedDataSet" uuid="38b13dcd-058d-434a-9e7f-f8b8bff1c866">
+    <stateWriterToOwnerMap type="ModelRefInfoRepo.StateWriterInfo" uuid="c4612db1-8fad-460f-afd4-efd3a3644ef2"/>
+    <stoClientDataRegistry type="sto.ClientDataRegistry" uuid="ad1d9ff9-09d8-41e1-9c62-af3813dcaa21">
+      <dataSets type="sto.ClientClockNamedDataSet" uuid="a58c1715-a345-46b7-8f01-652afbb2d44d">
         <tag>sltpEvents</tag>
       </dataSets>
-      <dataSets type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="6270a129-5102-4ec7-8e99-de4cb0fb612f">
+      <dataSets type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="6884007d-1f91-4c11-aa56-d5fca7a79d1b">
         <tag>sltpTaskGroups</tag>
       </dataSets>
-      <dataSets type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="41d29505-66e0-46aa-98c5-c683452ab8c2">
-        <dSet type="ModelRefInfoRepo.SltpTaskData" uuid="b6887464-7738-4269-8b65-880f8d19dacd"/>
-        <dSet type="ModelRefInfoRepo.SltpTaskData" uuid="b8b13805-c2ff-43cd-a7b0-e094741c7224"/>
-        <dSet type="ModelRefInfoRepo.SltpTaskData" uuid="d9b0c044-1d8c-4230-85bf-b1b8798c09c3"/>
-        <dSet type="ModelRefInfoRepo.SltpTaskData" uuid="2fb1e6aa-6f1f-40e1-83e3-865b10113d14"/>
-        <tSet type="ModelRefInfoRepo.SltpTaskData" uuid="b6887464-7738-4269-8b65-880f8d19dacd">
+      <dataSets type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="1b58a049-6725-4733-977d-46289a13f01a">
+        <dSet type="ModelRefInfoRepo.SltpTaskData" uuid="61cee756-3b49-445d-b560-b92738cd2651"/>
+        <dSet type="ModelRefInfoRepo.SltpTaskData" uuid="a0c926f8-2b0b-4311-af02-2494716c5ef4"/>
+        <dSet type="ModelRefInfoRepo.SltpTaskData" uuid="55cf3434-03fe-4ab9-94c1-4b296903d669"/>
+        <dSet type="ModelRefInfoRepo.SltpTaskData" uuid="90b7d365-9386-4653-a79e-54d644d3bcb2"/>
+        <tSet type="ModelRefInfoRepo.SltpTaskData" uuid="61cee756-3b49-445d-b560-b92738cd2651">
           <dataName>Cont</dataName>
-          <linkedSet type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="41d29505-66e0-46aa-98c5-c683452ab8c2"/>
+          <linkedSet type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="1b58a049-6725-4733-977d-46289a13f01a"/>
           <id type="sto.TaskHierarchyElementId">
             <clockId>QD2_DroneStack_PID_2021a::defaultTimer</clockId>
             <id>_task0</id>
           </id>
         </tSet>
-        <tSet type="ModelRefInfoRepo.SltpTaskData" uuid="b8b13805-c2ff-43cd-a7b0-e094741c7224">
+        <tSet type="ModelRefInfoRepo.SltpTaskData" uuid="a0c926f8-2b0b-4311-af02-2494716c5ef4">
           <dataName>D2</dataName>
-          <linkedSet type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="41d29505-66e0-46aa-98c5-c683452ab8c2"/>
+          <linkedSet type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="1b58a049-6725-4733-977d-46289a13f01a"/>
           <id type="sto.TaskHierarchyElementId">
             <clockId>QD2_DroneStack_PID_2021a::defaultTimer</clockId>
             <id>_task1</id>
           </id>
         </tSet>
-        <tSet type="ModelRefInfoRepo.SltpTaskData" uuid="d9b0c044-1d8c-4230-85bf-b1b8798c09c3">
+        <tSet type="ModelRefInfoRepo.SltpTaskData" uuid="55cf3434-03fe-4ab9-94c1-4b296903d669">
           <dataName>D3</dataName>
-          <linkedSet type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="41d29505-66e0-46aa-98c5-c683452ab8c2"/>
+          <linkedSet type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="1b58a049-6725-4733-977d-46289a13f01a"/>
           <id type="sto.TaskHierarchyElementId">
             <clockId>QD2_DroneStack_PID_2021a::defaultTimer</clockId>
             <id>_task2</id>
           </id>
         </tSet>
-        <tSet type="ModelRefInfoRepo.SltpTaskData" uuid="2fb1e6aa-6f1f-40e1-83e3-865b10113d14">
+        <tSet type="ModelRefInfoRepo.SltpTaskData" uuid="90b7d365-9386-4653-a79e-54d644d3bcb2">
           <dataName>D4</dataName>
-          <linkedSet type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="41d29505-66e0-46aa-98c5-c683452ab8c2"/>
+          <linkedSet type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="1b58a049-6725-4733-977d-46289a13f01a"/>
           <id type="sto.TaskHierarchyElementId">
             <clockId>QD2_DroneStack_PID_2021a::defaultTimer</clockId>
             <id>_task3</id>
@@ -802,6 +802,6 @@
         <tag>sltpTasks</tag>
       </dataSets>
     </stoClientDataRegistry>
-    <varTsUIDMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="18caffbd-7039-422b-b44e-6c62ccb5041b"/>
+    <varTsUIDMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="46397834-a73c-4336-bec7-9aef178060ed"/>
   </ModelRefInfoRepo.ModelRefInfoRoot>
 </MF0>

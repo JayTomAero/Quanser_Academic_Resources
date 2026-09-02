@@ -2,7 +2,7 @@
 ## Makefile generated for component 'QD2_MissionCtrl_Hover_2021a'. 
 ## 
 ## Makefile     : QD2_MissionCtrl_Hover_2021a.mk
-## Generated on : Tue Jul 28 13:17:17 2026
+## Generated on : Wed Sep 02 09:44:45 2026
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)\QD2_MissionCtrl_Hover_2021a.rt-win64
 ## Product type : executable
 ## 
@@ -23,7 +23,7 @@ MAKEFILE                  = QD2_MissionCtrl_Hover_2021a.mk
 MATLAB_ROOT               = C:\PROGRA~1\MATLAB\R2026a
 MATLAB_BIN                = C:\PROGRA~1\MATLAB\R2026a\bin
 MATLAB_ARCH_BIN           = $(MATLAB_BIN)\win64
-START_DIR                 = C:\Users\jayca\Quanser_Academic_Resources\1_setup\autonomous_vehicles_research_studio\step_13_hover_test\QDrone2_Hover_Test
+START_DIR                 = C:\Users\jayca\QUANSE~1\10_FRE~1\CMDSWP~1
 SOLVER                    = 
 SOLVER_OBJ                = 
 CLASSIC_INTERFACE         = 1
