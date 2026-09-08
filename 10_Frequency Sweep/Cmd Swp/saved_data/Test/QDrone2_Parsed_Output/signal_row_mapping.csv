@@ -1,0 +1,143 @@
+Source,SourceRow,MATLABName,MappingConfidence
+MissionControl,1,Time_s,Mapped/strong evidence
+MissionControl,2,DesiredX_m,Mapped/strong evidence
+MissionControl,3,DesiredY_m,Mapped/strong evidence
+MissionControl,4,DesiredZ_m,Mapped/strong evidence
+MissionControl,5,DesiredYaw_rad,Mapped/strong evidence
+MissionControl,6,MeasuredX_m,Mapped/strong evidence
+MissionControl,7,MeasuredY_m,Mapped/strong evidence
+MissionControl,8,MeasuredZ_m,Mapped/strong evidence
+MissionControl,9,MeasuredRoll_rad,Mapped/strong evidence
+MissionControl,10,MeasuredPitch_rad,Mapped/strong evidence
+MissionControl,11,MeasuredYaw_rad,Mapped/strong evidence
+MissionControl,12,Loopback,Mapped/strong evidence
+MissionControl,13,StatusOrTimer,Requires Mux confirmation
+MissionControl,14,Joystick1,Requires Mux confirmation
+MissionControl,15,Joystick2,Requires Mux confirmation
+MissionControl,16,Joystick3,Requires Mux confirmation
+MissionControl,17,Joystick4,Requires Mux confirmation
+MissionControl,18,FlightPlan1,Mapped/strong evidence
+MissionControl,19,FlightPlanState,Requires Mux confirmation
+MissionControl,20,Command1,Requires Mux confirmation
+MissionControl,21,Command2,Requires Mux confirmation
+MissionControl,22,Command3,Requires Mux confirmation
+MissionControl,23,Command4,Requires Mux confirmation
+Commander,1,Time_s,Mapped/strong evidence
+Commander,2,CommanderFlag01,Requires Mux confirmation
+Commander,3,CommanderFlag02,Requires Mux confirmation
+Commander,4,CommanderFlag03,Requires Mux confirmation
+Commander,5,CommanderFlag04,Requires Mux confirmation
+Commander,6,CommanderFlag05,Requires Mux confirmation
+Commander,7,CommanderFlag06,Requires Mux confirmation
+Commander,8,CommanderFlag07,Requires Mux confirmation
+Commander,9,CommanderFlag08,Requires Mux confirmation
+Commander,10,CommanderFlag09,Requires Mux confirmation
+Commander,11,CommanderFlag10,Requires Mux confirmation
+Commander,12,CommanderFlag11,Requires Mux confirmation
+Commander,13,CommanderFlag12,Requires Mux confirmation
+Commander,14,CommanderFlag13,Requires Mux confirmation
+Commander,15,CommanderFlag14,Requires Mux confirmation
+Commander,16,CommanderFlag15,Requires Mux confirmation
+Commander,17,CommanderFlag16,Requires Mux confirmation
+Commander,18,CommanderFlag17,Requires Mux confirmation
+Commander,19,CommanderFlag18,Requires Mux confirmation
+Commander,20,CommanderFlag19,Requires Mux confirmation
+Commander,21,CommanderFlag20,Requires Mux confirmation
+Commander,22,MeasuredX_m,Mapped/strong evidence
+Commander,23,MeasuredY_m,Mapped/strong evidence
+Commander,24,MeasuredZ_m,Mapped/strong evidence
+Commander,25,MeasuredYaw_rad,Mapped/strong evidence
+Commander,26,DesiredX_m,Mapped/strong evidence
+Commander,27,DesiredY_m,Mapped/strong evidence
+Commander,28,DesiredZ_m,Mapped/strong evidence
+Commander,29,DesiredYaw_rad,Mapped/strong evidence
+Commander,30,CommanderTransform01,Requires Mux confirmation
+Commander,31,CommanderTransform02,Requires Mux confirmation
+Commander,32,CommanderTransform03,Requires Mux confirmation
+Commander,33,CommanderTransform04,Requires Mux confirmation
+Commander,34,CommanderTransform05,Requires Mux confirmation
+Commander,35,CommanderTransform06,Requires Mux confirmation
+Commander,36,CommanderTransform07,Requires Mux confirmation
+Commander,37,CommanderTransform08,Requires Mux confirmation
+Stabilizer,1,Time_s,Mapped/strong evidence
+Stabilizer,2,ExecutionTime_s,Mapped/strong evidence
+Stabilizer,3,ComputationTime_s,Mapped/strong evidence
+Stabilizer,4,StabilizerState01,Requires Mux confirmation
+Stabilizer,5,StabilizerState02,Requires Mux confirmation
+Stabilizer,6,StabilizerState03,Requires Mux confirmation
+Stabilizer,7,StabilizerState04,Requires Mux confirmation
+Stabilizer,8,StabilizerSignal08,Requires Mux confirmation
+Stabilizer,9,StabilizerSignal09,Requires Mux confirmation
+Stabilizer,10,StabilizerSignal10,Requires Mux confirmation
+Stabilizer,11,StabilizerSignal11,Requires Mux confirmation
+Stabilizer,12,StabilizerSignal12,Requires Mux confirmation
+Stabilizer,13,StabilizerSignal13,Requires Mux confirmation
+Stabilizer,14,StabilizerSignal14,Requires Mux confirmation
+Stabilizer,15,StabilizerSignal15,Requires Mux confirmation
+Stabilizer,16,StabilizerSignal16,Requires Mux confirmation
+Stabilizer,17,StabilizerSignal17,Requires Mux confirmation
+Stabilizer,18,StabilizerSignal18,Requires Mux confirmation
+Stabilizer,19,StabilizerSignal19,Requires Mux confirmation
+Stabilizer,20,StabilizerSignal20,Requires Mux confirmation
+Stabilizer,21,StabilizerSignal21,Requires Mux confirmation
+QD2,1,Time_s,Mapped/strong evidence
+QD2,2,QD2Sensor02,Mapped/strong evidence
+QD2,3,QD2Sensor03,Mapped/strong evidence
+QD2,4,QD2Sensor04,Mapped/strong evidence
+QD2,5,QD2Sensor05,Mapped/strong evidence
+QD2,6,QD2Sensor06,Mapped/strong evidence
+QD2,7,QD2Sensor07,Mapped/strong evidence
+QD2,8,QD2Sensor08,Mapped/strong evidence
+QD2,9,QD2Sensor09,Mapped/strong evidence
+QD2,10,QD2Sensor10,Mapped/strong evidence
+QD2,11,QD2Sensor11,Mapped/strong evidence
+QD2,12,QD2Sensor12,Mapped/strong evidence
+QD2,13,QD2Sensor13,Mapped/strong evidence
+QD2,14,QD2Sensor14,Mapped/strong evidence
+QD2,15,QD2Sensor15,Mapped/strong evidence
+QD2,16,QD2Sensor16,Mapped/strong evidence
+QD2,17,QD2Sensor17,Mapped/strong evidence
+QD2,18,QD2Sensor18,Mapped/strong evidence
+QD2,19,QD2Sensor19,Mapped/strong evidence
+QD2,20,MotorCommand1,Requires Mux confirmation
+QD2,21,MotorCommand2,Requires Mux confirmation
+QD2,22,MotorCommand3,Requires Mux confirmation
+QD2,23,MotorCommand4,Requires Mux confirmation
+QD2,24,BatteryVoltage_V,Mapped/strong evidence
+QD2,25,QD2Signal25,Requires Mux confirmation
+QD2,26,BatteryCurrentCandidate_A,Requires Mux confirmation
+QD2,27,QD2Signal27,Requires Mux confirmation
+QD2,28,QD2Signal28,Requires Mux confirmation
+QD2,29,QD2Signal29,Requires Mux confirmation
+QD2,30,QD2Signal30,Requires Mux confirmation
+QD2,31,QD2Signal31,Requires Mux confirmation
+QD2,32,QD2Signal32,Requires Mux confirmation
+QD2,33,QD2Signal33,Requires Mux confirmation
+QD2,34,QD2Signal34,Requires Mux confirmation
+QD2,35,QD2Signal35,Requires Mux confirmation
+QD2,36,QD2Signal36,Requires Mux confirmation
+QD2,37,QD2Signal37,Requires Mux confirmation
+QD2,38,QD2Signal38,Requires Mux confirmation
+QD2,39,QD2Signal39,Requires Mux confirmation
+QD2,40,QD2Signal40,Requires Mux confirmation
+QD2,41,QD2Signal41,Requires Mux confirmation
+QD2,42,QD2Signal42,Requires Mux confirmation
+QD2,43,QD2Signal43,Requires Mux confirmation
+QD2,44,QD2Signal44,Requires Mux confirmation
+QD2,45,QD2Signal45,Requires Mux confirmation
+QD2,46,QD2Signal46,Requires Mux confirmation
+QD2,47,QD2Signal47,Requires Mux confirmation
+QD2,48,QD2Signal48,Requires Mux confirmation
+QD2,49,QD2Signal49,Requires Mux confirmation
+QD2,50,QD2Signal50,Requires Mux confirmation
+QD2,51,QD2Signal51,Requires Mux confirmation
+QD2,52,QD2Signal52,Requires Mux confirmation
+QD2,53,QD2Signal53,Requires Mux confirmation
+QD2,54,QD2Signal54,Requires Mux confirmation
+QD2,55,QD2Signal55,Requires Mux confirmation
+QD2,56,QD2Signal56,Requires Mux confirmation
+QD2,57,QD2Signal57,Requires Mux confirmation
+QD2,58,QD2Signal58,Requires Mux confirmation
+QD2,59,QD2Signal59,Requires Mux confirmation
+QD2,60,QD2Signal60,Requires Mux confirmation
+QD2,61,QD2Signal61,Requires Mux confirmation

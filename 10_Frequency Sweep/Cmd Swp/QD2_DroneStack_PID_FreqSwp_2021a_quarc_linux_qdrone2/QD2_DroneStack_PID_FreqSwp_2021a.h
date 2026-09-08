@@ -7,9 +7,9 @@
  *
  * Code generation for model "QD2_DroneStack_PID_FreqSwp_2021a".
  *
- * Model version              : 11.15
+ * Model version              : 11.17
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C source code generated on : Fri Sep  4 17:30:17 2026
+ * C source code generated on : Tue Sep  8 15:03:35 2026
  *
  * Target selection: quarc_linux_qdrone2.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -1191,6 +1191,8 @@ typedef struct {
   real_T RangingSensor_o4;             /* '<S5>/Ranging Sensor' */
   real_T Product_g;                    /* '<S71>/Product' */
   real_T Product1_g;                   /* '<S71>/Product1' */
+  real_T momentSweep[3];               /* '<S7>/SYSID Axis Router' */
+  real_T thrustSweep;                  /* '<S7>/SYSID Axis Router' */
   real_T u;                            /* '<S7>/MATLAB Function' */
   real_T active;                       /* '<S7>/MATLAB Function' */
   real_T omega;                        /* '<S7>/MATLAB Function' */
@@ -2294,16 +2296,22 @@ struct P_QD2_DroneStack_PID_FreqSwp__T_ {
   real_T Amplitude_Value;              /* Expression: 0.3
                                         * Referenced by: '<S7>/Amplitude'
                                         */
-  real_T StartFreq_Value;              /* Expression: 1
+  real_T StartFreq_Value;              /* Expression: 0.05
                                         * Referenced by: '<S7>/Start Freq'
                                         */
-  real_T EndFreq_Value;                /* Expression: 4
+  real_T Gain2_Gain_c;                 /* Expression: 2*pi
+                                        * Referenced by: '<S7>/Gain2'
+                                        */
+  real_T EndFreq_Value;                /* Expression: 1.5
                                         * Referenced by: '<S7>/End Freq'
                                         */
-  real_T Duration_Value;               /* Expression: 25
+  real_T Gain3_Gain;                   /* Expression: 2*pi
+                                        * Referenced by: '<S7>/Gain3'
+                                        */
+  real_T Duration_Value;               /* Expression: 90
                                         * Referenced by: '<S7>/Duration'
                                         */
-  real_T RampDuration_Value;           /* Expression: 2
+  real_T RampDuration_Value;           /* Expression: 0
                                         * Referenced by: '<S7>/Ramp Duration'
                                         */
   real_T DiscreteTimeIntegrator_gainval;
@@ -2448,7 +2456,7 @@ struct P_QD2_DroneStack_PID_FreqSwp__T_ {
   real_T DiscreteTimeIntegrator_IC_m0; /* Expression: 0
                                         * Referenced by: '<S101>/Discrete-Time Integrator'
                                         */
-  real_T AxisSelector_Value;           /* Expression: 1
+  real_T AxisSelector_Value;           /* Expression: 2
                                         * Referenced by: '<S7>/Axis Selector'
                                         */
   real_T Saturation_UpperSat[4];/* Expression: [10.79*4, 1.0915, 0.8984, 0.0984]

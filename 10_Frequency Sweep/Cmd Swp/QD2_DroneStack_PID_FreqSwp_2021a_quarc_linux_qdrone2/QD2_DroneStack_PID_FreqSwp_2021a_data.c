@@ -7,9 +7,9 @@
  *
  * Code generation for model "QD2_DroneStack_PID_FreqSwp_2021a".
  *
- * Model version              : 11.15
+ * Model version              : 11.17
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C source code generated on : Fri Sep  4 17:30:17 2026
+ * C source code generated on : Tue Sep  8 15:03:35 2026
  *
  * Target selection: quarc_linux_qdrone2.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -236,10 +236,12 @@ P_QD2_DroneStack_PID_FreqSwp__T QD2_DroneStack_PID_FreqSwp_20_P = {
 
   { -1.0915, -0.8984, -0.0984 },
   0.3,
-  1.0,
-  4.0,
-  25.0,
-  2.0,
+  0.05,
+  6.2831853071795862,
+  1.5,
+  6.2831853071795862,
+  90.0,
+  0.0,
   0.001,
   0.0,
   0.001,
@@ -282,7 +284,7 @@ P_QD2_DroneStack_PID_FreqSwp__T QD2_DroneStack_PID_FreqSwp_20_P = {
   0.0,
   0.001,
   0.0,
-  1.0,
+  2.0,
 
   { 43.16, 1.0915, 0.8984, 0.0984 },
 
@@ -566,7 +568,7 @@ P_QD2_DroneStack_PID_FreqSwp__T QD2_DroneStack_PID_FreqSwp_20_P = {
     95U, 68U, 114U, 111U, 110U, 101U, 83U, 116U, 97U, 99U, 107U, 95U, 80U, 73U,
     68U, 95U, 70U, 114U, 101U, 113U, 83U, 119U, 112U, 95U, 50U, 48U, 50U, 49U,
     97U, 92U, 108U, 111U, 103U, 95U, 81U, 68U, 50U, 95U, 50U, 48U, 50U, 54U, 45U,
-    48U, 57U, 45U, 48U, 52U, 95U, 49U, 55U, 45U, 51U, 48U, 45U, 48U, 56U, 46U,
+    48U, 57U, 45U, 48U, 56U, 95U, 49U, 53U, 45U, 48U, 51U, 45U, 50U, 54U, 46U,
     109U, 97U, 116U, 0U },
 
   { 99U, 111U, 109U, 109U, 97U, 110U, 100U, 101U, 114U, 95U, 100U, 97U, 116U,
@@ -577,7 +579,7 @@ P_QD2_DroneStack_PID_FreqSwp__T QD2_DroneStack_PID_FreqSwp_20_P = {
     95U, 68U, 114U, 111U, 110U, 101U, 83U, 116U, 97U, 99U, 107U, 95U, 80U, 73U,
     68U, 95U, 70U, 114U, 101U, 113U, 83U, 119U, 112U, 95U, 50U, 48U, 50U, 49U,
     97U, 47U, 108U, 111U, 103U, 95U, 50U, 48U, 50U, 54U, 45U, 48U, 57U, 45U, 48U,
-    52U, 95U, 49U, 55U, 45U, 51U, 48U, 45U, 48U, 56U, 95U, 67U, 111U, 109U, 109U,
+    56U, 95U, 49U, 53U, 45U, 48U, 51U, 45U, 50U, 54U, 95U, 67U, 111U, 109U, 109U,
     97U, 110U, 100U, 101U, 114U, 46U, 109U, 97U, 116U, 0U },
 
   { 73U, 78U, 73U, 84U, 73U, 65U, 76U, 73U, 90U, 65U, 84U, 73U, 79U, 78U, 32U,
@@ -664,7 +666,7 @@ P_QD2_DroneStack_PID_FreqSwp__T QD2_DroneStack_PID_FreqSwp_20_P = {
     95U, 68U, 114U, 111U, 110U, 101U, 83U, 116U, 97U, 99U, 107U, 95U, 80U, 73U,
     68U, 95U, 70U, 114U, 101U, 113U, 83U, 119U, 112U, 95U, 50U, 48U, 50U, 49U,
     97U, 47U, 108U, 111U, 103U, 95U, 50U, 48U, 50U, 54U, 45U, 48U, 57U, 45U, 48U,
-    52U, 95U, 49U, 55U, 45U, 51U, 48U, 45U, 48U, 56U, 95U, 83U, 116U, 97U, 98U,
+    56U, 95U, 49U, 53U, 45U, 48U, 51U, 45U, 50U, 54U, 95U, 83U, 116U, 97U, 98U,
     105U, 108U, 105U, 122U, 101U, 114U, 46U, 109U, 97U, 116U, 0U },
 
   { 115U, 121U, 115U, 105U, 100U, 95U, 100U, 97U, 116U, 97U, 0U },
@@ -674,7 +676,7 @@ P_QD2_DroneStack_PID_FreqSwp__T QD2_DroneStack_PID_FreqSwp_20_P = {
     95U, 68U, 114U, 111U, 110U, 101U, 83U, 116U, 97U, 99U, 107U, 95U, 80U, 73U,
     68U, 95U, 70U, 114U, 101U, 113U, 83U, 119U, 112U, 95U, 50U, 48U, 50U, 49U,
     97U, 47U, 108U, 111U, 103U, 95U, 50U, 48U, 50U, 54U, 45U, 48U, 57U, 45U, 48U,
-    52U, 95U, 49U, 55U, 45U, 51U, 48U, 45U, 48U, 56U, 95U, 83U, 89U, 83U, 73U,
+    56U, 95U, 49U, 53U, 45U, 48U, 51U, 45U, 50U, 54U, 95U, 83U, 89U, 83U, 73U,
     68U, 46U, 109U, 97U, 116U, 0U },
 
   { 116U, 99U, 112U, 105U, 112U, 58U, 47U, 47U, 108U, 111U, 99U, 97U, 108U, 104U,

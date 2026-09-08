@@ -7,9 +7,9 @@
  *
  * Code generation for model "QD2_MissionCtrl_Hover_FreqSwp_2021a".
  *
- * Model version              : 13.20
+ * Model version              : 13.21
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C source code generated on : Fri Sep  4 17:29:52 2026
+ * C source code generated on : Tue Sep  8 15:03:12 2026
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping

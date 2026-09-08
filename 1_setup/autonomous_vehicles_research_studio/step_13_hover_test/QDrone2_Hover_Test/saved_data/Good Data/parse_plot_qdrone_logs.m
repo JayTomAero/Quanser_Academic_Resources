@@ -22,12 +22,12 @@ function data = parse_plot_qdrone_logs(logDir)
 if nargin < 1 || isempty(logDir)
     logDir = locateDefaultLogDirectory();
 end
-logDir = char(logDir);
+logDir = uigetdir;%char(logDir);
 
-files.mission   = newestMatch(logDir, '*MissionCtrl*.mat');
-files.commander = newestMatch(logDir, '*Commander*.mat');
-files.stabilizer= newestMatch(logDir, '*Stabilizer*.mat');
-files.qd2       = newestMatch(logDir, 'log_QD2_*.mat');
+files.mission   = newestMatch(logDir, uigetfile);
+files.commander = newestMatch(logDir, uigetfile);
+files.stabilizer= newestMatch(logDir, uigetfile);
+files.qd2       = newestMatch(logDir, uigetfile);
 
 fprintf('Loading logs from:\n  %s\n', logDir);
 M = loadNumericMatrix(files.mission,    'mission_server_data', 23);

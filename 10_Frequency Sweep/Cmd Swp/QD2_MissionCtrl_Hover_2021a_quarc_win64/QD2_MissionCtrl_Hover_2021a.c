@@ -7,9 +7,9 @@
  *
  * Code generation for model "QD2_MissionCtrl_Hover_2021a".
  *
- * Model version              : 13.18
+ * Model version              : 13.19
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C source code generated on : Wed Sep  2 11:56:17 2026
+ * C source code generated on : Tue Sep  8 14:14:05 2026
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -2831,10 +2831,10 @@ RT_MODEL_QD2_MissionCtrl_Hove_T *QD2_MissionCtrl_Hover_2021a(void)
   QD2_MissionCtrl_Hover_2021a_M->Timing.stepSize2 = 0.016;
 
   /* External mode info */
-  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[0] = (886482611U);
-  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[1] = (187301752U);
-  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[2] = (1965503772U);
-  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[3] = (1335431202U);
+  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[0] = (2029218423U);
+  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[1] = (2320262797U);
+  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[2] = (152000717U);
+  QD2_MissionCtrl_Hover_2021a_M->Sizes.checksums[3] = (3657644580U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;
