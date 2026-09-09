@@ -7,9 +7,9 @@
  *
  * Code generation for model "QD2_DroneStack_PID_2021a".
  *
- * Model version              : 11.7
+ * Model version              : 11.8
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C source code generated on : Wed Sep  2 14:40:21 2026
+ * C source code generated on : Fri Sep  4 17:04:36 2026
  *
  * Target selection: quarc_linux_qdrone2.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
