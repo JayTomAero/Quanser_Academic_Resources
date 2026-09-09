@@ -4,3 +4,6 @@
 *.mat
 *.mat
 *.mat
+slprj/
+codegen/
+*.slxc
