@@ -1,0 +1,4 @@
+/* Expression: [2 2 5]
+  * Referenced by: '<S12>/Saturation'
+   */
+{   2.0, 2.0, 5.0 } 

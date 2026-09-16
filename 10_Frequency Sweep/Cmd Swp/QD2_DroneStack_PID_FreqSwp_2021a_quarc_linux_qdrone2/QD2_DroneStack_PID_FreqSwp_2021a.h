@@ -7,9 +7,9 @@
  *
  * Code generation for model "QD2_DroneStack_PID_FreqSwp_2021a".
  *
- * Model version              : 11.17
+ * Model version              : 11.26
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C source code generated on : Tue Sep  8 15:03:35 2026
+ * C source code generated on : Tue Sep 15 19:51:22 2026
  *
  * Target selection: quarc_linux_qdrone2.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -1078,6 +1078,7 @@ typedef struct {
   real_T ContinuousSigmoid3_o4;        /* '<S51>/Continuous Sigmoid3' */
   real_T Switch2_m[4];                 /* '<S57>/Switch2' */
   real_T Gain[4];                      /* '<S1>/Gain' */
+  real_T MatrixMultiply1[3];           /* '<S3>/Matrix Multiply1' */
   real_T SelectDataforIMU1[9];         /* '<S63>/Select Data for IMU1' */
   real_T SelectDataforIMU0[9];         /* '<S63>/Select Data for IMU0' */
   real_T Product3[9];                  /* '<S5>/Product3' */
@@ -1099,7 +1100,7 @@ typedef struct {
   real_T Sum6[3];                      /* '<S7>/Sum6' */
   real_T SaturationCommandAuthorityNm1[3];
                                 /* '<S7>/Saturation Command  Authority (Nm)1' */
-  real_T Clock;                        /* '<S7>/Clock' */
+  real_T SimTimes;                     /* '<S7>/Clock' */
   real_T Clock1;                       /* '<S47>/Clock1' */
   real_T DataTypeConversion4;          /* '<S47>/Data Type Conversion4' */
   real_T UnitDelay;                    /* '<Root>/Unit Delay' */
@@ -1174,8 +1175,8 @@ typedef struct {
   real_T DataTypeConversion1_i;        /* '<S116>/Data Type Conversion1' */
   real_T DataTypeConversion5;          /* '<S116>/Data Type Conversion5' */
   real_T TmpSignalConversionAtToHostFi_a[20];
-  real_T DataTypeConversion_c;         /* '<S7>/Data Type Conversion' */
-  real_T TmpSignalConversionAtToHostFi_n[30];
+  real_T u1;                           /* '<S7>/Data Type Conversion1' */
+  real_T TmpSignalConversionAtToHostFi_n[53];
   real_T DataTypeConversion_m;         /* '<S121>/Data Type Conversion' */
   real_T DataTypeConversion_ah;        /* '<S122>/Data Type Conversion' */
   real_T StreamServer_o4;              /* '<S5>/Stream Server' */
@@ -1191,11 +1192,9 @@ typedef struct {
   real_T RangingSensor_o4;             /* '<S5>/Ranging Sensor' */
   real_T Product_g;                    /* '<S71>/Product' */
   real_T Product1_g;                   /* '<S71>/Product1' */
-  real_T momentSweep[3];               /* '<S7>/SYSID Axis Router' */
-  real_T thrustSweep;                  /* '<S7>/SYSID Axis Router' */
-  real_T u;                            /* '<S7>/MATLAB Function' */
-  real_T active;                       /* '<S7>/MATLAB Function' */
-  real_T omega;                        /* '<S7>/MATLAB Function' */
+  real_T SwpSignal;                    /* '<S7>/MATLAB Function' */
+  real_T activeswp;                    /* '<S7>/MATLAB Function' */
+  real_T AngularFrq;                   /* '<S7>/MATLAB Function' */
   real_T OutportBufferForOut1;         /* '<S97>/Constant' */
   real_T cmd[4];                       /* '<S5>/MATLAB Function' */
   real_T cmd_enable;                   /* '<S5>/MATLAB Function' */
@@ -1275,7 +1274,7 @@ typedef struct {
   boolean_T LogicalOperator_i;         /* '<S101>/Logical Operator' */
   boolean_T OR;                        /* '<S5>/OR' */
   boolean_T Compare_b;                 /* '<S115>/Compare' */
-  boolean_T SafeFlight;                /* '<S7>/Logical Operator' */
+  boolean_T SafeFlightTrueFalse;       /* '<S7>/Logical Operator' */
   boolean_T AND[4];                    /* '<S70>/AND' */
   boolean_T LogicalOperator_p;         /* '<S80>/Logical Operator' */
   boolean_T RelationalOperator_c;      /* '<S80>/Relational Operator' */
@@ -2293,7 +2292,7 @@ struct P_QD2_DroneStack_PID_FreqSwp__T_ {
   real_T SaturationCommandAuthorityNm1_L[3];/* Expression: -[1.0915 0.8984 0.0984]
                                              * Referenced by: '<S7>/Saturation Command  Authority (Nm)1'
                                              */
-  real_T Amplitude_Value;              /* Expression: 0.3
+  real_T Amplitude_Value;              /* Expression: 1.5
                                         * Referenced by: '<S7>/Amplitude'
                                         */
   real_T StartFreq_Value;              /* Expression: 0.05
@@ -2308,10 +2307,10 @@ struct P_QD2_DroneStack_PID_FreqSwp__T_ {
   real_T Gain3_Gain;                   /* Expression: 2*pi
                                         * Referenced by: '<S7>/Gain3'
                                         */
-  real_T Duration_Value;               /* Expression: 90
+  real_T Duration_Value;               /* Expression: 80
                                         * Referenced by: '<S7>/Duration'
                                         */
-  real_T RampDuration_Value;           /* Expression: 0
+  real_T RampDuration_Value;           /* Expression: 5
                                         * Referenced by: '<S7>/Ramp Duration'
                                         */
   real_T DiscreteTimeIntegrator_gainval;
@@ -2456,7 +2455,7 @@ struct P_QD2_DroneStack_PID_FreqSwp__T_ {
   real_T DiscreteTimeIntegrator_IC_m0; /* Expression: 0
                                         * Referenced by: '<S101>/Discrete-Time Integrator'
                                         */
-  real_T AxisSelector_Value;           /* Expression: 2
+  real_T AxisSelector_Value;           /* Expression: 4
                                         * Referenced by: '<S7>/Axis Selector'
                                         */
   real_T Saturation_UpperSat[4];/* Expression: [10.79*4, 1.0915, 0.8984, 0.0984]

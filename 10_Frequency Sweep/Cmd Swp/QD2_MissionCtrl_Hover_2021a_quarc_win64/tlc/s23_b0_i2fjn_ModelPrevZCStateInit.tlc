@@ -1,0 +1,19 @@
+%implements s23_b0_i2fjn_ModelPrevZCStateInit "C"
+
+%function ModelPrevZCStateInit(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+QD2_MissionCtrl_Hover_2_PrevZCX.pulsecount_Trig_ZCE = POS_ZCSIG;
+QD2_MissionCtrl_Hover_2_PrevZCX.TriggeredSubsystem_Trig_ZCE = UNINITIALIZED_ZCSIG;
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function ModelPrevZCStateInitFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void ModelPrevZCStateInit(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 6, fcnProtoType)>
+%endfunction

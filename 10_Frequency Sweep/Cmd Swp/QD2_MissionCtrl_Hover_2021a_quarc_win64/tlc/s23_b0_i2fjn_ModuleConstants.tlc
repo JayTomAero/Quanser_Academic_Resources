@@ -1,0 +1,8 @@
+%implements s23_b0_i2fjn_ModuleConstants "C"
+
+%function ModuleConstants(block) Output
+
+
+/* Named constants for MATLAB Function: '<S6>/MATLAB Function' */
+#define QD2_MissionCtrl_Hove_CALL_EVENT (-1)
+%endfunction

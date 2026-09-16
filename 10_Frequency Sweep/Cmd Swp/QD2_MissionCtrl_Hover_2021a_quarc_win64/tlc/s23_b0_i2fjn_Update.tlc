@@ -1,0 +1,67 @@
+%implements s23_b0_i2fjn_Update "C"
+
+%function UpdateForTID(block, system, tid) Output
+%if tid == 0
+%assign ::GlobalCurrentTID = 0
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+int32_T idxDelay;
+%closefile localVarDecl
+/* {S!d3550}Update for DiscreteIntegrator: '<S21>/Discrete-Time Integrator' */
+QD2_MissionCtrl_Hover_2021a_DW.DiscreteTimeIntegrator_DSTATE += QD2_MissionCtrl_Hover_2021a_P.DiscreteTimeIntegrator_gainva_j * QD2_MissionCtrl_Hover_2021a_B.DataTypeConversion;
+QD2_MissionCtrl_Hover_2021a_DW.DiscreteTimeIntegrator_PrevRese = (int8_T)QD2_MissionCtrl_Hover_2021a_B.LogicalOperator;
+/* {S!d3547}Update for Enabled SubSystem: '<S10>/FrSKYMapping' incorporates:
+ *  EnablePort: '<S18>/Valid Signals Detected'
+ */
+if (QD2_MissionCtrl_Hover_2021a_DW.FrSKYMapping_MODE) {
+    /* {S!d3552}Update for DiscreteIntegrator: '<S23>/Discrete-Time Integrator' */
+    QD2_MissionCtrl_Hover_2021a_DW.DiscreteTimeIntegrator_DSTATE_h += QD2_MissionCtrl_Hover_2021a_P.DiscreteTimeIntegrator_gainval * QD2_MissionCtrl_Hover_2021a_B.DataTypeConversion_g;
+    QD2_MissionCtrl_Hover_2021a_DW.DiscreteTimeIntegrator_PrevRe_i = (int8_T)QD2_MissionCtrl_Hover_2021a_B.LogicalOperator_n;
+}
+/* {E!d3547}End of Update for SubSystem: '<S10>/FrSKYMapping' */
+
+/* {S!d3554}Update for DiscreteIntegrator: '<S8>/Discrete-Time Integrator' */
+QD2_MissionCtrl_Hover_2021a_DW.DiscreteTimeIntegrator_DSTATE_j += QD2_MissionCtrl_Hover_2021a_P.DiscreteTimeIntegrator_gainva_n * QD2_MissionCtrl_Hover_2021a_B.DataTypeConversion_o;
+QD2_MissionCtrl_Hover_2021a_DW.DiscreteTimeIntegrator_PrevRe_b = (int8_T)QD2_MissionCtrl_Hover_2021a_B.LogicalOperator_k;
+/* {S!d3556}Update for Delay: '<S13>/Delay' */
+for (idxDelay = 0; idxDelay < 5999; idxDelay++) {
+    QD2_MissionCtrl_Hover_2021a_DW.Delay_DSTATE[idxDelay] = QD2_MissionCtrl_Hover_2021a_DW.Delay_DSTATE[idxDelay + 1];
+}
+QD2_MissionCtrl_Hover_2021a_DW.Delay_DSTATE[5999] = QD2_MissionCtrl_Hover_2021a_B.OR;
+/* {E!d3556}End of Update for Delay: '<S13>/Delay' */
+
+/* {S!d3558}Update for Delay: '<S13>/Delay1' */
+for (idxDelay = 0; idxDelay < 1999; idxDelay++) {
+    QD2_MissionCtrl_Hover_2021a_DW.Delay1_DSTATE[idxDelay] = QD2_MissionCtrl_Hover_2021a_DW.Delay1_DSTATE[idxDelay + 1];
+}
+QD2_MissionCtrl_Hover_2021a_DW.Delay1_DSTATE[1999] = QD2_MissionCtrl_Hover_2021a_B.Compare;
+/* {E!d3558}End of Update for Delay: '<S13>/Delay1' */
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedUpdate0LocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 2
+%assign ::GlobalCurrentTID = 2
+%assign ::GlobalCurrentTID = []
+%endif
+%endfunction
+%function UpdateFcnProtoTypeForTID(block, system, tid) Output
+%if tid == 0
+%assign ::GlobalCurrentTID = 0
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Update0(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 4, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 2
+%assign ::GlobalCurrentTID = 2
+%assign ::GlobalCurrentTID = []
+%endif
+%endfunction

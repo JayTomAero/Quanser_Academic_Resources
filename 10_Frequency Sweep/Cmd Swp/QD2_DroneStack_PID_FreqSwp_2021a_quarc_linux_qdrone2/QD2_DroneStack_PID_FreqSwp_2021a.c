@@ -7,9 +7,9 @@
  *
  * Code generation for model "QD2_DroneStack_PID_FreqSwp_2021a".
  *
- * Model version              : 11.17
+ * Model version              : 11.26
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C source code generated on : Tue Sep  8 15:03:35 2026
+ * C source code generated on : Tue Sep 15 19:51:22 2026
  *
  * Target selection: quarc_linux_qdrone2.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -439,13 +439,13 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
   real_T Product_n;
   real_T data_loss;
   real_T rtb_DataTypeConversion3;
-  real_T rtb_Gain2_m;
-  real_T rtb_Gain3;
   real_T rtb_Integrator2_idx_0;
   real_T rtb_Integrator7_idx_0;
   real_T rtb_Product_h_idx_0;
   real_T rtb_Product_h_idx_1;
   real_T rtb_Product_h_idx_2;
+  real_T rtb_rads;
+  real_T rtb_rads_b;
   real_T sigmoid;
   int32_T b_k;
   int32_T exitg1;
@@ -2196,6 +2196,31 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
       QD2_DroneStack_PID_FreqSwp_20_P.Integrator1_LowerSat[3];
   }
 
+  /* Product: '<S3>/Matrix Multiply1' incorporates:
+   *  Integrator: '<S3>/Integrator6'
+   *  Math: '<S3>/Transpose'
+   */
+  sigmoid = 0.0;
+  data_loss = 0.0;
+  rtb_Integrator7_idx_0 = 0.0;
+  for (i = 0; i < 3; i++) {
+    rtb_DataTypeConversion3 =
+      QD2_DroneStack_PID_FreqSwp_20_X.Integrator6_CSTATE[i];
+    sigmoid += QD2_DroneStack_PID_FreqSwp_20_B.IFtoHRrotationmatrix[3 * i] *
+      rtb_DataTypeConversion3;
+    data_loss += QD2_DroneStack_PID_FreqSwp_20_B.IFtoHRrotationmatrix[3 * i + 1]
+      * rtb_DataTypeConversion3;
+    rtb_Integrator7_idx_0 +=
+      QD2_DroneStack_PID_FreqSwp_20_B.IFtoHRrotationmatrix[3 * i + 2] *
+      rtb_DataTypeConversion3;
+  }
+
+  QD2_DroneStack_PID_FreqSwp_20_B.MatrixMultiply1[2] = rtb_Integrator7_idx_0;
+  QD2_DroneStack_PID_FreqSwp_20_B.MatrixMultiply1[1] = data_loss;
+  QD2_DroneStack_PID_FreqSwp_20_B.MatrixMultiply1[0] = sigmoid;
+
+  /* End of Product: '<S3>/Matrix Multiply1' */
+
   /* Outputs for Iterator SubSystem: '<S63>/For Each Subsystem - Iterate over IMU0 and IMU1' incorporates:
    *  ForEach: '<S82>/For Each'
    */
@@ -2664,27 +2689,6 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
     /* End of Product: '<S3>/Product1' */
   }
 
-  /* Product: '<S3>/Matrix Multiply1' incorporates:
-   *  Integrator: '<S3>/Integrator6'
-   *  Math: '<S3>/Transpose'
-   */
-  sigmoid = 0.0;
-  data_loss = 0.0;
-  rtb_Integrator7_idx_0 = 0.0;
-  for (i = 0; i < 3; i++) {
-    rtb_DataTypeConversion3 =
-      QD2_DroneStack_PID_FreqSwp_20_X.Integrator6_CSTATE[i];
-    sigmoid += QD2_DroneStack_PID_FreqSwp_20_B.IFtoHRrotationmatrix[3 * i] *
-      rtb_DataTypeConversion3;
-    data_loss += QD2_DroneStack_PID_FreqSwp_20_B.IFtoHRrotationmatrix[3 * i + 1]
-      * rtb_DataTypeConversion3;
-    rtb_Integrator7_idx_0 +=
-      QD2_DroneStack_PID_FreqSwp_20_B.IFtoHRrotationmatrix[3 * i + 2] *
-      rtb_DataTypeConversion3;
-  }
-
-  /* End of Product: '<S3>/Matrix Multiply1' */
-
   /* Sum: '<S1>/Sum2' incorporates:
    *  Gain: '<S1>/Gain2'
    *  Gain: '<S1>/Kd (rad // m//s, rad // m//s, N // m//s, rad//s // rad//s)'
@@ -2693,18 +2697,21 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
   QD2_DroneStack_PID_FreqSwp_20_B.UnsaturatedControllerCommandsNr[0] =
     (QD2_DroneStack_PID_FreqSwp_20_B.Gain[0] +
      QD2_DroneStack_PID_FreqSwp_20_X.Integrator1_CSTATE_f[0]) -
-    QD2_DroneStack_PID_FreqSwp_20_P.KdradmsradmsNmsradsrads_Gain[0] * sigmoid *
+    QD2_DroneStack_PID_FreqSwp_20_P.KdradmsradmsNmsradsrads_Gain[0] *
+    QD2_DroneStack_PID_FreqSwp_20_B.MatrixMultiply1[0] *
     QD2_DroneStack_PID_FreqSwp_20_P.Gain2_Gain[0];
   QD2_DroneStack_PID_FreqSwp_20_B.UnsaturatedControllerCommandsNr[1] =
     (QD2_DroneStack_PID_FreqSwp_20_B.Gain[1] +
      QD2_DroneStack_PID_FreqSwp_20_X.Integrator1_CSTATE_f[1]) -
-    QD2_DroneStack_PID_FreqSwp_20_P.KdradmsradmsNmsradsrads_Gain[1] * data_loss *
+    QD2_DroneStack_PID_FreqSwp_20_P.KdradmsradmsNmsradsrads_Gain[1] *
+    QD2_DroneStack_PID_FreqSwp_20_B.MatrixMultiply1[1] *
     QD2_DroneStack_PID_FreqSwp_20_P.Gain2_Gain[1];
   QD2_DroneStack_PID_FreqSwp_20_B.UnsaturatedControllerCommandsNr[2] =
     (QD2_DroneStack_PID_FreqSwp_20_B.Gain[2] +
      QD2_DroneStack_PID_FreqSwp_20_X.Integrator1_CSTATE_f[2]) -
     QD2_DroneStack_PID_FreqSwp_20_P.KdradmsradmsNmsradsrads_Gain[2] *
-    rtb_Integrator7_idx_0 * QD2_DroneStack_PID_FreqSwp_20_P.Gain2_Gain[2];
+    QD2_DroneStack_PID_FreqSwp_20_B.MatrixMultiply1[2] *
+    QD2_DroneStack_PID_FreqSwp_20_P.Gain2_Gain[2];
   QD2_DroneStack_PID_FreqSwp_20_B.UnsaturatedControllerCommandsNr[3] =
     (QD2_DroneStack_PID_FreqSwp_20_B.Gain[3] +
      QD2_DroneStack_PID_FreqSwp_20_X.Integrator1_CSTATE_f[3]) -
@@ -3315,7 +3322,7 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
   rtb_Integrator7_idx_0 = QD2_DroneStack_PID_FreqSwp_2_M->Timing.t[0];
 
   /* Clock: '<S7>/Clock' */
-  QD2_DroneStack_PID_FreqSwp_20_B.Clock = rtb_Integrator7_idx_0;
+  QD2_DroneStack_PID_FreqSwp_20_B.SimTimes = rtb_Integrator7_idx_0;
 
   /* Clock: '<S47>/Clock1' */
   QD2_DroneStack_PID_FreqSwp_20_B.Clock1 = rtb_Integrator7_idx_0;
@@ -3323,13 +3330,13 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
     /* Gain: '<S7>/Gain2' incorporates:
      *  Constant: '<S7>/Start Freq'
      */
-    rtb_Gain2_m = QD2_DroneStack_PID_FreqSwp_20_P.Gain2_Gain_c *
+    rtb_rads = QD2_DroneStack_PID_FreqSwp_20_P.Gain2_Gain_c *
       QD2_DroneStack_PID_FreqSwp_20_P.StartFreq_Value;
 
     /* Gain: '<S7>/Gain3' incorporates:
      *  Constant: '<S7>/End Freq'
      */
-    rtb_Gain3 = QD2_DroneStack_PID_FreqSwp_20_P.Gain3_Gain *
+    rtb_rads_b = QD2_DroneStack_PID_FreqSwp_20_P.Gain3_Gain *
       QD2_DroneStack_PID_FreqSwp_20_P.EndFreq_Value;
 
     /* RelationalOperator: '<S112>/Compare' incorporates:
@@ -4201,7 +4208,7 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
    *  Constant: '<S114>/Constant'
    *  RelationalOperator: '<S114>/Compare'
    */
-  QD2_DroneStack_PID_FreqSwp_20_B.SafeFlight =
+  QD2_DroneStack_PID_FreqSwp_20_B.SafeFlightTrueFalse =
     (QD2_DroneStack_PID_FreqSwp_20_B.Compare_g &&
      QD2_DroneStack_PID_FreqSwp_20_B.Compare_h &&
      QD2_DroneStack_PID_FreqSwp_20_B.Compare_n &&
@@ -4218,114 +4225,114 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
     QD2_DroneStack_PID_FreqSwp_2_DW.sfEvent_j = QD2_DroneStack_PID_F_CALL_EVENT;
 
     /* MATLAB Function 'STABILIZER - QDRONE 2/MATLAB Function': '<S117>:1' */
-    /* '<S117>:1:13' */
-    QD2_DroneStack_PID_FreqSwp_20_B.u = 0.0;
+    /* '<S117>:1:14' */
+    QD2_DroneStack_PID_FreqSwp_20_B.SwpSignal = 0.0;
 
     /* '<S117>:1:14' */
-    QD2_DroneStack_PID_FreqSwp_20_B.active = 0.0;
+    QD2_DroneStack_PID_FreqSwp_20_B.activeswp = 0.0;
 
-    /* '<S117>:1:15' */
-    QD2_DroneStack_PID_FreqSwp_20_B.omega = 0.0;
+    /* '<S117>:1:14' */
+    QD2_DroneStack_PID_FreqSwp_20_B.AngularFrq = 0.0;
 
-    /* '<S117>:1:17' */
-    /* '<S117>:1:18' */
+    /* '<S117>:1:16' */
     if (!(QD2_DroneStack_PID_FreqSwp_20_B.StreamClient_o4[16] > 0.5)) {
-      /* '<S117>:1:21' */
-      /* '<S117>:1:22' */
+      /* '<S117>:1:19' */
+      /* '<S117>:1:20' */
       QD2_DroneStack_PID_FreqSwp_2_DW.previousRequest = false;
 
-      /* '<S117>:1:23' */
+      /* '<S117>:1:21' */
       QD2_DroneStack_PID_FreqSwp_2_DW.aborted = false;
-    } else if (!((real_T)QD2_DroneStack_PID_FreqSwp_20_B.SafeFlight > 0.5)) {
-      /* '<S117>:1:28' */
-      /* '<S117>:1:29' */
+    } else if (!((real_T)QD2_DroneStack_PID_FreqSwp_20_B.SafeFlightTrueFalse >
+                 0.5)) {
+      /* '<S117>:1:26' */
+      /* '<S117>:1:27' */
       QD2_DroneStack_PID_FreqSwp_2_DW.previousRequest = true;
 
-      /* '<S117>:1:30' */
+      /* '<S117>:1:28' */
       QD2_DroneStack_PID_FreqSwp_2_DW.aborted = true;
     } else {
       if (!QD2_DroneStack_PID_FreqSwp_2_DW.previousRequest) {
-        /* '<S117>:1:35' */
-        /* '<S117>:1:36' */
+        /* '<S117>:1:33' */
+        /* '<S117>:1:34' */
         QD2_DroneStack_PID_FreqSwp_2_DW.tStart =
-          QD2_DroneStack_PID_FreqSwp_20_B.Clock;
+          QD2_DroneStack_PID_FreqSwp_20_B.SimTimes;
       }
 
-      /* '<S117>:1:39' */
+      /* '<S117>:1:37' */
       QD2_DroneStack_PID_FreqSwp_2_DW.previousRequest = true;
       if (!QD2_DroneStack_PID_FreqSwp_2_DW.aborted) {
-        /* '<S117>:1:46' */
-        rtb_DataTypeConversion3 = QD2_DroneStack_PID_FreqSwp_20_B.Clock -
+        /* '<S117>:1:45' */
+        rtb_DataTypeConversion3 = QD2_DroneStack_PID_FreqSwp_20_B.SimTimes -
           QD2_DroneStack_PID_FreqSwp_2_DW.tStart;
         if ((rtb_DataTypeConversion3 >= 0.0) && (rtb_DataTypeConversion3 <=
              QD2_DroneStack_PID_FreqSwp_20_P.Duration_Value) &&
-            (QD2_DroneStack_PID_FreqSwp_20_P.Duration_Value > 0.0) &&
-            (rtb_Gain2_m > 0.0) && (rtb_Gain3 > 0.0)) {
-          /* '<S117>:1:48' */
+            (QD2_DroneStack_PID_FreqSwp_20_P.Duration_Value > 0.0) && (rtb_rads >
+             0.0) && (rtb_rads_b > 0.0)) {
           /* '<S117>:1:49' */
-          /* '<S117>:1:52' */
-          rtb_Gain3 = log(rtb_Gain3 / rtb_Gain2_m) /
+          /* '<S117>:1:50' */
+          /* '<S117>:1:55' */
+          rtb_rads_b = log(rtb_rads_b / rtb_rads) /
             QD2_DroneStack_PID_FreqSwp_20_P.Duration_Value;
-          if (fabs(rtb_Gain3) < 1.0E-9) {
-            /* '<S117>:1:54' */
-            /* '<S117>:1:55' */
-            QD2_DroneStack_PID_FreqSwp_20_B.omega = rtb_Gain2_m;
-
-            /* '<S117>:1:56' */
-            rtb_Gain2_m *= rtb_DataTypeConversion3;
-          } else {
+          if (fabs(rtb_rads_b) < 1.0E-9) {
+            /* '<S117>:1:57' */
             /* '<S117>:1:58' */
-            data_loss = exp(rtb_Gain3 * rtb_DataTypeConversion3);
+            QD2_DroneStack_PID_FreqSwp_20_B.AngularFrq = rtb_rads;
 
             /* '<S117>:1:59' */
-            QD2_DroneStack_PID_FreqSwp_20_B.omega = rtb_Gain2_m * data_loss;
+            rtb_rads *= rtb_DataTypeConversion3;
+          } else {
+            /* '<S117>:1:61' */
+            data_loss = exp(rtb_rads_b * rtb_DataTypeConversion3);
 
-            /* '<S117>:1:60' */
-            rtb_Gain2_m = rtb_Gain2_m / rtb_Gain3 * (data_loss - 1.0);
+            /* '<S117>:1:62' */
+            QD2_DroneStack_PID_FreqSwp_20_B.AngularFrq = rtb_rads * data_loss;
+
+            /* '<S117>:1:63' */
+            rtb_rads = rtb_rads / rtb_rads_b * (data_loss - 1.0);
           }
 
-          /* '<S117>:1:63' */
-          rtb_Gain3 = QD2_DroneStack_PID_FreqSwp_20_P.Duration_Value / 2.0;
-          if ((QD2_DroneStack_PID_FreqSwp_20_P.RampDuration_Value <= rtb_Gain3) ||
-              rtIsNaN(rtb_Gain3)) {
-            rtb_Gain3 = QD2_DroneStack_PID_FreqSwp_20_P.RampDuration_Value;
+          /* '<S117>:1:68' */
+          rtb_rads_b = QD2_DroneStack_PID_FreqSwp_20_P.Duration_Value / 2.0;
+          if ((QD2_DroneStack_PID_FreqSwp_20_P.RampDuration_Value <= rtb_rads_b)
+              || rtIsNaN(rtb_rads_b)) {
+            rtb_rads_b = QD2_DroneStack_PID_FreqSwp_20_P.RampDuration_Value;
           }
 
-          if ((rtb_Gain3 <= 0.0) || rtIsNaN(rtb_Gain3)) {
-            rtb_Gain3 = 0.0;
+          if ((rtb_rads_b <= 0.0) || rtIsNaN(rtb_rads_b)) {
+            rtb_rads_b = 0.0;
           }
 
-          /* '<S117>:1:64' */
+          /* '<S117>:1:69' */
           data_loss = 1.0;
-          if (rtb_Gain3 > 0.0) {
-            /* '<S117>:1:66' */
-            if (rtb_DataTypeConversion3 < rtb_Gain3) {
-              /* '<S117>:1:67' */
-              /* '<S117>:1:68' */
+          if (rtb_rads_b > 0.0) {
+            /* '<S117>:1:71' */
+            if (rtb_DataTypeConversion3 < rtb_rads_b) {
+              /* '<S117>:1:72' */
+              /* '<S117>:1:73' */
               data_loss = (1.0 - cos(3.141592653589793 * rtb_DataTypeConversion3
-                / rtb_Gain3)) * 0.5;
+                / rtb_rads_b)) * 0.5;
             } else if (rtb_DataTypeConversion3 >
                        QD2_DroneStack_PID_FreqSwp_20_P.Duration_Value -
-                       rtb_Gain3) {
-              /* '<S117>:1:69' */
-              /* '<S117>:1:70' */
+                       rtb_rads_b) {
+              /* '<S117>:1:74' */
+              /* '<S117>:1:75' */
               data_loss = (1.0 - cos
                            ((QD2_DroneStack_PID_FreqSwp_20_P.Duration_Value -
                              rtb_DataTypeConversion3) * 3.141592653589793 /
-                            rtb_Gain3)) * 0.5;
+                            rtb_rads_b)) * 0.5;
             }
           }
 
-          /* '<S117>:1:74' */
-          QD2_DroneStack_PID_FreqSwp_20_B.u =
+          /* '<S117>:1:80' */
+          QD2_DroneStack_PID_FreqSwp_20_B.SwpSignal =
             QD2_DroneStack_PID_FreqSwp_20_P.Amplitude_Value * data_loss * sin
-            (rtb_Gain2_m);
+            (rtb_rads);
 
-          /* '<S117>:1:75' */
-          QD2_DroneStack_PID_FreqSwp_20_B.active = 1.0;
+          /* '<S117>:1:81' */
+          QD2_DroneStack_PID_FreqSwp_20_B.activeswp = 1.0;
         }
       } else {
-        /* '<S117>:1:42' */
+        /* '<S117>:1:40' */
       }
     }
 
@@ -4338,47 +4345,44 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
     /* MATLAB Function: '<S7>/SYSID Axis Router' */
     QD2_DroneStack_PID_FreqSwp_2_DW.sfEvent = QD2_DroneStack_PID_F_CALL_EVENT;
 
+    /* Reshape: '<S7>/Reshape' incorporates:
+     *  MATLAB Function: '<S7>/SYSID Axis Router'
+     */
     /* MATLAB Function 'STABILIZER - QDRONE 2/SYSID Axis Router': '<S120>:1' */
     /* '<S120>:1:4' */
-    QD2_DroneStack_PID_FreqSwp_20_B.momentSweep[0] = 0.0;
-    QD2_DroneStack_PID_FreqSwp_20_B.momentSweep[1] = 0.0;
-    QD2_DroneStack_PID_FreqSwp_20_B.momentSweep[2] = 0.0;
+    QD2_DroneStack_PID_FreqSwp_20_B.Reshape_d[1] = 0.0;
+    QD2_DroneStack_PID_FreqSwp_20_B.Reshape_d[2] = 0.0;
+    QD2_DroneStack_PID_FreqSwp_20_B.Reshape_d[3] = 0.0;
 
     /* '<S120>:1:5' */
-    QD2_DroneStack_PID_FreqSwp_20_B.thrustSweep = 0.0;
+    QD2_DroneStack_PID_FreqSwp_20_B.Reshape_d[0] = 0.0;
+
+    /* MATLAB Function: '<S7>/SYSID Axis Router' */
     if (QD2_DroneStack_PID_FreqSwp_20_B.AxisSelector == 1.0) {
+      /* Reshape: '<S7>/Reshape' */
       /* '<S120>:1:7' */
       /* '<S120>:1:8' */
-      QD2_DroneStack_PID_FreqSwp_20_B.momentSweep[0] =
-        QD2_DroneStack_PID_FreqSwp_20_B.u;
+      QD2_DroneStack_PID_FreqSwp_20_B.Reshape_d[1] =
+        QD2_DroneStack_PID_FreqSwp_20_B.SwpSignal;
     } else if (QD2_DroneStack_PID_FreqSwp_20_B.AxisSelector == 2.0) {
+      /* Reshape: '<S7>/Reshape' */
       /* '<S120>:1:9' */
       /* '<S120>:1:10' */
-      QD2_DroneStack_PID_FreqSwp_20_B.momentSweep[1] =
-        QD2_DroneStack_PID_FreqSwp_20_B.u;
+      QD2_DroneStack_PID_FreqSwp_20_B.Reshape_d[2] =
+        QD2_DroneStack_PID_FreqSwp_20_B.SwpSignal;
     } else if (QD2_DroneStack_PID_FreqSwp_20_B.AxisSelector == 3.0) {
+      /* Reshape: '<S7>/Reshape' */
       /* '<S120>:1:11' */
       /* '<S120>:1:12' */
-      QD2_DroneStack_PID_FreqSwp_20_B.momentSweep[2] =
-        QD2_DroneStack_PID_FreqSwp_20_B.u;
+      QD2_DroneStack_PID_FreqSwp_20_B.Reshape_d[3] =
+        QD2_DroneStack_PID_FreqSwp_20_B.SwpSignal;
     } else if (QD2_DroneStack_PID_FreqSwp_20_B.AxisSelector == 4.0) {
+      /* Reshape: '<S7>/Reshape' */
       /* '<S120>:1:13' */
       /* '<S120>:1:14' */
-      QD2_DroneStack_PID_FreqSwp_20_B.thrustSweep =
-        QD2_DroneStack_PID_FreqSwp_20_B.u;
+      QD2_DroneStack_PID_FreqSwp_20_B.Reshape_d[0] =
+        QD2_DroneStack_PID_FreqSwp_20_B.SwpSignal;
     }
-
-    /* End of MATLAB Function: '<S7>/SYSID Axis Router' */
-
-    /* Reshape: '<S7>/Reshape' */
-    QD2_DroneStack_PID_FreqSwp_20_B.Reshape_d[0] =
-      QD2_DroneStack_PID_FreqSwp_20_B.thrustSweep;
-    QD2_DroneStack_PID_FreqSwp_20_B.Reshape_d[1] =
-      QD2_DroneStack_PID_FreqSwp_20_B.momentSweep[0];
-    QD2_DroneStack_PID_FreqSwp_20_B.Reshape_d[2] =
-      QD2_DroneStack_PID_FreqSwp_20_B.momentSweep[1];
-    QD2_DroneStack_PID_FreqSwp_20_B.Reshape_d[3] =
-      QD2_DroneStack_PID_FreqSwp_20_B.momentSweep[2];
 
     /* Delay: '<S7>/Delay' */
     QD2_DroneStack_PID_FreqSwp_20_B.Delay =
@@ -4479,9 +4483,9 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
 
   /* MATLAB Function 'QDrone 2 DAQ/Force to percentage Mapping': '<S74>:1' */
   /* '<S74>:1:3' */
-  rtb_Gain2_m = QD2_DroneStack_PID_FreqSwp_20_P.KT[1] *
+  rtb_rads = QD2_DroneStack_PID_FreqSwp_20_P.KT[1] *
     QD2_DroneStack_PID_FreqSwp_20_P.KT[1];
-  rtb_Gain3 = 4.0 * QD2_DroneStack_PID_FreqSwp_20_P.KT[0];
+  rtb_rads_b = 4.0 * QD2_DroneStack_PID_FreqSwp_20_P.KT[0];
   rtb_DataTypeConversion3 = QD2_DroneStack_PID_FreqSwp_20_P.KT[2];
 
   /* Product: '<S5>/Product5' incorporates:
@@ -4499,12 +4503,12 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
    *  Product: '<S5>/Product5'
    */
   for (i = 0; i < 4; i++) {
-    Duty_Cycle_0 = rtb_Gain2_m - (rtb_DataTypeConversion3 -
+    Duty_Cycle_0 = rtb_rads - (rtb_DataTypeConversion3 -
       (((QD2_DroneStack_PID_FreqSwp_20_P.Motor_Matrix[i + 4] * data_loss +
          QD2_DroneStack_PID_FreqSwp_20_P.Motor_Matrix[i] * rtb_Integrator7_idx_0)
         + QD2_DroneStack_PID_FreqSwp_20_P.Motor_Matrix[i + 8] *
         rtb_Integrator2_idx_0) + QD2_DroneStack_PID_FreqSwp_20_P.Motor_Matrix[i
-       + 12] * Product_n)) * rtb_Gain3;
+       + 12] * Product_n)) * rtb_rads_b;
     Duty_Cycle[i] = Duty_Cycle_0;
     if (Duty_Cycle_0 < 0.0) {
       Duty_Cycle[i] = 0.0;
@@ -4661,7 +4665,7 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
 
     /* MATLAB Function 'QDrone 2 DAQ/Choose Motor Telemetry/MATLAB Function': '<S86>:1' */
     /* '<S86>:1:11' */
-    rtb_Gain2_m = QD2_DroneStack_PID_FreqSwp_2_DW.state;
+    rtb_rads = QD2_DroneStack_PID_FreqSwp_2_DW.state;
     if (QD2_DroneStack_PID_FreqSwp_20_B.tele_enable != 0.0) {
       /* '<S86>:1:15' */
       QD2_DroneStack_PID_FreqSwp_2_DW.state++;
@@ -4676,7 +4680,7 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
       QD2_DroneStack_PID_FreqSwp_2_DW.state = 0.0;
 
       /* '<S86>:1:23' */
-      rtb_Gain2_m = 0.0;
+      rtb_rads = 0.0;
     }
 
     /* End of MATLAB Function: '<S64>/MATLAB Function' */
@@ -4685,7 +4689,7 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
      *  Constant: '<S64>/Constant1'
      */
     QD2_DroneStack_PID_FreqSwp_20_B.Selector[0] =
-      QD2_DroneStack_PID_FreqSwp_20_P.Constant1_Value_c[(int32_T)rtb_Gain2_m];
+      QD2_DroneStack_PID_FreqSwp_20_P.Constant1_Value_c[(int32_T)rtb_rads];
 
     /* DataTypeConversion: '<S5>/Data Type Conversion1' */
     rtb_DataTypeConversion3 = floor(QD2_DroneStack_PID_FreqSwp_20_B.cmd[0]);
@@ -4703,7 +4707,7 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
      *  Constant: '<S64>/Constant1'
      */
     QD2_DroneStack_PID_FreqSwp_20_B.Selector[1] =
-      QD2_DroneStack_PID_FreqSwp_20_P.Constant1_Value_c[(int32_T)rtb_Gain2_m + 8];
+      QD2_DroneStack_PID_FreqSwp_20_P.Constant1_Value_c[(int32_T)rtb_rads + 8];
 
     /* DataTypeConversion: '<S5>/Data Type Conversion1' */
     rtb_DataTypeConversion3 = floor(QD2_DroneStack_PID_FreqSwp_20_B.cmd[1]);
@@ -4721,8 +4725,7 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
      *  Constant: '<S64>/Constant1'
      */
     QD2_DroneStack_PID_FreqSwp_20_B.Selector[2] =
-      QD2_DroneStack_PID_FreqSwp_20_P.Constant1_Value_c[(int32_T)rtb_Gain2_m +
-      16];
+      QD2_DroneStack_PID_FreqSwp_20_P.Constant1_Value_c[(int32_T)rtb_rads + 16];
 
     /* DataTypeConversion: '<S5>/Data Type Conversion1' */
     rtb_DataTypeConversion3 = floor(QD2_DroneStack_PID_FreqSwp_20_B.cmd[2]);
@@ -4740,8 +4743,7 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
      *  Constant: '<S64>/Constant1'
      */
     QD2_DroneStack_PID_FreqSwp_20_B.Selector[3] =
-      QD2_DroneStack_PID_FreqSwp_20_P.Constant1_Value_c[(int32_T)rtb_Gain2_m +
-      24];
+      QD2_DroneStack_PID_FreqSwp_20_P.Constant1_Value_c[(int32_T)rtb_rads + 24];
 
     /* DataTypeConversion: '<S5>/Data Type Conversion1' */
     rtb_DataTypeConversion3 = floor(QD2_DroneStack_PID_FreqSwp_20_B.cmd[3]);
@@ -5007,8 +5009,7 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
       QD2_DroneStack_PID_FreqSwp_20_B.HILRead_o2[19];
 
     /* Gain: '<S5>/Multiple by resolution (supposed to be 100 RPM)' */
-    rtb_Gain2_m =
-      QD2_DroneStack_PID_FreqSwp_20_P.Multiplebyresolutionsupposedtob *
+    rtb_rads = QD2_DroneStack_PID_FreqSwp_20_P.Multiplebyresolutionsupposedtob *
       rtb_DataTypeConversion3;
 
     /* MultiPortSwitch: '<S5>/Extract ESC Channels' */
@@ -5087,28 +5088,28 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
     /* End of MultiPortSwitch: '<S5>/Extract ESC Channels' */
 
     /* Product: '<S5>/Product' */
-    rtb_Product_g[0] = rtb_Gain2_m *
+    rtb_Product_g[0] = rtb_rads *
       QD2_DroneStack_PID_FreqSwp_20_B.ExtractESCChannels[0];
 
     /* Memory: '<S67>/Memory' */
     rtb_Memory_e[0] = QD2_DroneStack_PID_FreqSwp_2_DW.Memory_PreviousInput_a[0];
 
     /* Product: '<S5>/Product' */
-    rtb_Product_g[1] = rtb_Gain2_m *
+    rtb_Product_g[1] = rtb_rads *
       QD2_DroneStack_PID_FreqSwp_20_B.ExtractESCChannels[1];
 
     /* Memory: '<S67>/Memory' */
     rtb_Memory_e[1] = QD2_DroneStack_PID_FreqSwp_2_DW.Memory_PreviousInput_a[1];
 
     /* Product: '<S5>/Product' */
-    rtb_Product_g[2] = rtb_Gain2_m *
+    rtb_Product_g[2] = rtb_rads *
       QD2_DroneStack_PID_FreqSwp_20_B.ExtractESCChannels[2];
 
     /* Memory: '<S67>/Memory' */
     rtb_Memory_e[2] = QD2_DroneStack_PID_FreqSwp_2_DW.Memory_PreviousInput_a[2];
 
     /* Product: '<S5>/Product' */
-    rtb_Product_g[3] = rtb_Gain2_m *
+    rtb_Product_g[3] = rtb_rads *
       QD2_DroneStack_PID_FreqSwp_20_B.ExtractESCChannels[3];
 
     /* Memory: '<S67>/Memory' */
@@ -6788,108 +6789,105 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
    *  Constant: '<S3>/wn'
    *  Integrator: '<S52>/Integrator2'
    */
-  rtb_Gain2_m = QD2_DroneStack_PID_FreqSwp_20_P.wn_Value *
+  rtb_rads = QD2_DroneStack_PID_FreqSwp_20_P.wn_Value *
     QD2_DroneStack_PID_FreqSwp_20_X.Integrator2_CSTATE_c[0];
-  QD2_DroneStack_PID_FreqSwp_20_B.Product1_j[0] = rtb_Gain2_m;
+  QD2_DroneStack_PID_FreqSwp_20_B.Product1_j[0] = rtb_rads;
 
   /* Sum: '<S3>/Sum8' incorporates:
    *  Integrator: '<S3>/Integrator6'
    */
-  rtb_Gain3 = QD2_DroneStack_PID_FreqSwp_20_X.Integrator6_CSTATE[0] -
-    rtb_Gain2_m;
-  rtb_Integrator7_idx_0 = rtb_Gain3;
+  rtb_rads_b = QD2_DroneStack_PID_FreqSwp_20_X.Integrator6_CSTATE[0] - rtb_rads;
+  rtb_Integrator7_idx_0 = rtb_rads_b;
 
   /* Gain: '<S3>/Ki3' */
   QD2_DroneStack_PID_FreqSwp_20_B.Ki3[0] =
-    QD2_DroneStack_PID_FreqSwp_20_P.Ki3_Gain * rtb_Gain3;
+    QD2_DroneStack_PID_FreqSwp_20_P.Ki3_Gain * rtb_rads_b;
 
   /* Product: '<S52>/Product1' incorporates:
    *  Constant: '<S3>/wn'
    *  Integrator: '<S52>/Integrator2'
    */
-  rtb_Gain2_m = QD2_DroneStack_PID_FreqSwp_20_P.wn_Value *
+  rtb_rads = QD2_DroneStack_PID_FreqSwp_20_P.wn_Value *
     QD2_DroneStack_PID_FreqSwp_20_X.Integrator2_CSTATE_c[1];
-  QD2_DroneStack_PID_FreqSwp_20_B.Product1_j[1] = rtb_Gain2_m;
+  QD2_DroneStack_PID_FreqSwp_20_B.Product1_j[1] = rtb_rads;
 
   /* Sum: '<S3>/Sum8' incorporates:
    *  Integrator: '<S3>/Integrator6'
    */
-  rtb_Gain3 = QD2_DroneStack_PID_FreqSwp_20_X.Integrator6_CSTATE[1] -
-    rtb_Gain2_m;
-  data_loss = rtb_Gain3;
+  rtb_rads_b = QD2_DroneStack_PID_FreqSwp_20_X.Integrator6_CSTATE[1] - rtb_rads;
+  data_loss = rtb_rads_b;
 
   /* Gain: '<S3>/Ki3' */
   QD2_DroneStack_PID_FreqSwp_20_B.Ki3[1] =
-    QD2_DroneStack_PID_FreqSwp_20_P.Ki3_Gain * rtb_Gain3;
+    QD2_DroneStack_PID_FreqSwp_20_P.Ki3_Gain * rtb_rads_b;
 
   /* Product: '<S52>/Product1' incorporates:
    *  Constant: '<S3>/wn'
    *  Integrator: '<S52>/Integrator2'
    */
-  rtb_Gain2_m = QD2_DroneStack_PID_FreqSwp_20_P.wn_Value *
+  rtb_rads = QD2_DroneStack_PID_FreqSwp_20_P.wn_Value *
     QD2_DroneStack_PID_FreqSwp_20_X.Integrator2_CSTATE_c[2];
-  QD2_DroneStack_PID_FreqSwp_20_B.Product1_j[2] = rtb_Gain2_m;
+  QD2_DroneStack_PID_FreqSwp_20_B.Product1_j[2] = rtb_rads;
 
   /* Sum: '<S3>/Sum8' incorporates:
    *  Integrator: '<S3>/Integrator6'
    */
-  rtb_Gain3 = QD2_DroneStack_PID_FreqSwp_20_X.Integrator6_CSTATE[2] -
-    rtb_Gain2_m;
+  rtb_rads_b = QD2_DroneStack_PID_FreqSwp_20_X.Integrator6_CSTATE[2] - rtb_rads;
 
   /* Gain: '<S3>/Ki3' */
   QD2_DroneStack_PID_FreqSwp_20_B.Ki3[2] =
-    QD2_DroneStack_PID_FreqSwp_20_P.Ki3_Gain * rtb_Gain3;
+    QD2_DroneStack_PID_FreqSwp_20_P.Ki3_Gain * rtb_rads_b;
   if (rtb_Compare_gx) {
     /* MATLAB Function: '<S51>/Signmoid Type' */
     QD2_DroneStack_PID_FreqSwp_2_DW.sfEvent_b = QD2_DroneStack_PID_F_CALL_EVENT;
 
     /* MATLAB Function 'HORIZON FRAME CONVERSION AND ESTIMATION/Pose Switchbox/Signmoid Type': '<S58>:1' */
     /* '<S58>:1:24' */
-    rtb_Gain2_m = 0.0;
+    rtb_rads = 0.0;
     switch ((int32_T)QD2_DroneStack_PID_FreqSwp_20_B.Memory) {
      case 1:
       /* '<S58>:1:28' */
-      rtb_Gain2_m = 1.0;
+      rtb_rads = 1.0;
       break;
 
      case 2:
       /* '<S58>:1:30' */
-      rtb_Gain2_m = 1.0;
+      rtb_rads = 1.0;
       break;
 
      case 3:
       /* '<S58>:1:32' */
-      rtb_Gain2_m = 2.0;
+      rtb_rads = 2.0;
       break;
 
      case 4:
       /* '<S58>:1:34' */
-      rtb_Gain2_m = 4.0;
+      rtb_rads = 4.0;
       break;
 
      case 5:
       /* '<S58>:1:36' */
-      rtb_Gain2_m = 3.0;
+      rtb_rads = 3.0;
       break;
 
      case 6:
       /* '<S58>:1:38' */
-      rtb_Gain2_m = 5.0;
+      rtb_rads = 5.0;
       break;
 
      case 7:
       /* '<S58>:1:40' */
-      rtb_Gain2_m = 1.0;
+      rtb_rads = 1.0;
       break;
 
      case 8:
       /* '<S58>:1:42' */
-      rtb_Gain2_m = 1.0;
+      rtb_rads = 1.0;
       break;
 
      case 9:
       /* '<S58>:1:44' */
-      rtb_Gain2_m = 1.0;
+      rtb_rads = 1.0;
       break;
     }
 
@@ -6913,7 +6911,7 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
 
     /* '<S53>:1:11' */
     QD2_DroneStack_PID_FreqSwp_20_B.max_x_accel = 0.0;
-    switch ((int32_T)rtb_Gain2_m) {
+    switch ((int32_T)rtb_rads) {
      case 1:
       /* '<S53>:1:15' */
       QD2_DroneStack_PID_FreqSwp_20_B.enable_k = 1.0;
@@ -7042,7 +7040,7 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
 
     /* '<S54>:1:11' */
     QD2_DroneStack_PID_FreqSwp_20_B.max_y_accel = 0.0;
-    switch ((int32_T)rtb_Gain2_m) {
+    switch ((int32_T)rtb_rads) {
      case 1:
       /* '<S54>:1:15' */
       QD2_DroneStack_PID_FreqSwp_20_B.enable_n = 1.0;
@@ -7171,7 +7169,7 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
 
     /* '<S55>:1:11' */
     QD2_DroneStack_PID_FreqSwp_20_B.max_height_accel = 0.0;
-    switch ((int32_T)rtb_Gain2_m) {
+    switch ((int32_T)rtb_rads) {
      case 1:
       /* '<S55>:1:15' */
       /* '<S55>:1:16' */
@@ -7286,7 +7284,7 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
 
     /* '<S56>:1:11' */
     QD2_DroneStack_PID_FreqSwp_20_B.max_yaw_accel = 0.0;
-    switch ((int32_T)rtb_Gain2_m) {
+    switch ((int32_T)rtb_rads) {
      case 1:
       /* '<S56>:1:15' */
       /* '<S56>:1:16' */
@@ -7555,7 +7553,7 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
    */
   QD2_DroneStack_PID_FreqSwp_20_B.Sum9[2] =
     (QD2_DroneStack_PID_FreqSwp_20_B.IFAccelerometerdatamss3[2] -
-     QD2_DroneStack_PID_FreqSwp_20_P.Kp3_Gain * rtb_Gain3) -
+     QD2_DroneStack_PID_FreqSwp_20_P.Kp3_Gain * rtb_rads_b) -
     QD2_DroneStack_PID_FreqSwp_20_X.Integrator7_CSTATE[2];
 
   /* Gain: '<S118>/Gain' */
@@ -7763,72 +7761,86 @@ void QD2_DroneStack_PID_FreqSwp_2021a_output0(void) /* Sample time: [0.0s, 0.0s]
       QD2_DroneStack_PID_FreqSwp_20_B.SaturationCommandAuthorityNm1[2];
   }
 
-  /* DataTypeConversion: '<S7>/Data Type Conversion' */
-  QD2_DroneStack_PID_FreqSwp_20_B.DataTypeConversion_c =
-    QD2_DroneStack_PID_FreqSwp_20_B.SafeFlight;
+  /* DataTypeConversion: '<S7>/Data Type Conversion1' */
+  QD2_DroneStack_PID_FreqSwp_20_B.u1 =
+    QD2_DroneStack_PID_FreqSwp_20_B.SafeFlightTrueFalse;
   if (rtb_Compare_gx) {
     /* SignalConversion generated from: '<S7>/To Host File- SYSID' */
     QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[0] =
-      QD2_DroneStack_PID_FreqSwp_20_B.Clock;
+      QD2_DroneStack_PID_FreqSwp_20_B.SimTimes;
     QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[1] =
       QD2_DroneStack_PID_FreqSwp_20_B.StreamClient_o4[16];
     QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[2] =
-      QD2_DroneStack_PID_FreqSwp_20_B.AxisSelector;
+      QD2_DroneStack_PID_FreqSwp_20_B.u1;
     QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[3] =
-      QD2_DroneStack_PID_FreqSwp_20_B.DataTypeConversion_c;
+      QD2_DroneStack_PID_FreqSwp_20_B.activeswp;
     QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[4] =
-      QD2_DroneStack_PID_FreqSwp_20_B.active;
+      QD2_DroneStack_PID_FreqSwp_20_B.StreamClient_o4[4];
     QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[5] =
-      QD2_DroneStack_PID_FreqSwp_20_B.omega;
+      QD2_DroneStack_PID_FreqSwp_20_B.AxisSelector;
     QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[6] =
-      QD2_DroneStack_PID_FreqSwp_20_B.u;
+      QD2_DroneStack_PID_FreqSwp_20_B.AngularFrq;
     QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[7] =
-      QD2_DroneStack_PID_FreqSwp_20_B.Reshape_d[0];
+      QD2_DroneStack_PID_FreqSwp_20_B.SwpSignal;
     QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[8] =
-      QD2_DroneStack_PID_FreqSwp_20_B.Reshape_d[1];
+      QD2_DroneStack_PID_FreqSwp_20_B.Reshape_d[0];
     QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[9] =
-      QD2_DroneStack_PID_FreqSwp_20_B.Reshape_d[2];
+      QD2_DroneStack_PID_FreqSwp_20_B.Reshape_d[1];
     QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[10] =
-      QD2_DroneStack_PID_FreqSwp_20_B.Reshape_d[3];
+      QD2_DroneStack_PID_FreqSwp_20_B.Reshape_d[2];
     QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[11] =
-      QD2_DroneStack_PID_FreqSwp_20_B.Sum1[0];
-    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[14] =
-      QD2_DroneStack_PID_FreqSwp_20_B.SaturationMaxRaterads[0];
-    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[17] =
-      QD2_DroneStack_PID_FreqSwp_20_B.Reshape[3];
-    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[20] =
-      QD2_DroneStack_PID_FreqSwp_20_B.Reshape[0];
-    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[23] =
-      QD2_DroneStack_PID_FreqSwp_20_B.SaturationCommandAuthorityNm1[0];
+      QD2_DroneStack_PID_FreqSwp_20_B.Reshape_d[3];
     QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[12] =
-      QD2_DroneStack_PID_FreqSwp_20_B.Sum1[1];
-    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[15] =
-      QD2_DroneStack_PID_FreqSwp_20_B.SaturationMaxRaterads[1];
-    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[18] =
-      QD2_DroneStack_PID_FreqSwp_20_B.Reshape[4];
-    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[21] =
-      QD2_DroneStack_PID_FreqSwp_20_B.Reshape[1];
-    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[24] =
-      QD2_DroneStack_PID_FreqSwp_20_B.SaturationCommandAuthorityNm1[1];
+      QD2_DroneStack_PID_FreqSwp_20_B.SaturationCommandAuthorityNm1[0];
     QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[13] =
-      QD2_DroneStack_PID_FreqSwp_20_B.Sum1[2];
-    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[16] =
-      QD2_DroneStack_PID_FreqSwp_20_B.SaturationMaxRaterads[2];
-    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[19] =
-      QD2_DroneStack_PID_FreqSwp_20_B.Reshape[5];
-    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[22] =
-      QD2_DroneStack_PID_FreqSwp_20_B.Reshape[2];
-    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[25] =
+      QD2_DroneStack_PID_FreqSwp_20_B.SaturationCommandAuthorityNm1[1];
+    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[14] =
       QD2_DroneStack_PID_FreqSwp_20_B.SaturationCommandAuthorityNm1[2];
-    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[26] =
+    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[15] =
       QD2_DroneStack_PID_FreqSwp_20_B.Product_n[0];
-    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[27] =
+    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[16] =
       QD2_DroneStack_PID_FreqSwp_20_B.Product_n[1];
-    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[28] =
+    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[17] =
       QD2_DroneStack_PID_FreqSwp_20_B.Product_n[2];
-    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[29] =
+    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[18] =
       QD2_DroneStack_PID_FreqSwp_20_B.Product_n[3];
+    memcpy(&QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[19],
+           &QD2_DroneStack_PID_FreqSwp_20_B.Reshape[0], 9U * sizeof(real_T));
+    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[34] =
+      QD2_DroneStack_PID_FreqSwp_20_B.MatrixMultiply1[0];
+    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[35] =
+      QD2_DroneStack_PID_FreqSwp_20_B.MatrixMultiply1[1];
+    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[36] =
+      QD2_DroneStack_PID_FreqSwp_20_B.MatrixMultiply1[2];
+    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[37] =
+      QD2_DroneStack_PID_FreqSwp_20_B.Product1[2];
+    for (i = 0; i < 6; i++) {
+      QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[i + 28] =
+        QD2_DroneStack_PID_FreqSwp_20_B.StreamClient_o4[i + 5];
+      QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[i + 38] =
+        QD2_DroneStack_PID_FreqSwp_20_B.Product4[i];
+    }
 
+    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[44] =
+      QD2_DroneStack_PID_FreqSwp_20_B.Sum1[0];
+    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[47] =
+      QD2_DroneStack_PID_FreqSwp_20_B.SaturationMaxRaterads[0];
+    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[45] =
+      QD2_DroneStack_PID_FreqSwp_20_B.Sum1[1];
+    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[48] =
+      QD2_DroneStack_PID_FreqSwp_20_B.SaturationMaxRaterads[1];
+    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[46] =
+      QD2_DroneStack_PID_FreqSwp_20_B.Sum1[2];
+    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[49] =
+      QD2_DroneStack_PID_FreqSwp_20_B.SaturationMaxRaterads[2];
+    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[50] =
+      QD2_DroneStack_PID_FreqSwp_20_B.HILRead_o1[0];
+    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[51] =
+      QD2_DroneStack_PID_FreqSwp_20_B.SpecifyAngleModeforStabilizerDO;
+    QD2_DroneStack_PID_FreqSwp_20_B.TmpSignalConversionAtToHostFi_n[52] =
+      QD2_DroneStack_PID_FreqSwp_20_B.DataTypeConversion1;
+
+    /* End of SignalConversion generated from: '<S7>/To Host File- SYSID' */
     /* Stop: '<S123>/Stop Simulation' incorporates:
      *  Constant: '<S126>/Constant'
      *  RelationalOperator: '<S126>/Compare'
@@ -10909,10 +10921,10 @@ RT_MODEL_QD2_DroneStack_PID_F_T *QD2_DroneStack_PID_FreqSwp_2021a(void)
   rtmSetFirstInitCond(QD2_DroneStack_PID_FreqSwp_2_M, 1);
 
   /* External mode info */
-  QD2_DroneStack_PID_FreqSwp_2_M->Sizes.checksums[0] = (1279415977U);
-  QD2_DroneStack_PID_FreqSwp_2_M->Sizes.checksums[1] = (4284962446U);
-  QD2_DroneStack_PID_FreqSwp_2_M->Sizes.checksums[2] = (1075607153U);
-  QD2_DroneStack_PID_FreqSwp_2_M->Sizes.checksums[3] = (447100548U);
+  QD2_DroneStack_PID_FreqSwp_2_M->Sizes.checksums[0] = (3806767742U);
+  QD2_DroneStack_PID_FreqSwp_2_M->Sizes.checksums[1] = (1760334808U);
+  QD2_DroneStack_PID_FreqSwp_2_M->Sizes.checksums[2] = (1654648833U);
+  QD2_DroneStack_PID_FreqSwp_2_M->Sizes.checksums[3] = (487077538U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;
@@ -11076,7 +11088,7 @@ RT_MODEL_QD2_DroneStack_PID_F_T *QD2_DroneStack_PID_FreqSwp_2021a(void)
   QD2_DroneStack_PID_FreqSwp_2_M->Sizes.sysDirFeedThru = (0);/* The model is not direct feedthrough */
   QD2_DroneStack_PID_FreqSwp_2_M->Sizes.numSampTimes = (5);/* Number of sample times */
   QD2_DroneStack_PID_FreqSwp_2_M->Sizes.numBlocks = (758);/* Number of blocks */
-  QD2_DroneStack_PID_FreqSwp_2_M->Sizes.numBlockIO = (282);/* Number of block outputs */
+  QD2_DroneStack_PID_FreqSwp_2_M->Sizes.numBlockIO = (283);/* Number of block outputs */
   QD2_DroneStack_PID_FreqSwp_2_M->Sizes.numBlockPrms = (2825);/* Sum of parameter "widths" */
   return QD2_DroneStack_PID_FreqSwp_2_M;
 }

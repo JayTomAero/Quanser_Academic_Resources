@@ -7,9 +7,9 @@
  *
  * Code generation for model "QD2_DroneStack_PID_FreqSwp_2021a".
  *
- * Model version              : 11.17
+ * Model version              : 11.26
  * Simulink Coder version : 26.1 (R2026a) 20-Nov-2025
- * C source code generated on : Tue Sep  8 15:03:35 2026
+ * C source code generated on : Tue Sep 15 19:51:22 2026
  *
  * Target selection: quarc_linux_qdrone2.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -100,7 +100,7 @@ static const char_T * rtDataTypeNames[] = {
 
 /* data type transitions for block I/O structure */
 static DataTypeTransition rtBTransitions[] = {
-  { (char_T *)(&QD2_DroneStack_PID_FreqSwp_20_B.HILRead_o1[0]), 0, 0, 521 },
+  { (char_T *)(&QD2_DroneStack_PID_FreqSwp_20_B.HILRead_o1[0]), 0, 0, 543 },
 
   { (char_T *)(&QD2_DroneStack_PID_FreqSwp_20_B.StreamClient_o2), 6, 0, 3 },
 

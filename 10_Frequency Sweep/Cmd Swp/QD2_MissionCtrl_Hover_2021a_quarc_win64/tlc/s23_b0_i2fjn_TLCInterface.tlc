@@ -1,0 +1,480 @@
+%implements s23_b0_i2fjn_TLCInterface "C"
+
+%function getOutputAddr_23_9_0_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(8, 0, "")> %% rtb_Time
+
+  %return ""
+%endfunction
+
+%function getOutput_23_9_0_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(8, 0, "")> %% rtb_Time
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_21_0_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(60, 0, "")> %% rtb_Time_j
+
+  %return ""
+%endfunction
+
+%function getOutput_23_21_0_0_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(60, 0, "")> %% rtb_Time_j
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_24_0_0_6_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(63, 0, "")> %% rtb_StreamServer_o1
+
+  %return ""
+%endfunction
+
+%function getOutput_23_24_0_0_6_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(63, 0, "")> %% rtb_StreamServer_o1
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_24_0_0_6_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(62, 0, "")> %% rtb_StreamServer_o2
+
+  %return ""
+%endfunction
+
+%function getOutput_23_24_0_0_6_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(62, 0, "")> %% rtb_StreamServer_o2
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_24_0_0_6_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(75, 0, "")> %% rtb_StreamServer_o3
+
+  %return ""
+%endfunction
+
+%function getOutput_23_24_0_0_6_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(75, 0, "")> %% rtb_StreamServer_o3
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_24_0_0_6_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(76, 0, "")> %% rtb_StreamServer_o5
+
+  %return ""
+%endfunction
+
+%function getOutput_23_24_0_0_6_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(76, 0, "")> %% rtb_StreamServer_o5
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_32_0_0_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(60, 0, "")> %% rtb_Time_j
+
+  %return ""
+%endfunction
+
+%function getOutput_23_32_0_0_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(60, 0, "")> %% rtb_Time_j
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_1_0_2_1_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(70, 0, "")> %% rtb_HostGameController_o2
+
+  %return ""
+%endfunction
+
+%function getOutput_23_1_0_2_1_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(70, 0, "")> %% rtb_HostGameController_o2
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_1_0_2_1_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(0, 0, "")> %% rtb_HostGameController_o3
+
+  %return ""
+%endfunction
+
+%function getOutput_23_1_0_2_1_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(0, 0, "")> %% rtb_HostGameController_o3
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_1_0_2_1_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(1, 0, "")> %% rtb_HostGameController_o4
+
+  %return ""
+%endfunction
+
+%function getOutput_23_1_0_2_1_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(1, 0, "")> %% rtb_HostGameController_o4
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_1_0_2_1_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(2, 0, "")> %% rtb_HostGameController_o5
+
+  %return ""
+%endfunction
+
+%function getOutput_23_1_0_2_1_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(2, 0, "")> %% rtb_HostGameController_o5
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_1_0_2_1_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(3, 0, "")> %% rtb_HostGameController_o6
+
+  %return ""
+%endfunction
+
+%function getOutput_23_1_0_2_1_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(3, 0, "")> %% rtb_HostGameController_o6
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_1_0_2_1_6_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(4, 0, "")> %% rtb_HostGameController_o7
+
+  %return ""
+%endfunction
+
+%function getOutput_23_1_0_2_1_6_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(4, 0, "")> %% rtb_HostGameController_o7
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_1_0_2_1_7_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(7, 0, "")> %% rtb_TmpSignalConversionAtCompar
+
+  %return ""
+%endfunction
+
+%function getOutput_23_1_0_2_1_7_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(7, 0, "")> %% rtb_TmpSignalConversionAtCompar
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_1_0_2_1_8_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(5, 0, "")> %% rtb_HostGameController_o9
+
+  %return ""
+%endfunction
+
+%function getOutput_23_1_0_2_1_8_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(5, 0, "")> %% rtb_HostGameController_o9
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_1_0_2_1_9_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(6, 0, "")> %% rtb_HostGameController_o10
+
+  %return ""
+%endfunction
+
+%function getOutput_23_1_0_2_1_9_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(6, 0, "")> %% rtb_HostGameController_o10
+
+  %return ""
+%endfunction
+
+%function getInputAddr_23_3_0_2_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(7, 0, "")> %% rtb_TmpSignalConversionAtCompar
+
+  %return ""
+%endfunction
+
+%function getInput_23_3_0_2_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(7, 0, "")> %% rtb_TmpSignalConversionAtCompar
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_3_0_2_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(71, 0, "")> %% rtb_Compare
+
+  %return ""
+%endfunction
+
+%function getOutput_23_3_0_2_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(71, 0, "")> %% rtb_Compare
+
+  %return ""
+%endfunction
+
+%function getOutputExprIdx_23_3_0_2_0_0(block) void
+  %assign indexExpr = ["0"]
+  %return indexExpr
+%endfunction
+
+%function getOutputExprIdx_23_3_0_2_0_1(block) void
+  %assign indexExpr = ["i + 1"]
+  %return indexExpr
+%endfunction
+
+%function getOutputAddr_23_9_0_2_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(8, 0, "")> %% rtb_Time
+
+  %return ""
+%endfunction
+
+%function getOutput_23_9_0_2_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(8, 0, "")> %% rtb_Time
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_24_0_2_9_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(63, 0, "")> %% rtb_StreamServer_o1
+
+  %return ""
+%endfunction
+
+%function getOutput_23_24_0_2_9_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(63, 0, "")> %% rtb_StreamServer_o1
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_24_0_2_9_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(62, 0, "")> %% rtb_StreamServer_o2
+
+  %return ""
+%endfunction
+
+%function getOutput_23_24_0_2_9_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(62, 0, "")> %% rtb_StreamServer_o2
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_24_0_2_9_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(75, 0, "")> %% rtb_StreamServer_o3
+
+  %return ""
+%endfunction
+
+%function getOutput_23_24_0_2_9_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(75, 0, "")> %% rtb_StreamServer_o3
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_24_0_2_9_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(76, 0, "")> %% rtb_StreamServer_o5
+
+  %return ""
+%endfunction
+
+%function getOutput_23_24_0_2_9_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(76, 0, "")> %% rtb_StreamServer_o5
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_1_0_5_1_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(70, 0, "")> %% rtb_HostGameController_o2
+
+  %return ""
+%endfunction
+
+%function getOutput_23_1_0_5_1_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(70, 0, "")> %% rtb_HostGameController_o2
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_1_0_5_1_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(0, 0, "")> %% rtb_HostGameController_o3
+
+  %return ""
+%endfunction
+
+%function getOutput_23_1_0_5_1_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(0, 0, "")> %% rtb_HostGameController_o3
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_1_0_5_1_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(1, 0, "")> %% rtb_HostGameController_o4
+
+  %return ""
+%endfunction
+
+%function getOutput_23_1_0_5_1_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(1, 0, "")> %% rtb_HostGameController_o4
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_1_0_5_1_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(2, 0, "")> %% rtb_HostGameController_o5
+
+  %return ""
+%endfunction
+
+%function getOutput_23_1_0_5_1_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(2, 0, "")> %% rtb_HostGameController_o5
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_1_0_5_1_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(3, 0, "")> %% rtb_HostGameController_o6
+
+  %return ""
+%endfunction
+
+%function getOutput_23_1_0_5_1_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(3, 0, "")> %% rtb_HostGameController_o6
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_1_0_5_1_6_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(4, 0, "")> %% rtb_HostGameController_o7
+
+  %return ""
+%endfunction
+
+%function getOutput_23_1_0_5_1_6_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(4, 0, "")> %% rtb_HostGameController_o7
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_1_0_5_1_7_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(60, 0, "")> %% rtb_Time_j
+
+  %return ""
+%endfunction
+
+%function getOutput_23_1_0_5_1_7_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(60, 0, "")> %% rtb_Time_j
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_1_0_5_1_8_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(5, 0, "")> %% rtb_HostGameController_o9
+
+  %return ""
+%endfunction
+
+%function getOutput_23_1_0_5_1_8_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(5, 0, "")> %% rtb_HostGameController_o9
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_1_0_5_1_9_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(6, 0, "")> %% rtb_HostGameController_o10
+
+  %return ""
+%endfunction
+
+%function getOutput_23_1_0_5_1_9_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(6, 0, "")> %% rtb_HostGameController_o10
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_9_0_5_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(8, 0, "")> %% rtb_Time
+
+  %return ""
+%endfunction
+
+%function getOutput_23_9_0_5_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(8, 0, "")> %% rtb_Time
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_21_0_5_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(60, 0, "")> %% rtb_Time_j
+
+  %return ""
+%endfunction
+
+%function getOutput_23_21_0_5_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(60, 0, "")> %% rtb_Time_j
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_24_0_5_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(63, 0, "")> %% rtb_StreamServer_o1
+
+  %return ""
+%endfunction
+
+%function getOutput_23_24_0_5_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(63, 0, "")> %% rtb_StreamServer_o1
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_24_0_5_4_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(62, 0, "")> %% rtb_StreamServer_o2
+
+  %return ""
+%endfunction
+
+%function getOutput_23_24_0_5_4_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(62, 0, "")> %% rtb_StreamServer_o2
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_24_0_5_4_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(75, 0, "")> %% rtb_StreamServer_o3
+
+  %return ""
+%endfunction
+
+%function getOutput_23_24_0_5_4_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(75, 0, "")> %% rtb_StreamServer_o3
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_24_0_5_4_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(76, 0, "")> %% rtb_StreamServer_o5
+
+  %return ""
+%endfunction
+
+%function getOutput_23_24_0_5_4_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(76, 0, "")> %% rtb_StreamServer_o5
+
+  %return ""
+%endfunction
+
+%function getOutputAddr_23_32_0_5_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(60, 0, "")> %% rtb_Time_j
+
+  %return ""
+%endfunction
+
+%function getOutput_23_32_0_5_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(60, 0, "")> %% rtb_Time_j
+
+  %return ""
+%endfunction
+
