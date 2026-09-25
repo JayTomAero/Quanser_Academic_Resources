@@ -1,0 +1,4 @@
+/* Expression: [1 0 0 0]
+  * Referenced by: '<S2>/Motor 0'
+   */
+{   1.0, 0.0, 0.0, 0.0 } 

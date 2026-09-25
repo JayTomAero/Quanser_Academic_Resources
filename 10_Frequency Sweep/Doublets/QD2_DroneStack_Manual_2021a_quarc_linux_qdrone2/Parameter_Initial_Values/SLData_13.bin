@@ -1,0 +1,4 @@
+/* Mask Parameter: HILRead_analog_channels
+  * Referenced by: '<S2>/HIL Read'
+   */
+{   3U, 1U, 2U } 

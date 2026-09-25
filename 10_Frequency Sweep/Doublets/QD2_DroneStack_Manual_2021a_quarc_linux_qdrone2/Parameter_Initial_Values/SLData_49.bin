@@ -1,0 +1,4 @@
+/* Expression: [0.1 0.1 0] 
+  * Referenced by: '<S4>/K_d_angle (rad//s // rad//s)'
+   */
+{   0.1, 0.1, 0.0 } 
